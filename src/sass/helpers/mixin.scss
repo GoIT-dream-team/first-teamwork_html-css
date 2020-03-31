@@ -1,3 +1,6 @@
+@function rem($px) {
+  @return ($px / 16) + rem;
+}
 // mixins популярных брекпоинтов / вызов @include phones{ background-color: red;}
 @mixin desktop {
   @media screen and (min-width: 1200px) {
