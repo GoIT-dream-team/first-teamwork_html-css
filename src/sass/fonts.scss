@@ -1,49 +1,44 @@
 @font-face {
     font-family: 'Acrom';
-    src: url('Acrom-Bold.eot');
     src: local('Acrom Bold'), local('Acrom-Bold'),
-        url('Acrom-Bold.woff2') format('woff2'),
-        url('Acrom-Bold.woff') format('woff'),
+        url('../fonts/Acrom/Acrom-Bold.woff2') format('woff2'),
+        url('../fonts/Acrom/Acrom-Bold.woff') format('woff'),
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Acrom';
-    src: url('Acrom-ExtraBold.eot');
     src: local('Acrom ExtraBold'), local('Acrom-ExtraBold'),
-        url('Acrom-ExtraBold.woff2') format('woff2'),
-        url('Acrom-ExtraBold.woff') format('woff'),
+        url('../fonts/Acrom/Acrom-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Acrom/Acrom-ExtraBold.woff') format('woff'),
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Acrom';
-    src: url('Acrom-Light.eot');
     src: local('Acrom Light'), local('Acrom-Light'),
-        url('Acrom-Light.woff2') format('woff2'),
-        url('Acrom-Light.woff') format('woff'),
+        url('../fonts/Acrom/Acrom-Light.woff2') format('woff2'),
+        url('../fonts/Acrom/Acrom-Light.woff') format('woff'),
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Acrom';
-    src: url('Acrom-Medium.eot');
     src: local('Acrom Medium'), local('Acrom-Medium'),
-        url('Acrom-Medium.woff2') format('woff2'),
-        url('Acrom-Medium.woff') format('woff'),
+        url('../fonts/Acrom/Acrom-Medium.woff2') format('woff2'),
+        url('../fonts/Acrom/Acrom-Medium.woff') format('woff'),
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Acrom';
-    src: url('Acrom-Regular.eot');
     src: local('Acrom'), local('Acrom-Regular'),
-        url('Acrom-Regular.woff2') format('woff2'),
-        url('Acrom-Regular.woff') format('woff'),
+        url('../fonts/Acrom/Acrom-Regular.woff2') format('woff2'),
+        url('../fonts/Acrom/Acrom-Regular.woff') format('woff'),
     font-weight: normal;
     font-style: normal;
 }
