@@ -1,0 +1,21 @@
+.main-title-block {
+
+  &__title {
+  }
+
+  &__sub-title {
+
+    &::before,
+    &::after {
+      @include pseudo;
+    }
+
+    &::before {
+
+    }
+
+    &::after {
+
+    }
+  }
+}
