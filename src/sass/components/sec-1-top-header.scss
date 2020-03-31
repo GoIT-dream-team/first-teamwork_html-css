@@ -1,0 +1,38 @@
+.top-header {
+  @include content-between-flex;
+  padding-bottom: rem(12);
+
+  &__title-block {
+  }
+}
+.bur-menu {
+  &__line {
+    position: relative;
+    width: rem(17);
+    height: rem(3);
+    display: block;
+    background-color: $main-white-color;
+
+    &::before,
+    &::after {
+      @include pseudo;
+      position: absolute;
+      width: rem(3);
+      height: rem(3);
+      background-color: $main-white-color;
+      border-radius: rem(1);
+    }
+
+    &::before {
+      width: rem(22);
+      right: 0;
+      top: rem(-8);
+    }
+
+    &::after {
+      width: rem(28);
+      right: 0;
+      bottom: rem(-8);
+    }
+  }
+}
