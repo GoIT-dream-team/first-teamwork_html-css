@@ -12,7 +12,7 @@ html {
 
 // * add this class to <a href="#"></a>
 .link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 rem(15);
 }
 
 .visually-hidden:not(:focus):not(:active),

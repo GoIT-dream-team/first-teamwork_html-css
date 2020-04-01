@@ -1,0 +1,80 @@
+.wave-btn__link {
+  position: relative;
+  min-width: rem(123);
+  max-width: rem(225);
+  min-height: rem(54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease 0s;
+  overflow: hidden;
+  box-shadow: 0 rem(9) rem(13) 0 rgba(196, 87, 15, 0.26);
+
+  &:hover {
+    border-radius: rem(4);
+    transition: all 0.8s ease 0.2s;
+  }
+
+  &:hover .wave-btn__waves {
+    top: 0;
+  }
+
+  &:hover .wave-btn__text {
+    color: #000;
+  }
+}
+
+.wave-btn__text {
+  position: relative;
+  font-family: 'Acrom ExtraBold', sans-serif;
+  font-size: rem(12);
+  text-transform: uppercase;
+  line-height: rem(18);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.8s ease 0.2s;
+  z-index: 1;
+}
+
+.wave-btn__waves {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: rem(218);
+  background-color: rgb(255, 107, 8);
+  transition: all 0.8s ease 0s;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 250%;
+    height: 250%;
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+
+  &:before {
+    background-color: #ffffff;
+    border-radius: 48%;
+    animation: waves 5s infinite linear;
+  }
+
+  &.wave-btn__waves:after {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 44%;
+    animation: waves 10s infinite linear;
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
