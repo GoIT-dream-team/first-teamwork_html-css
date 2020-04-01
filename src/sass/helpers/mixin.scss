@@ -33,9 +33,9 @@
 
 // Создает линию под блоком
 // пример: @include sep-h(80%,2px,$blue);
-@mixin line($w, $h, $color, $mar:5px) {
+@mixin line($w, $h, $color, $mar: 5px) {
   &:after {
-    content: '';
+    content: "";
     display: block;
     height: $h;
     width: $w;
@@ -66,7 +66,7 @@
 }
 
 // для псевдоэлементов
-@mixin pseudo($display: block, $content: '') {
+@mixin pseudo($display: block, $content: "") {
   display: $display;
   content: $content;
 }
@@ -79,14 +79,14 @@
 // all - применит все
 // hor - flex и j-c: center
 // ver - flex и a-i: center
-@mixin content-center-flex($type: 'all') {
+@mixin content-center-flex($type: "all") {
   display: flex;
-  @if $type== 'all' {
+  @if $type== "all" {
     justify-content: center;
     align-items: center;
-  } @else if $type== 'hor' {
+  } @else if $type== "hor" {
     justify-content: center;
-  } @else if $type== 'ver' {
+  } @else if $type== "ver" {
     align-items: center;
   }
 }
@@ -94,27 +94,27 @@
 // all - применит все
 // hor - flex и j-c: space-between
 // ver - flex и a-i: center
-@mixin content-between-flex($type: 'all') {
+@mixin content-between-flex($type: "all") {
   display: flex;
-  @if $type== 'all' {
+  @if $type== "all" {
     justify-content: space-between;
     align-items: center;
-  } @else if $type== 'hor' {
+  } @else if $type== "hor" {
     justify-content: space-between;
-  } @else if $type== 'ver' {
+  } @else if $type== "ver" {
     align-items: center;
   }
 }
 
 // для background
-@mixin bg-img($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+@mixin bg-img($path: "", $size: cover, $repeat: no-repeat, $pos: center) {
   background-image: url($path);
   background-size: $size;
   background-repeat: $repeat;
   background-position: $pos;
 }
 // для background с градиентом (затемнением). (пример): linear-gradient(to top, $color_bg-overlay, $color_bg-overlay)
-@mixin gradient-bg-img($path: '', $path-two: linear-gradient(), $size: cover, $repeat: no-repeat, $pos: center) {
+@mixin gradient-bg-img($path: "", $path-two: linear-gradient(), $size: cover, $repeat: no-repeat, $pos: center) {
   background-image: $path-two, url($path);
   background-size: $size;
   background-repeat: $repeat;
@@ -122,59 +122,53 @@
 }
 
 //создает треугольники, без картинок, вы только задаете цвет, размер, направление и все.
-@mixin css-triangle(
-  $color,
-  $direction,
-  $size: 6px,
-  $position: absolute,
-  $round: false
-) {
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
   width: 0;
   height: 0;
   @if $round {
     border-radius: 3px;
   }
-  @if $direction == 'down' {
+  @if $direction == "down" {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-top: $size solid $color;
     margin-top: 0 - round($size / 2.5);
-  } @else if $direction == 'up' {
+  } @else if $direction == "up" {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-bottom: $size solid $color;
     margin-bottom: 0 - round($size / 2.5);
-  } @else if $direction == 'right' {
+  } @else if $direction == "right" {
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-left: $size solid $color;
     margin-right: -$size;
-  } @else if $direction == 'left' {
+  } @else if $direction == "left" {
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-right: $size solid $color;
     margin-left: -$size;
-  } @else if $direction == 'down-left' {
+  } @else if $direction == "down-left" {
     border-top: $size solid transparent;
     border-left: $size solid $color;
     margin-right: -$size;
     border-bottom: 0px solid $color;
     margin-bottom: 0 - round($size / 2.5);
-  } @else if $direction == 'down-right' {
+  } @else if $direction == "down-right" {
     border-left: $size solid transparent;
     border-bottom: 0px solid $color;
     margin-bottom: 0 - round($size / 2.5);
     border-top: $size solid transparent;
     border-right: $size solid $color;
     margin-left: -$size;
-  } @else if $direction == 'up-right' {
+  } @else if $direction == "up-right" {
     border-left: $size solid transparent;
     border-top: 0px solid $color;
     margin-top: 0 - round($size / 2.5);
     border-bottom: $size solid transparent;
     border-right: $size solid $color;
     margin-left: -$size;
-  } @else if $direction == 'up-left' {
+  } @else if $direction == "up-left" {
     border-right: $size solid transparent;
     border-top: 0px solid $color;
     margin-top: 0 - round($size / 2.5);
@@ -190,4 +184,54 @@
   height: $height;
   background: $background;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+// Линия возле заголовка
+@mixin title-line($w: 28px, $h: 3px, $color: #000, $mar: 15px) {
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: $h;
+    width: $w;
+    margin-right: $mar;
+    background-color: $color;
+  }
+}
+
+// Квадратик в списке
+@mixin square-list($w: 10px, $h: 10px, $color: #000, $mar: 15px) {
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: $h;
+    width: $w;
+    margin-right: $mar;
+    background-color: $color;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+  }
+}
+
+// Квадратик в списке ORANGE
+@mixin square-list-orange($w: 10px, $h: 10px, $color: #ff6b08, $mar: 15px) {
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: $h;
+    width: $w;
+    margin-right: $mar;
+    background-color: $color;
+  }
+}
+
+// Стиль subtitle h3
+@mixin title-h3($fs: 20px, $fw: 600, $c: #000, $lh: 11px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $c;
 }
