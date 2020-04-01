@@ -1,28 +1,31 @@
 .sec-1 {
   position: relative;
-  padding-top: rem(14);
-  min-height: rem(612);
-  background-color: $bg-header-footer-color;
+  background: $bg-header-footer-color;
   color: $main-white-color;
+
+  &::after {
+    @include content-center-flex;
+    @include сenter-xy;
+    content: "GoIt";
+    width: 100%;
+    height: 100%;
+    font-family: 'Acrom', sans-serif;
+    font-size: rem(100);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $go-it-header-color;
+    background: radial-gradient(
+      rgba(9, 34, 61, 1) 0%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 0;
+  }
 }
-.grad {
-  position: absolute;
-  top: 96px;
-  left: 0;
-  margin: 0 auto;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Acrom";
-  font-size: 120px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
-  background: radial-gradient(
-    rgba(9, 34, 61, 1) 0%,
-    rgba(255, 255, 255, 0) 70%,
-    rgba(255, 255, 255, 0) 100%
-  );
+
+.main-content-sec-1 {
+  position: relative;
+  background-image: url(../../images/bg/lines.png);
+  background-position: center;
+  z-index: 5;
 }

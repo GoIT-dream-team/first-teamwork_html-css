@@ -1,5 +1,6 @@
 .wrapper-soc-and-dots {
   @include content-between-flex;
+  display: none;
 }
 
 .soc-list {

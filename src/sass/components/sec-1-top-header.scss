@@ -1,10 +1,17 @@
 .top-header {
   @include content-between-flex;
-  padding-bottom: rem(12);
+  width: 100%;
+  padding: rem(14);
+  position: fixed;
 
-  &__title-block {
+  &__main-title-block {
+    padding-top: rem(50);
+  }
+
+  &__main-text-block {
   }
 }
+
 .bur-menu {
   &__line {
     position: relative;

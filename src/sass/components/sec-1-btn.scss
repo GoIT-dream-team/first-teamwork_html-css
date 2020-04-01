@@ -1,5 +1,10 @@
-.main-text-block__btn {
-  & .wave-btn__link {
+.main-title-block__btn {
+  display: none;
+}
+
+.main-text-block,
+.main-title-block {
+  .wave-btn__link {
     &:hover .wave-btn__text {
       color: $main-white-color;
     }
@@ -12,5 +17,17 @@
     &:after {
       background-color: rgba($bg-header-footer-color, 0.5);
     }
+  }
+}
+
+.main-title-block {
+  .wave-btn {
+    display: none;
+  }
+}
+
+.main-text-block {
+  .wave-btn__link {
+    margin: 0 auto;
   }
 }

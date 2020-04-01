@@ -1,7 +1,6 @@
 .wave-btn__link {
   position: relative;
-  min-width: rem(123);
-  max-width: rem(225);
+  width: rem(219);
   min-height: rem(54);
   display: flex;
   justify-content: center;
@@ -9,6 +8,7 @@
   transition: all 0.8s ease 0s;
   overflow: hidden;
   box-shadow: $button-shadow-orange;
+
 
   &:hover {
     border-bottom-left-radius: rem(4);

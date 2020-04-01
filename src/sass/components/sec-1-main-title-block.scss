@@ -1,21 +1,52 @@
 .main-title-block {
+  margin-bottom: rem(96);
+  min-width: rem(300);
+  text-align: center;
+  text-transform: uppercase;
 
   &__title {
+    margin: 0 auto;
+    margin-bottom: rem(35);
+    padding-top: rem(50);
+    max-width: rem(300);
+    font-size: rem(30);
+    font-weight: 800;
+    line-height: rem(39);
   }
 
   &__sub-title {
+    position: relative;
+    margin: 0 auto;
+    max-width: rem(260);
+    font-size: rem(13.5);
+    font-weight: 700;
+    line-height: rem(19.5);
+    letter-spacing: -0.025em;
 
     &::before,
     &::after {
       @include pseudo;
+      position: absolute;
     }
 
     &::before {
-
+      top: rem(4);
+      left: rem(-16);
+      width: rem(10);
+      height: rem(10);
+      background-image: url(../images/icons/icon_parentheses-left.svg);
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     &::after {
-
+      bottom: rem(2);
+      right: rem(-15);
+      width: rem(20);
+      height: rem(16);
+      background-image: url(../images/icons/icon_parentheses-right.svg);
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
