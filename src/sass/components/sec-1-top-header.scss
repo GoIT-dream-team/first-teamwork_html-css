@@ -8,10 +8,14 @@
     width: 100%;
     padding: rem(14);
 
-    @include tablets {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin: 0 auto;
       width: rem(642);
       padding: rem(14) rem(10);
+    }
+
+    @include desktop {
+      padding: rem(25);
     }
 
     &__main-title-block {
@@ -27,7 +31,9 @@
   position: relative;
   width: rem(20);
   height: rem(20);
-  @include content-center-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   cursor: pointer;
 
   &__line {

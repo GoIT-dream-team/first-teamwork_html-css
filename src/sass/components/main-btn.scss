@@ -1,7 +1,9 @@
 .wave-btn__link {
   position: relative;
-  width: rem(219);
-  min-height: rem(54);
+  width: 100%;
+  // width: rem(219);
+  // min-height: rem(54);
+  min-height: rem(20);
   display: flex;
   justify-content: center;
   align-items: center;

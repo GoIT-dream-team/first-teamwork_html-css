@@ -10,8 +10,17 @@
   }
 
   @include tablets {
-    background-image: url(../../images/bg/bg_photo-top-sec.png);
+    background-image: url(../images/bg/bg_photo-top-sec.png);
     background-repeat: no-repeat;
-    background-position: bottom -244px right 0px
+    background-size: 69%;
+    background-position: bottom -172px right 0px
+  }
+
+  @include retina2x {
+    background-image: url(../images/bg/bg_photo-top-sec@2x.png);
+  }
+
+  @include retina3x {
+    background-image: url(../images/bg/bg_photo-top-sec@3x.png);
   }
 }
