@@ -44,28 +44,28 @@
 
 @font-face {
   font-family: 'Futura';
-  src: local url('../fonts/futura/Futura Bold.woff') format('woff');
+  src: local ('Futura Bold'), url('../fonts/futura/Futura Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Futura';
-  src: url('../fonts/futura/Futura Medium.woff') format('woff');
+  src: local ('Futura Medium'), url('../fonts/futura/Futura Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/gilroy/Gilroy-Light.woff') format('woff');
+  src: local ('Gilroy'), url('../fonts/gilroy/Gilroy-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Minion';
-  src: url('../fonts/minion/MinionPro-Regular.woff') format('woff');
+  src: local ('Minion'), url('../fonts/minion/MinionPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
