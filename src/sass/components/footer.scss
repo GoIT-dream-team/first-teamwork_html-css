@@ -2,14 +2,38 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $videocourse-price-color;
+  background-color: $bg-header-footer-color;
   height: rem(100);
   flex-wrap: wrap;
   border-top: rem(1) solid #d1d2d4;
 }
 
+.page-footer__contacts {
+  width: rem(300);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  @include tablets {
+    min-width: rem(430);
+  }
+}
+
 .contact-block {
-  max-width: rem(80);
+  max-width: rem(90);
+
+  &__link {
+    @include transition($transition: all 0.2s linear);
+    color: $main-white-color;
+    font-family: $font-first;
+    font-size: rem(9);
+    font-weight: 800;
+    line-height: rem(15);
+
+    &:hover {
+      color: $stylish-color-orange;
+    }
+  }
 }
 
 .contact-footer {
@@ -20,6 +44,10 @@
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: rem(5);
+
+  &__num {
+    display: block;
+  }
 
   &__info {
     color: $decs-header-footer-color;
@@ -46,6 +74,10 @@
   background-color: transparent;
   border: rem(1) solid $footer-button-color;
   cursor: pointer;
+  @include tablets {
+    width: rem(123);
+    height: rem(28);
+  }
 
   &:hover {
     color: $stylish-color-orange;
@@ -61,13 +93,20 @@
 
   &__logo {
     padding-right: rem(14);
+    @include tablets {
+      padding-right: rem(64);
+    }
   }
 }
 
 .privacy-block {
   display: flex;
   justify-content: space-around;
-  width: rem(330);
+  width: rem(290);
+  @include tablets {
+    padding-left: rem(60);
+    width: rem(400);
+  }
 
   &__link {
     @include transition($transition: all 0.2s linear);
@@ -77,9 +116,18 @@
     font-weight: 300;
     line-height: 1;
     letter-spacing: 0.06em;
+    @include tablets {
+      font-size: rem(7);
+    }
 
     &:hover {
       color: $stylish-color-orange;
     }
+  }
+}
+
+.contact-block--hidden {
+  @media screen and (max-width: rem(767)) {
+    display: none;
   }
 }
