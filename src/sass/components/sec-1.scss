@@ -14,12 +14,12 @@
     font-weight: 800;
     text-transform: uppercase;
     color: $go-it-header-color;
-    background: radial-gradient(
-      rgba(9, 34, 61, 1) 0%,
-      rgba(255, 255, 255, 0) 70%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background-image: url(../images/bg/bgt.png);
     z-index: 0;
+
+    @include phones {
+      font-size: rem(120);
+    }
   }
 }
 

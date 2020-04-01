@@ -6,9 +6,14 @@
   line-height: rem(19.5);
   text-align: center;
 
+  @include phones {
+    text-align: left;
+  }
+
   &__title {
     font-size: rem(13.5);
     text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   &__subtitle {

@@ -11,7 +11,7 @@
   }
   & .wave-btn__waves {
     &:before {
-      background-color: $bg-header-footer-color;
+      background-color: rgba($bg-header-footer-color, 0.9);
     }
 
     &:after {
