@@ -65,8 +65,8 @@
 }
 
 .privacy-block {
-  @include content-center-flex($type: 'all');
-  align-content: stretch;
+  display: flex;
+  justify-content: space-around;
   width: rem(330);
 
   &__link {
