@@ -1,9 +1,10 @@
 .page-footer {
-  @include content-center-flex($type: 'all');
+  display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: $videocourse-price-color;
   height: rem(100);
-  min-width: rem(480);
+  flex-wrap: wrap;
   border-top: rem(1) solid #d1d2d4;
 }
 
@@ -18,6 +19,7 @@
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
+  margin-bottom: rem(5);
 
   &__info {
     color: $decs-header-footer-color;
@@ -63,8 +65,8 @@
 }
 
 .privacy-block {
-  @include content-center-flex($type: 'all');
-  align-content: stretch;
+  display: flex;
+  justify-content: space-around;
   width: rem(330);
 
   &__link {
