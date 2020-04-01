@@ -1,0 +1,16 @@
+.main-text-block__btn {
+  & .wave-btn__link {
+    &:hover .wave-btn__text {
+      color: $main-white-color;
+    }
+  }
+  & .wave-btn__waves {
+    &:before {
+      background-color: $bg-header-footer-color;
+    }
+
+    &:after {
+      background-color: rgba($bg-header-footer-color, 0.5);
+    }
+  }
+}
