@@ -23,11 +23,20 @@
 .main-title-block {
   .wave-btn {
     display: none;
+
+    @include tablets {
+      display: block;
+      margin-bottom: rem(96);
+    }
   }
 }
 
 .main-text-block {
   .wave-btn__link {
     margin: 0 auto;
+
+    @include tablets {
+      display: none;
+    }
   }
 }

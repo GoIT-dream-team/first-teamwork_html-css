@@ -8,14 +8,27 @@
     margin-bottom: rem(150);
   }
 
+  @include tablets {
+    margin-bottom: 0;
+    min-width: rem(380);
+    text-align: left;
+  }
+
   &__title {
     margin: 0 auto;
     margin-bottom: rem(35);
-    padding-top: rem(50);
-    max-width: rem(300);
+    max-width: rem(350);
     font-size: rem(30);
     font-weight: 800;
     line-height: rem(39);
+
+    @include tablets {
+      margin-left: rem(0);
+      margin-right: rem(0);
+      max-width: rem(370);
+      font-size: rem(45);
+      line-height: rem(56.08);
+    }
   }
 
   &__sub-title {
@@ -29,6 +42,16 @@
 
     @include phones {
       max-width: rem(380);
+    }
+
+    @include tablets {
+      margin: 0;
+      margin-bottom: rem(28);
+      margin-left: rem(55);
+      max-width: rem(180);
+      font-size: rem(8);
+      line-height: rem(13.46);
+      letter-spacing: 0em;
     }
 
     &::before,
@@ -60,5 +83,47 @@
         right: rem(-30);
       }
     }
+  }
+}
+
+.title-line-r {
+  position: relative;
+  padding-right: rem(3);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: rem(19);
+    right: rem(-9);
+    display: inline-block;
+    width: rem(8);
+    height: rem(3);
+    background-color: $main-white-color;
+  }
+}
+
+@include tablets {
+  .title-line-l {
+    position: relative;
+    display: block;
+  }
+
+  .title-line-l::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    margin-right: rem(22);
+    top: rem(-13);
+    left: rem(0);
+    width: rem(56);
+    height: rem(6);
+    background-color: $main-white-color;
+  }
+
+  .title-line-r::after {
+    top: rem(25);
+    right: rem(-50);
+    width: rem(44);
+    height: rem(6);
   }
 }

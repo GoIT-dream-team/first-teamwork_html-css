@@ -1,11 +1,5 @@
-.wrapper-soc-and-dots {
-  @include content-between-flex;
-  display: none;
-}
-
-.soc-list {
-  display: flex;
-
+.soc-list,
+.soc-list-fluid {
   &__item {
     margin-right: rem(20);
 
@@ -24,5 +18,25 @@
       fill: $stylish-color-orange;
       transform: scale(1.25);
     }
+  }
+}
+
+.soc-list,
+.soc-list-fluid {
+  display: none;
+}
+
+.soc-list {
+  position: absolute;
+  bottom: -146px;
+  right: 0;
+
+  @include tablets {
+    display: flex;
+  }
+}
+.soc-list-fluid {
+  @include desktop {
+    display: flex;
   }
 }

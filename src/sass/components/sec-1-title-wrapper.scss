@@ -1,0 +1,17 @@
+.sec-1-title-wrapper {
+  padding-top: rem(50);
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: rem(85);
+    min-height: rem(475);
+  }
+
+  @include tablets {
+    background-image: url(../../images/bg/bg_photo-top-sec.png);
+    background-repeat: no-repeat;
+    background-position: bottom -244px right 0px
+  }
+}
