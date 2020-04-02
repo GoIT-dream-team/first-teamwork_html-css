@@ -12,10 +12,12 @@
   box-shadow: $button-shadow-orange;
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom-left-radius: rem(4);
     border-bottom-right-radius: rem(4);
     transition: all 0.8s ease 0.2s;
+    outline-color: $stylish-color-orange;
   }
 
   &:hover .wave-btn__waves {
