@@ -18,3 +18,35 @@
 %stretched-text {
   color: #000;
 }
+
+%title-basic {
+  font-family: "Acrom";
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+%title-basic-revers {
+  font-family: "Acrom";
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+%title-simple {
+  font-family: "Acrom";
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+%subtitle-simple {
+  font-family: "Acrom";
+  font-weight: 500;
+}
+
+%container {
+  max-width: rem(1200);
+  margin: 0 auto;
+  padding: 0 rem(10);
+}

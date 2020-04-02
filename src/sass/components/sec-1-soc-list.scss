@@ -1,0 +1,55 @@
+.soc-list,
+.soc-list-fluid {
+  &__item {
+    margin-right: rem(20);
+
+    &:last-child {
+      margin-right: rem(0);
+    }
+  }
+
+  &__icon {
+    width: rem(11);
+    height: rem(11);
+    fill: $main-white-color;
+    @include transition;
+
+    &:hover {
+      fill: $stylish-color-orange;
+      transform: scale(1.25);
+    }
+  }
+}
+
+.soc-list,
+.soc-list-fluid {
+  display: none;
+}
+
+.soc-list {
+  position: absolute;
+  bottom: rem(100);
+  right: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+  }
+}
+
+.soc-list-fluid {
+  z-index: 10;
+
+  @include desktop {
+    position: absolute;
+    right: rem(36);
+    bottom: rem(36);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1920px) {
+    @include сenter-x;
+    width: rem(1820);
+  }
+}
