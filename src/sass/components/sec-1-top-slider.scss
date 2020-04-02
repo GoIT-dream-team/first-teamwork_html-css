@@ -60,6 +60,10 @@
       font-size: 0;
       background-color: transparent;
 
+      &:hover::after {
+        color: $stylish-color-orange;
+      }
+
       &::after {
         display: block;
         font-family: $font-second;
