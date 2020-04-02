@@ -1,3 +1,27 @@
-.sec-5 {
-  padding: rem(16) 0;
+.sec-5-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sec-5-title-main {
+    font-size: rem(18);
+    @extend %title-simple;
+    padding-bottom: rem(35);
+    @media (max-width: 767px) {
+        width: rem(200);
+        padding-top: rem(50);
+    }
+}
+
+.sec-5-subtitle {
+    @extend %subtitle-simple;
+    @include title-line;
+    font-size: rem(13.5);
+}
+
+.sec-5-title-wrapper {
+    @media (max-width: 767px) {
+        @include title-сenterX;
+        width: rem(300);
+    }
 }
