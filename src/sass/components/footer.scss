@@ -4,7 +4,6 @@
   background-color: $bg-header-footer-color;
   height: rem(100);
   border-top: rem(1) solid #d1d2d4;
-
   @include desktop {
     height: rem(167);
   }
@@ -16,15 +15,21 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  @include desktop {
+    justify-content: space-between;
+  }
 }
 
 .page-footer__contacts {
-  width: rem(300);
+  width: rem(320);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   @include tablets {
     min-width: rem(430);
+  }
+
+  @include desktop {
+    justify-content: space-between;
   }
 }
 
@@ -97,6 +102,10 @@
     width: rem(123);
     height: rem(28);
   }
+  @include desktop {
+    width: rem(139);
+    height: rem(31);
+  }
 
   &:hover {
     color: $stylish-color-orange;
@@ -105,17 +114,23 @@
 
 .sub-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: rem(23);
   background-color: $footer-privaty-section-color;
 
   &__logo {
-    padding-right: rem(14);
-    @include tablets {
-      padding-right: rem(64);
+    @media screen and (max-width: rem(767)) {
+      padding-right: rem(14);
     }
   }
+}
+
+.sub-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(714);
 }
 
 .privacy-block {
@@ -123,8 +138,10 @@
   justify-content: space-around;
   width: rem(290);
   @include tablets {
-    padding-left: rem(60);
     width: rem(400);
+  }
+  @include desktop {
+    justify-content: space-between;
   }
 
   &__link {
