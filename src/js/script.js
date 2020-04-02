@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  $(".main-title-block").slick({
+  $(".top-clider").slick({
+    arrows:false,
     dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     adaptiveHeight: true,
+    appendDots:$(".top-slider-dots"),
   });
 });
-
-// appendDots:$(".wr-dot"),
