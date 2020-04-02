@@ -1,88 +1,86 @@
 .sec-14 {
-    padding-top: rem(25);
-    padding-bottom: rem(45);
-  }
-  
-  .sec-14-wrap {
-      width: rem(350);
-      margin: 0 auto;
-  }
-  
-  .sec-14-title {
-    font-size: rem(10.5);
-    font-family: $font-first;
-    font-weight: 800;
-    padding-bottom: rem(36);
-    text-transform: uppercase;
-  }
-  
-  .sec-14-list {
-    list-style-type: none;
-    width: rem(285);
-    margin: 0 auto;
-    padding-left: rem(28);
-  }
-  
-  .sec-14-list_item {
-    display: block;
-    content: '';
-    position: relative;
-  }
-  
-  .sec-14-list_item::before {
-    display: block;
-    content: '[ 001 ]';
-    position: absolute;
-    font-size: rem(13);
-    font-family: $font-first;
-    font-weight: 700;
-    color: $main-white-color;
-    text-align: center;
-    width: rem(55);
-    height: rem(15);
-    background-color: $stylish-color-orange;
-    top: 23%;
-    left: -19%;
-    transform: rotate(-90deg);
-  }
-  
-  .two-numb::before {
-    content: '[ 002 ]';
-  }
-  
-  .three-numb::before {
-    content: '[ 003 ]';
-  }
-  
-  .four-numb::before {
-    content: '[ 004 ]';
-  }
-  
-  .five-numb::before {
-    content: '[ 005 ]';
-  }
-  
-  .six-numb::before {
-      content: '[ 006 ]';
-      margin-top: rem(-8);
-    }
-    
-  .sec-14-title_item {
-    margin: 0;
-    padding: 0;
-    color: $main-text-color;
-    font-size: rem(13);
-    font-family: $font-first;
-    font-weight: 700;
-    padding-bottom: rem(15);
-  }
-  
-  .sec-14-item_text {
-    color: $desc-text-color;
-    font-size: rem(13);
-    font-family: $font-first;
-    font-weight: normal;
-    padding-bottom: rem(30);
-  }
-  
-    
+  padding-top: rem(25);
+  padding-bottom: rem(45);
+}
+
+.sec-14-wrap {
+  width: rem(350);
+  margin: 0 auto;
+}
+
+.sec-14-title {
+  font-size: rem(10.5);
+  font-family: $font-first;
+  font-weight: 800;
+  padding-bottom: rem(36);
+  text-transform: uppercase;
+}
+
+.sec-14-list {
+  list-style-type: none;
+  width: rem(285);
+  margin: 0 auto;
+  padding-left: rem(28);
+}
+
+.sec-14-list_item {
+  display: block;
+  content: '';
+  position: relative;
+}
+
+.sec-14-list_item::before {
+  display: block;
+  content: '[ 001 ]';
+  position: absolute;
+  font-size: rem(13);
+  font-family: $font-first;
+  font-weight: 700;
+  color: $main-white-color;
+  text-align: center;
+  width: rem(55);
+  height: rem(15);
+  background-color: $stylish-color-orange;
+  top: 23%;
+  left: -19%;
+  transform: rotate(-90deg);
+}
+
+.two-numb::before {
+  content: '[ 002 ]';
+}
+
+.three-numb::before {
+  content: '[ 003 ]';
+}
+
+.four-numb::before {
+  content: '[ 004 ]';
+}
+
+.five-numb::before {
+  content: '[ 005 ]';
+}
+
+.six-numb::before {
+  content: '[ 006 ]';
+  margin-top: rem(-8);
+}
+
+.sec-14-title_item {
+  margin: 0;
+  padding: 0;
+  color: $main-text-color;
+  font-size: rem(13);
+  font-family: $font-first;
+  font-weight: 700;
+  padding-bottom: rem(15);
+}
+
+.sec-14-item_text {
+  color: $desc-text-color;
+  font-size: rem(13);
+  font-family: $font-first;
+  font-weight: normal;
+  padding-bottom: rem(30);
+}
