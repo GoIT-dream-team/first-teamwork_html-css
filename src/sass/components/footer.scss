@@ -45,17 +45,18 @@
   text-transform: uppercase;
   margin-bottom: rem(5);
 
-  &__num {
-    display: block;
-  }
-
-  &__info {
+  &__info, &__num {
+    @include transition($transition: all 0.2s linear);
     color: $decs-header-footer-color;
     font-family: $font-first;
     font-size: rem(9);
     font-weight: 400;
     line-height: rem(11);
     letter-spacing: 0.035em;
+
+    &:hover {
+        color: $stylish-color-orange;
+    }
   }
 }
 
