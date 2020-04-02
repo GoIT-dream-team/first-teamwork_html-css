@@ -14,6 +14,10 @@ html {
 .link {
   display: block;
   text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // * add this class to <ul> </ul>
@@ -34,8 +38,13 @@ body {
   color: $main-text-color;
 }
 .container {
+  width: 100%;
   margin: 0 auto;
-  padding: 0 rem(15);
+  padding: 0 rem(10);
+
+  @include tablets {
+    width: rem(642);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
