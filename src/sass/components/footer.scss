@@ -1,17 +1,26 @@
 .page-footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   background-color: $bg-header-footer-color;
   height: rem(100);
-  flex-wrap: wrap;
   border-top: rem(1) solid #d1d2d4;
+
+  @include desktop {
+    height: rem(167);
+  }
+}
+
+.page-footer__container {
+  width: rem(714);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .page-footer__contacts {
   width: rem(300);
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   @include tablets {
@@ -36,16 +45,19 @@
   }
 }
 
-.contact-footer {
-  color: $main-white-color;
-  font-family: $font-first;
-  font-size: rem(10);
-  font-weight: 800;
-  line-height: 1;
-  text-transform: uppercase;
-  margin-bottom: rem(5);
+.contact-block {
+  &__title {
+    color: $main-white-color;
+    font-family: $font-first;
+    font-size: rem(10);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: rem(5);
+    text-transform: uppercase;
+  }
 
-  &__info, &__num {
+  &__info,
+  &__num {
     @include transition($transition: all 0.2s linear);
     color: $decs-header-footer-color;
     font-family: $font-first;
@@ -55,8 +67,14 @@
     letter-spacing: 0.035em;
 
     &:hover {
-        color: $stylish-color-orange;
+      color: $stylish-color-orange;
     }
+  }
+}
+
+.contact-block--hidden {
+  @media screen and (max-width: rem(767)) {
+    display: none;
   }
 }
 
@@ -124,11 +142,5 @@
     &:hover {
       color: $stylish-color-orange;
     }
-  }
-}
-
-.contact-block--hidden {
-  @media screen and (max-width: rem(767)) {
-    display: none;
   }
 }
