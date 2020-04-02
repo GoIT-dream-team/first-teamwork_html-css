@@ -61,7 +61,8 @@
     .wave-btn__link {
       height: rem(30);
 
-      &:hover .wave-btn__waves {
+      &:hover .wave-btn__waves,
+      &:focus .wave-btn__waves {
         &:after,
         &:before {
           top: rem(55);

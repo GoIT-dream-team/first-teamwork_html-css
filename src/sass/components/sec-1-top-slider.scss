@@ -3,10 +3,15 @@
   display: none;
   bottom: rem(32);
   left: rem(32);
-  z-index: 100;
+  z-index: 20;
 
   @include tablets {
     display: block;
+  }
+
+  @media screen and (min-width: 1920px) {
+    @include сenter-x;
+    width: rem(1820);
   }
 
   .slick-dots {
@@ -32,7 +37,7 @@
       &::before {
         content: '';
         position: absolute;
-        top: rem(21);
+        top: rem(19);
         left: rem(14);
         width: rem(2);
         height: rem(2);
@@ -101,7 +106,7 @@
     overflow: hidden;
 
     @include tablets {
-      width: rem(622);
+      width: rem(620);
     }
   }
 }

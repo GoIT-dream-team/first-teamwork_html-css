@@ -1,12 +1,16 @@
 .top-header {
+  // TODO position fixed to scrol
+  // position: fixed;
+  position: absolute;
   width: 100%;
-  position: fixed;
-  z-index: 10;
+  @include content-center-flex;
+  z-index: 100;
 
   &__inner {
     @include content-between-flex;
     width: 100%;
     padding: rem(14);
+
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin: 0 auto;
@@ -15,16 +19,27 @@
     }
 
     @include desktop {
-      padding: rem(25);
+      padding: rem(25) rem(32);
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: rem(1820);
+      padding: rem(25) rem(0);
     }
 
     &__main-title-block {
       padding-top: rem(50);
     }
-
-    &__main-text-block {
-    }
   }
+}
+
+.top-logo {
+  @include transition;
+}
+
+.top-logo:focus {
+  transform: scale(1.1);
+  outline-color: $stylish-color-orange;
 }
 
 .bur-menu {

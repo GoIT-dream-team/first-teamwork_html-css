@@ -17,7 +17,6 @@
 @import './components/sec-1-main-text-block.scss';
 @import './components/sec-1-soc-list.scss';
 @import './components/sec-1-btn.scss';
-@import './components/sec-1-first-slider-dots.scss';
 
 // ! Sections 2
 @import "./components/sec-2.scss";
@@ -25,3 +24,10 @@
 
 // ! Footer
 @import "./components/footer.scss";
+
+
+.test {
+  width: 100%;
+  height: 1500px;
+  background-color: $footer-privaty-text-color;
+}
