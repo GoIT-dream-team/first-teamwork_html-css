@@ -1,0 +1,188 @@
+.sec-5-slider {
+  position: relative;
+  padding: 0 rem(20);
+  padding-right:rem(13);
+  width: rem(294);
+  height: rem(213);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: $main-box-shadow;
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-list {
+    width: rem(300);
+    overflow: hidden;
+  }
+}
+
+.test-ar {
+  position: relative;
+  width: rem(294);
+  margin: 0 auto;
+  display: flex;
+
+  & button.slick-arrow {
+    order: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(14);
+    height: rem(14);
+    font-size: 0;
+    border: none;
+    border: rem(1) solid $footer-privaty-text-color;
+    cursor: pointer;
+  }
+
+  & button.slick-arrow.slick-prev {
+    right: rem(13);
+    background: url(../images/icons/arrow-left.svg), $main-text-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    @include transition;
+
+    &:hover {
+      background: url(../images/icons/arrow-left.svg), $stylish-color-orange;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+  }
+
+  & button.slick-arrow.slick-next {
+    background: url(../images/icons/arrow-right.svg), $main-text-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    @include transition;
+
+    &:hover {
+      background: url(../images/icons/arrow-right.svg), $stylish-color-orange;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+  }
+
+  .slick-dots {
+    order: 1;
+    margin-top: rem(5);
+    margin-left: rem(20);
+    display: flex;
+    list-style: none;
+
+    & button {
+      border: none;
+      font-size: 0;
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        font-weight: 800;
+        font-size: rem(8);
+        cursor: pointer;
+        @include transition;
+      }
+
+      &:hover::after {
+        color: $stylish-color-orange;
+      }
+    }
+
+    li {
+      position: relative;
+      margin-right: rem(8);
+    }
+
+    li.slick-active::after {
+      position: absolute;
+      content: '';
+      top: rem(10);
+      left: rem(-7);
+      width: rem(25);
+      height: rem(1);
+      display: block;
+      background-color: $main-text-color;
+    }
+
+    li:first-child button::after {
+      content: '01';
+
+      &:hover {
+        color: $stylish-color-orange;
+      }
+    }
+
+    & li.slick-active button::after {
+      font-size: rem(13);
+    }
+
+    & li:nth-child(2) button::after {
+      content: '02';
+    }
+
+    & li:nth-child(3) button::after {
+      content: '03';
+    }
+  }
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: rem(5.46);
+  line-height: rem(9.37);
+
+  .slick-slide {
+    width: rem(263);
+  }
+
+  &__info {
+    padding-top: rem(20);
+  }
+
+  &__text-block {
+    width: rem(190);
+    // height: rem(177);
+    height: rem(213);
+    overflow-y: scroll;
+    padding-right: rem(11);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 99%;
+      height: rem(20);
+      display: block;
+      background-color: #fff;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &::-webkit-scrollbar {
+      width: rem(1);
+      background-color: rgba(63, 65, 68, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height:rem(15);
+      width: rem(5);
+      background-color: $main-text-color;
+    }
+  }
+}
