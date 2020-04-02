@@ -37,6 +37,7 @@ body {
   font-family: 'Acrom', sans-serif;
   color: $main-text-color;
 }
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -51,9 +52,9 @@ body {
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1);
+  height: rem(1);
+  margin: rem(-1);
   border: 0;
   padding: 0;
   white-space: nowrap;

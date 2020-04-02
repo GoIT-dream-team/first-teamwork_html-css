@@ -3,22 +3,22 @@
 }
 // mixins популярных брекпоинтов / вызов @include phones{ background-color: red;}
 @mixin desktop {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: rem(1200)) {
     @content;
   }
 }
 @mixin laptop {
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: rem(992)) {
     @content;
   }
 }
 @mixin tablets {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: rem(768)) {
     @content;
   }
 }
 @mixin phones {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: rem(480)) {
     @content;
   }
 }
@@ -45,7 +45,7 @@
 
 // Создает линию под блоком
 // пример: @include sep-h(80%,2px,$blue);
-@mixin line($w, $h, $color, $mar: 5px) {
+@mixin line($w, $h, $color, $mar: rem(5)) {
   &:after {
     content: "";
     display: block;
@@ -134,11 +134,11 @@
 }
 
 //создает треугольники, без картинок, вы только задаете цвет, размер, направление и все.
-@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
+@mixin css-triangle($color, $direction, $size: rem(6), $position: absolute, $round: false) {
   width: 0;
   height: 0;
   @if $round {
-    border-radius: 3px;
+    border-radius: rem(3);
   }
   @if $direction == "down" {
     border-left: $size solid transparent;
@@ -164,25 +164,25 @@
     border-top: $size solid transparent;
     border-left: $size solid $color;
     margin-right: -$size;
-    border-bottom: 0px solid $color;
+    border-bottom: 0 solid $color;
     margin-bottom: 0 - round($size / 2.5);
   } @else if $direction == "down-right" {
     border-left: $size solid transparent;
-    border-bottom: 0px solid $color;
+    border-bottom: 0 solid $color;
     margin-bottom: 0 - round($size / 2.5);
     border-top: $size solid transparent;
     border-right: $size solid $color;
     margin-left: -$size;
   } @else if $direction == "up-right" {
     border-left: $size solid transparent;
-    border-top: 0px solid $color;
+    border-top: 0 solid $color;
     margin-top: 0 - round($size / 2.5);
     border-bottom: $size solid transparent;
     border-right: $size solid $color;
     margin-left: -$size;
   } @else if $direction == "up-left" {
     border-right: $size solid transparent;
-    border-top: 0px solid $color;
+    border-top: 0 solid $color;
     margin-top: 0 - round($size / 2.5);
     border-bottom: $size solid transparent;
     border-left: $size solid $color;
@@ -191,7 +191,7 @@
 }
 
 // шестиугольник
-@mixin hexagon($width: 100px, $height: 90px, $background: $color_accent) {
+@mixin hexagon($width: rem(100), $height: rem(90), $background: $color_accent) {
   width: $width;
   height: $height;
   background: $background;
@@ -199,7 +199,7 @@
 }
 
 // Линия возле заголовка
-@mixin title-line($w: 28px, $h: 3px, $color: #000, $mar: 15px) {
+@mixin title-line($w: rem(28), $h: rem(3), $color: #000, $mar: rem(15)) {
   &::before {
     content: "";
     display: inline-block;
@@ -212,7 +212,7 @@
 }
 
 // Квадратик в списке
-@mixin square-list($w: 10px, $h: 10px, $color: #000, $mar: 15px) {
+@mixin square-list($w: rem(10), $h: rem(10), $color: #000, $mar: rem(15)) {
   &::before {
     content: "";
     display: inline-block;
@@ -222,13 +222,13 @@
     margin-right: $mar;
     background-color: $color;
     position: absolute;
-    top: 5px;
-    left: -20px;
+    top: rem(5);
+    left: rem(-20);
   }
 }
 
 // Квадратик в списке ORANGE
-@mixin square-list-orange($w: 10px, $h: 10px, $color: #ff6b08, $mar: 15px) {
+@mixin square-list-orange($w: rem(10), $h: rem(10), $color: #ff6b08, $mar: rem(15)) {
   &::before {
     content: "";
     display: inline-block;
@@ -241,7 +241,7 @@
 }
 
 // Стиль subtitle h3
-@mixin title-h3($fs: 20px, $fw: 600, $c: #000, $lh: 11px) {
+@mixin title-h3($fs: rem(20), $fw: 600, $c: #000, $lh: rem(11)) {
   font-size: $fs;
   font-weight: $fw;
   line-height: $lh;
