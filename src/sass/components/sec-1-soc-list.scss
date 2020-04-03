@@ -1,23 +1,22 @@
-.soc-list,
-.soc-list-fluid {
-  &__item {
-    margin-right: rem(20);
+.soc-list__item,
+.soc-list-fluid__item {
+  margin-right: rem(20);
 
-    &:last-child {
-      margin-right: rem(0);
-    }
+  &:last-child {
+    margin-right: rem(0);
   }
+}
 
-  &__icon {
-    width: rem(11);
-    height: rem(11);
-    fill: $main-white-color;
-    @include transition;
+.soc-list__icon,
+.soc-list-fluid__icon {
+  width: rem(11);
+  height: rem(11);
+  fill: $main-white-color;
+  @include transition;
 
-    &:hover {
-      fill: $stylish-color-orange;
-      transform: scale(1.25);
-    }
+  &:hover {
+    fill: $stylish-color-orange;
+    transform: scale(1.25);
   }
 }
 
@@ -40,16 +39,11 @@
   z-index: 10;
 
   @include desktop {
-    position: absolute;
-    right: rem(36);
-    bottom: rem(36);
+    @include сenter-x;
+    bottom: rem(32);
+    width: rem(1130);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 1920px) {
-    @include сenter-x;
-    width: rem(1820);
+    position: absolute;
   }
 }
