@@ -29,6 +29,7 @@
   position: absolute;
   bottom: rem(156);
   right: 0;
+  z-index: 20;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -37,7 +38,7 @@
 
 .soc-list-fluid {
   z-index: 11;
-
+  
   @include desktop {
     @include сenter-x;
     bottom: rem(32);
