@@ -1,0 +1,75 @@
+.price-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $videocourse-price-color;
+  width: rem(370);
+  height: rem(274);
+  border: rem(1) solid #d1d2d4;
+}
+
+.price-inner, .price-inner-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(225);
+
+  &__about {
+    width: rem(90);
+    color: $main-white-color;
+    font-family: $font-first;
+    font-size: rem(13);
+    line-height: rem(19);
+    font-weight: 500;
+  }
+
+  &__about-price {
+    color: $main-white-color;
+    font-size: rem(15);
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+        display: block;
+        content: "";
+        background-color: $main-white-color;
+        width: rem(37);
+        height: rem(1);
+        position: absolute;
+        top: rem(7);
+        left: rem(-50);
+    }
+  }
+}
+
+.price-inner-next {
+    margin-top: rem(29);
+    justify-content: left;
+
+    &__price {
+        width: rem(75);
+        color: $main-text-color;
+        font-family: $font-first;
+        font-size: rem(13);
+        font-weight: 500;
+        line-height: rem(19);
+        margin-right: rem(20);
+    }
+    &__span {
+        background-color: $stylish-color-cyan;
+    }
+    &__span-price, &__span-text {
+      color: $main-white-color;
+      font-family: $font-first;
+      font-size: rem(39);
+      font-weight: 800;
+      line-height: 1;
+    }
+    &__span-text {
+        font-size: rem(13);
+        text-transform: uppercase;
+        align-self: flex-end;
+        margin-left: rem(11);
+    }
+}
