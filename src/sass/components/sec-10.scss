@@ -4,8 +4,8 @@
 }
 
 .sec-10-wrap {
-    width: rem(378);
-    margin: 0 auto;
+  width: rem(378);
+  margin: 0 auto;
 }
 
 .sec-10-title {
@@ -29,23 +29,23 @@
   display: block;
   content: '';
   position: relative;
-}
 
-.sec-10-list_item::before {
-  display: block;
-  content: '[ 001 ]';
-  position: absolute;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: 700;
-  color: $main-white-color;
-  text-align: center;
-  width: rem(55);
-  height: rem(15);
-  background-color: $stylish-color-orange;
-  top: rem(19);
-  left: rem(-50);
-  transform: rotate(-90deg);
+  &::before {
+    display: block;
+    content: '[ 001 ]';
+    position: absolute;
+    font-size: rem(13);
+    font-family: $font-first;
+    font-weight: 700;
+    color: $main-white-color;
+    text-align: center;
+    width: rem(55);
+    height: rem(15);
+    background-color: $stylish-color-orange;
+    top: rem(19);
+    left: rem(-50);
+    transform: rotate(-90deg);
+  }
 }
 
 .two-numb::before {
@@ -65,10 +65,10 @@
 }
 
 .six-numb::before {
-    content: '[ 006 ]';
-    top: rem(30);
-  }
-  
+  content: '[ 006 ]';
+  top: rem(30);
+}
+
 .sec-10-title_item {
   margin: 0;
   padding: 0;
@@ -88,22 +88,42 @@
 }
 
 .sec-10-note_text {
-    font-size: rem(13.5);
-    font-family: $font-first;
-    font-weight: 500;
-    color: $stylish-color-orange;
-    position: relative;
-    padding-left: rem(28);
-    &::before {
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      display: block;
-      content: '/';
-      color: $main-text-color;
-      font-size: rem(30);
-      font-weight: 600;
-      top: rem(-5);
-      left: rem(-3);
+  font-size: rem(13.5);
+  font-family: $font-first;
+  font-weight: 500;
+  color: $stylish-color-orange;
+  position: relative;
+  padding-left: rem(28);
+  &::before {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: block;
+    content: '/';
+    color: $main-text-color;
+    font-size: rem(30);
+    font-weight: 600;
+    top: rem(-5);
+    left: rem(-3);
   }
+}
+
+.click {
+  display: block;
+  width: rem(215);
+  margin: 0 auto;
+  height: rem(50);
+  margin-top: rem(38);
+  border: none;
+  text-transform: uppercase;
+  font-family: $font-first;
+  font-weight: 800;
+  background-color: $stylish-color-orange;
+  color: $main-white-color;
+  font-size: rem(11);
+}
+
+.link_click {
+  text-transform: uppercase;
+  text-decoration: none;
 }
