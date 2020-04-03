@@ -1,68 +1,86 @@
-.subtitle {
-    @include title-line;
-    padding-bottom: 15px;
-    padding-top: 40px;
-}
-
-.list__title {
-    padding: 45px 0 15px 0;
-    font-size: 17px;
-}
-
-.span-basic {
-    background-color: #fff;
-    color: #000;
-}
-.span-bg-dark {
-    background-color: #000;
-    color: #fff;
-}
-
-.title-basic {
-    text-transform: uppercase;
-}
-
-.list__item {
-    list-style-type: none;
+.sec-2-title__wrapper {
     @media (max-width: 767px) {
-        padding-top: 20px;
-        width: 385px;
-        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
+.sec-2-subtitle {
+    @include title-line;
+    padding-bottom: rem(15);
+    padding-top: 40px;
+    font-family: "Acrom";
+    font-size: rem(15);
+    font-weight: 600;
+}
 
-.list__item-text-span {
+.sec-2-list__title {
+    padding: rem(45) 0 rem(15) 0;
+    font-size: rem(17);
+}
+
+.sec-2-span-basic {
+    display: block;
+}
+
+.sec-2-span-bg-dark {
+    background-color: #000;
+    color: #fff;
+    padding: 0 rem(5);
+    display: block;
+    width: rem(270);
+}
+
+.sec-2-title-basic {
+    @extend %title-basic;
+    font-size: rem(20.5);
+    line-height: rem(25);
+}
+
+.sec-2-list__item-text-span {
     position: relative;
     font-weight: 700;
-
     @media (max-width: 767px) {
         @include square-list;
     }
 }
 
-.list__item {
+.sec-2-list__item {
+    font-family: "Acrom";
+    font-size: rem(15);
+    list-style-type: none;
+    @media (max-width: 767px) {
+        padding-top: rem(20);
+    }
     @media (min-width: 768px) {
-        width: 165px;
+        width: 24%;
+        padding-bottom: rem(20);
+    }
+    &:first-child {
+        padding-top: 0px;
     }
 }
 
-.list__items {
+.sec-2-list__items {
+    width: rem(380);
+    padding-left: rem(45);
+
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-
         flex-wrap: wrap;
-        width: 740px;
+        width: 100%;
+        padding-left: 0;
     }
 }
-.img-text__text {
-    font-family: "Arial";
-    font-size: 13.5px;
-    font-weight: medium;
-}
 
-@media (max-width: 767px) {
-    .container {
-        width: 480px;
+.sec-2-img-text__text {
+    font-family: "Acrom";
+    font-size: rem(13.5);
+    font-weight: 500;
+    @media (max-width: 767px) {
+        padding-top: rem(30);
+        padding-bottom: rem(15);
     }
 }

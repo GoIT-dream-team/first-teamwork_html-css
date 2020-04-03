@@ -1,0 +1,116 @@
+.top-slider-dots {
+  position: absolute;
+  display: none;
+  bottom: rem(32);
+  left: rem(32);
+  z-index: 20;
+
+  @include tablets {
+    display: block;
+  }
+
+  @media screen and (min-width: 1920px) {
+    @include сenter-x;
+    width: rem(1820);
+  }
+
+  .slick-dots {
+    display: flex;
+    list-style: none;
+
+    & li {
+      margin-right: rem(6);
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: rem(-7);
+        left: rem(14);
+        width: rem(2);
+        height: rem(14);
+        display: block;
+        background-color: transparent;
+        transition: all 0.4s linear;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: rem(19);
+        left: rem(14);
+        width: rem(2);
+        height: rem(2);
+        display: block;
+        background-color: $main-white-color;
+        transition: all 0.4s linear;
+      }
+    }
+
+    & li.slick-active::after {
+      background-color: $main-white-color;
+    }
+
+    & li.slick-active::before {
+      opacity: 0;
+    }
+
+    & button {
+      border: none;
+      font-size: 0;
+      background-color: transparent;
+
+      &:hover::after {
+        color: $stylish-color-orange;
+      }
+
+      &::after {
+        display: block;
+        font-family: $font-second;
+        font-size: rem(8.75);
+        font-weight: 700;
+        color: $main-white-color;
+        transition: all 0.4s linear;
+        cursor: pointer;
+      }
+    }
+
+    & li:first-child button::after {
+      content: '01';
+    }
+
+    & li.slick-active button::after {
+      transform: rotate(-90deg);
+      font-size: rem(15);
+    }
+
+    & li:nth-child(2) button::after {
+      content: '02';
+    }
+  }
+}
+
+.top-clider {
+  &__slide {
+    display: block;
+
+    @include tablets {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-list {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+
+    @include tablets {
+      width: rem(620);
+    }
+  }
+}
