@@ -1,17 +1,17 @@
 .top-slider-dots {
-  position: absolute;
-  display: none;
+  @include сenter-x;
   bottom: rem(32);
-  left: rem(32);
-  z-index: 20;
+  display: none;
+  z-index: 11;
+
 
   @include tablets {
+    width: rem(644);
     display: block;
   }
 
-  @media screen and (min-width: 1920px) {
-    @include сenter-x;
-    width: rem(1820);
+  @include desktop {
+    width: rem(1126);
   }
 
   .slick-dots {
@@ -60,9 +60,12 @@
       font-size: 0;
       background-color: transparent;
 
+      &:hover::after {
+        color: $stylish-color-orange;
+      }
+
       &::after {
         display: block;
-        font-family: $font-second;
         font-size: rem(8.75);
         font-weight: 700;
         color: $main-white-color;
@@ -89,6 +92,7 @@
 .top-clider {
   &__slide {
     display: block;
+    width: 100%;
 
     @include tablets {
       display: flex;
@@ -106,7 +110,11 @@
     overflow: hidden;
 
     @include tablets {
-      width: rem(620);
+      width: rem(644);
+    }
+
+    @include desktop {
+      width: rem(712);
     }
   }
 }
