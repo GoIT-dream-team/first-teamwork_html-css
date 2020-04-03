@@ -58,10 +58,10 @@ body {
   //   width: rem(712);
   // }
 
-  // ! под вопросом
-  // @include desktop {
-  //   width: rem(1160);
-  // }
+  // ! под вопросом, пока временный
+  @include desktop {
+    width: rem(712);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
