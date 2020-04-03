@@ -4,12 +4,14 @@
   }
   
   .sec-14-wrap {
-      width: rem(300);
+      width: rem(378);
       margin: 0 auto;
   }
   
   .sec-14-title {
-    font-size: rem(10.5);
+    width: rem(358);
+    text-align: left;
+    font-size: rem(13.5);
     font-family: $font-first;
     font-weight: 800;
     padding-bottom: rem(36);
@@ -64,7 +66,7 @@
   
   .six-numb::before {
       content: '[ 006 ]';
-      margin-top: rem(-8);
+      top: rem(20);
     }
     
   .sec-14-title_item {
