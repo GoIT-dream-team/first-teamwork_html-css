@@ -43,8 +43,23 @@ body {
   margin: 0 auto;
   padding: 0 rem(10);
 
+  
+  @include phones {
+    width: rem(446);
+    padding: 0;
+  }
+
   @include tablets {
-    width: rem(642);
+    width: rem(644);
+  }
+
+  @include laptop {
+    width: rem(712);
+  }
+
+  // ! под вопросом
+  @include desktop {
+    width: rem(1160);
   }
 }
 
