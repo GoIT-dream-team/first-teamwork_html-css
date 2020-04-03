@@ -1,7 +1,9 @@
 .sec-5-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @media (min-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 .sec-5-title-main {
     font-size: rem(18);

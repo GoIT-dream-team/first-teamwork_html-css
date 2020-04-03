@@ -1,7 +1,7 @@
 .sec-5-slider {
   position: relative;
   padding: 0 rem(20);
-  padding-right:rem(13);
+  padding-right: rem(13);
   width: rem(294);
   height: rem(213);
   margin: 0 auto;
@@ -101,7 +101,7 @@
 
     li.slick-active::after {
       position: absolute;
-      content: '';
+      content: "";
       top: rem(10);
       left: rem(-7);
       width: rem(25);
@@ -111,7 +111,7 @@
     }
 
     li:first-child button::after {
-      content: '01';
+      content: "01";
 
       &:hover {
         color: $stylish-color-orange;
@@ -123,11 +123,11 @@
     }
 
     & li:nth-child(2) button::after {
-      content: '02';
+      content: "02";
     }
 
     & li:nth-child(3) button::after {
-      content: '03';
+      content: "03";
     }
   }
 }
@@ -180,7 +180,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      height:rem(15);
+      height: rem(15);
       width: rem(5);
       background-color: $main-text-color;
     }
