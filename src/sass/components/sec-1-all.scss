@@ -15,7 +15,7 @@
   }
 
   &::after {
-    @include content-center-flex;
+    // @include content-center-flex;
     @include сenter-xy;
     content: 'GoIt';
     font-family: 'Acrom', sans-serif;
@@ -200,9 +200,9 @@
   // background-image: none;
 
   @include tablets {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-start;
     padding-top: rem(80);
     min-height: rem(475);
     background-image: url(../images/bg/bg_photo-top-sec.png);

@@ -63,16 +63,16 @@
 }
 
 .sec-2-list__items {
-    width: rem(380);
+    // width: rem(380);
     padding-left: rem(45);
 
-    @media (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-left: 0;
-    }
+    // @media (min-width: 768px) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     width: 100%;
+    //     padding-left: 0;
+    // }
 }
 
 .sec-2-img-text__text {
