@@ -37,14 +37,9 @@
 }
 
 .soc-list-fluid {
-  z-index: 11;
+  order: 2;
   
   @include desktop {
-    @include сenter-x;
-    bottom: rem(32);
-    width: rem(1130);
     display: flex;
-    justify-content: flex-end;
-    position: absolute;
   }
 }
