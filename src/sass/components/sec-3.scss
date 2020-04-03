@@ -5,13 +5,13 @@
   margin-top: rem(70);
   margin-bottom: rem(35);
 
-  @media (max-width: 767px) {
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: rem(290);
-  }
+  // @media (max-width: 767px) {
+  //   display: inline-block;
+  //   position: relative;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: rem(290);
+  // }
 }
 
 .sec-3-subtitle {
@@ -45,9 +45,9 @@
   list-style-type: none;
   padding-left: rem(45);
 
-  @media (min-width: 768px) {
-    padding-left: 0;
-  }
+  // @media (min-width: 768px) {
+  //   padding-left: 0;
+  // }
 }
 
 .sec-3-list__title {
