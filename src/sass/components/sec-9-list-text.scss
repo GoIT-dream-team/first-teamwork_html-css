@@ -76,20 +76,24 @@
 
 .after-list {
    margin-top: rem(35);
-   width: rem(358);
-   padding-left: rem(26);
-   position: relative;
+   
 }
 
 .after-list__text {
-   display: inline;
-   font-size: rem(15);
+   display: inline-block;
+   padding-left: rem(26);
+   position: relative;
+   font-size: rem(13);
    font-family: $font-first;
    color: $stylish-color-orange;
    text-align: left;
    font-weight: 500;
 
-   
+}
+
+.after-list__text--sec-9 {
+   width: rem(358);
+
    &::after {
       content: "/";
       font-size: rem(35);
@@ -97,10 +101,7 @@
       display: block;
       color: $main-text-color;
       top: 0;
-      left: rem(3);
+      left: rem(5);
       transform: rotate(10deg);
    }
 }
-
-
- 
