@@ -209,6 +209,17 @@
     margin-right: $mar;
     background-color: $color;
   }
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: rem(4);
+  //   left: 0;
+  //   display: block;
+  //   height: rem(3);
+  //   width: rem(20);
+  //   background-color: $main-text-color;
+  // }
 }
 
 // Квадратик в списке

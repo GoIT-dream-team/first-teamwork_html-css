@@ -16,6 +16,7 @@
   font-weight: 800;
   padding-bottom: rem(36);
   text-transform: uppercase;
+  line-height: rem(16.5);
 }
 
 .sec-10-list {
@@ -29,6 +30,7 @@
   display: block;
   content: '';
   position: relative;
+  line-height: rem(20.31);
 
   &::before {
     display: block;
