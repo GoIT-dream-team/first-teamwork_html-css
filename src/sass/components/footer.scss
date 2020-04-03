@@ -5,7 +5,7 @@
   height: rem(100);
   border-top: rem(1) solid #d1d2d4;
   @include desktop {
-    height: rem(167);
+    min-height: rem(167);
   }
 }
 
