@@ -53,14 +53,15 @@ body {
     width: rem(644);
   }
 
-  @include laptop {
-    width: rem(712);
-  }
+   // ! Скороее всего нет такого
+  // @include laptop {
+  //   width: rem(712);
+  // }
 
   // ! под вопросом
-  @include desktop {
-    width: rem(1160);
-  }
+  // @include desktop {
+  //   width: rem(1160);
+  // }
 }
 
 .visually-hidden:not(:focus):not(:active),
