@@ -1,21 +1,21 @@
-$(document).ready(function() {
+"use strict";
+
+$(document).ready(function () {
   $(".top-clider").slick({
-    arrows:false,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     adaptiveHeight: true,
-    appendDots:$(".top-slider-dots"),
+    appendDots: $(".top-slider-dots")
   });
-
   $(".sec-5-slider").slick({
     dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
-    appendDots:$(".test-ar"),
-    appendArrows:$(".test-ar"),
+    appendDots: $(".test-ar"),
+    appendArrows: $(".test-ar")
   });
-});
-// test-ar
+}); // test-ar
