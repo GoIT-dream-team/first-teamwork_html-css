@@ -4,16 +4,14 @@
 }
 
 .sec-10-wrap {
-  width: rem(350);
-  margin: 0 auto;
+    width: rem(300);
+    margin: 0 auto;
 }
 
 .sec-10-title {
   font-size: rem(10.5);
   font-family: $font-first;
   font-weight: 800;
-  width: rem(285);
-  margin: 0 auto;
   padding-bottom: rem(36);
   text-transform: uppercase;
 }
@@ -40,11 +38,11 @@
   font-weight: 700;
   color: $main-white-color;
   text-align: center;
-  width: rem(50);
+  width: rem(55);
   height: rem(15);
   background-color: $stylish-color-orange;
-  top: 23%;
-  left: -19%;
+  top: rem(19);
+  left: rem(-50);
   transform: rotate(-90deg);
 }
 
@@ -65,11 +63,13 @@
 }
 
 .six-numb::before {
-  content: '[ 006 ]';
-  margin-top: rem(-10);
-}
-
+    content: '[ 006 ]';
+    top: rem(30);
+  }
+  
 .sec-10-title_item {
+  margin: 0;
+  padding: 0;
   color: $main-text-color;
   font-size: rem(13);
   font-family: $font-first;
@@ -85,24 +85,23 @@
   padding-bottom: rem(30);
 }
 
-.sec-10-note {
-  font-size: rem(13.5);
-  font-family: $font-first;
-  font-weight: 500;
-  color: $stylish-color-orange;
-  position: relative;
-  padding-left: rem(28);
-}
-
-.sec-10-note::before {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  display: block;
-  content: '/';
-  color: $main-text-color;
-  font-size: rem(30);
-  font-weight: 600;
-  top: rem(-5);
-  left: rem(-3);
+.sec-10-note_text {
+    font-size: rem(13.5);
+    font-family: $font-first;
+    font-weight: 500;
+    color: $stylish-color-orange;
+    position: relative;
+    padding-left: rem(28);
+    &::before {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      display: block;
+      content: '/';
+      color: $main-text-color;
+      font-size: rem(30);
+      font-weight: 600;
+      top: rem(-5);
+      left: rem(-3);
+  }
 }

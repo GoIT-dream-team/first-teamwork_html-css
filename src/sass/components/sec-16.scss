@@ -1,121 +1,122 @@
 .sec-16 {
-  padding-top: rem(25);
-  padding-bottom: rem(45);
-}
+    padding-top: rem(25);
+    padding-bottom: rem(45);
+  }
+  
+  .sec-16-wrap {
+      width: rem(300);
+      margin: 0 auto;
+  }
+  
+  .sec-16-title {
+    font-size: rem(10.5);
+    font-family: $font-first;
+    font-weight: 800;
+    padding-bottom: rem(36);
+    text-transform: uppercase;
+  }
+  
+  .sec-16-list {
+    list-style-type: none;
+    width: rem(285);
+    margin: 0 auto;
+    padding-left: rem(28);
+  }
+  
+  .sec-16-list_item {
+    display: block;
+    content: '';
+    position: relative;
+  }
+  
+  .sec-16-list_item::before {
+    display: block;
+    content: '[ 001 ]';
+    position: absolute;
+    font-size: rem(13);
+    font-family: $font-first;
+    font-weight: 700;
+    color: $main-white-color;
+    text-align: center;
+    width: rem(55);
+    height: rem(15);
+    background-color: $stylish-color-orange;
+    top: 23%;
+    left: -19%;
+    transform: rotate(-90deg);
+  }
+  
+  .two-numb::before {
+    content: '[ 002 ]';
+  }
+  
+  .three-numb::before {
+    content: '[ 003 ]';
+  }
+  
+  .four-numb::before {
+    content: '[ 004 ]';
+  }
+  
+  .five-numb::before {
+    content: '[ 005 ]';
+    margin-top: rem(5);
 
-.sec-16-wrap {
-  width: rem(350);
-  margin: 0 auto;
-}
+  }
+  
+  .sec-16-title_item {
+    margin: 0;
+    padding: 0;
+    color: $main-text-color;
+    font-size: rem(13);
+    font-family: $font-first;
+    font-weight: 700;
+    padding-bottom: rem(15);
+  }
+  
+  .sec-16-item_text {
+    color: $desc-text-color;
+    font-size: rem(13);
+    font-family: $font-first;
+    font-weight: normal;
+    padding-bottom: rem(30);
+  }
 
-.sec-16-title {
-  font-size: rem(10.5);
-  font-family: $font-first;
-  font-weight: 800;
-  padding-bottom: rem(36);
-  text-transform: uppercase;
-}
+   .sec-16-box_text {
+    display: inline-block;
+    color: $main-text-color;
+    font-size: rem(17);
+    font-family: $font-first;
+    font-weight: 500;
+    background-color:$stylish-color-cyan;
+    margin-left: rem(5);
+    margin-top: rem(40);
+   }
 
-.sec-16-list {
-  list-style-type: none;
-  width: rem(285);
-  margin: 0 auto;
-  padding-left: rem(28);
-}
+   .sec-16-box_price {
+     position: relative;
+   }
 
-.sec-16-list_item {
-  display: block;
-  content: '';
-  position: relative;
-}
+   .sec-16-price {
+     position: absolute;
+     display: block;
+     content: "";
+     bottom: -5%;
+     right: 0%;
+     font-size: rem(30);
+     font-weight: 700;
+     color: $main-text-color;
+   }
 
-.sec-16-list_item::before {
-  display: block;
-  content: '[ 001 ]';
-  position: absolute;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: 700;
-  color: $main-white-color;
-  text-align: center;
-  width: rem(55);
-  height: rem(15);
-  background-color: $stylish-color-orange;
-  top: 23%;
-  left: -19%;
-  transform: rotate(-90deg);
-}
+   .price_text {
+     display: block;
+   }
 
-.two-numb::before {
-  content: '[ 002 ]';
-}
-
-.three-numb::before {
-  content: '[ 003 ]';
-}
-
-.four-numb::before {
-  content: '[ 004 ]';
-}
-
-.five-numb::before {
-  content: '[ 005 ]';
-  margin-top: rem(5);
-}
-
-.sec-16-title_item {
-  margin: 0;
-  padding: 0;
-  color: $main-text-color;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: 700;
-  padding-bottom: rem(15);
-}
-
-.sec-16-item_text {
-  color: $desc-text-color;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: normal;
-  padding-bottom: rem(30);
-}
-
-// ! Переделать, под класс или вложенность
-// span {
-//   display: block;
-// }
-
-.sec-16-box_text {
-  display: inline-block;
-  color: $main-text-color;
-  font-size: rem(17);
-  font-family: $font-first;
-  font-weight: 500;
-  background-color: $stylish-color-cyan;
-  margin-left: rem(30);
-  margin-top: rem(40);
-}
-
-.sec-16-box_price {
-  position: relative;
-}
-
-.sec-16-price {
-  position: absolute;
-  display: block;
-  content: '';
-  bottom: -5%;
-  right: 10%;
-  font-size: rem(30);
-  font-weight: 700;
-  color: $main-text-color;
-}
-
-.price_tag {
-  text-decoration: line-through;
-  font-size: rem(17);
-  font-family: $font-first;
-  font-weight: 800;
-  color: #3c3b40;
-}
+   .price_tag {
+     display: block;
+     text-decoration: line-through;
+     font-size: rem(17);
+     font-family: $font-first;
+     font-weight: 800;
+     color: #3c3b40;
+   }
