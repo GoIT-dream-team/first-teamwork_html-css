@@ -4,7 +4,7 @@
   }
   
   .sec-16-wrap {
-      width: rem(350);
+      width: rem(300);
       margin: 0 auto;
   }
   
@@ -81,9 +81,6 @@
     font-weight: normal;
     padding-bottom: rem(30);
   }
-   span {
-     display: block;
-   } 
 
    .sec-16-box_text {
     display: inline-block;
@@ -92,7 +89,7 @@
     font-family: $font-first;
     font-weight: 500;
     background-color:$stylish-color-cyan;
-    margin-left: rem(30);
+    margin-left: rem(5);
     margin-top: rem(40);
    }
 
@@ -105,18 +102,24 @@
      display: block;
      content: "";
      bottom: -5%;
-     right: 10%;
+     right: 0%;
      font-size: rem(30);
      font-weight: 700;
      color: $main-text-color;
    }
 
+   .price_text {
+     display: block;
+   }
+
    .price_tag {
+     display: block;
      text-decoration: line-through;
      font-size: rem(17);
      font-family: $font-first;
      font-weight: 800;
      color: #3c3b40;
+
    }
   
   
