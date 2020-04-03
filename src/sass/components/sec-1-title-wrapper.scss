@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: rem(85);
+    padding-top: rem(80);
     min-height: rem(475);
     background-image: url(../images/bg/bg_photo-top-sec.png);
     background-repeat: no-repeat;
@@ -22,5 +22,9 @@
     }
   }
 
-  
+  @include desktop {
+    min-height: 531px;
+    background-size: 72%;
+    background-position: bottom rem(-227) right 0px;
+  }
 }
