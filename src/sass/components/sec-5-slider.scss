@@ -2,7 +2,7 @@
   position: relative;
   padding: 0 rem(20);
   padding-right:rem(13);
-  width: rem(294);
+  // width: rem(294);
   height: rem(213);
   margin: 0 auto;
   display: flex;
@@ -14,14 +14,14 @@
   }
 
   .slick-list {
-    width: rem(300);
+    // width: rem(300);
     overflow: hidden;
   }
 }
 
 .test-ar {
   position: relative;
-  width: rem(294);
+  // width: rem(294);
   margin: 0 auto;
   display: flex;
 
@@ -141,7 +141,7 @@
   line-height: rem(9.37);
 
   .slick-slide {
-    width: rem(263);
+    // width: rem(263);
   }
 
   &__info {
@@ -149,7 +149,7 @@
   }
 
   &__text-block {
-    width: rem(190);
+    // width: rem(190);
     // height: rem(177);
     height: rem(213);
     overflow-y: scroll;
@@ -181,7 +181,6 @@
 
     &::-webkit-scrollbar-thumb {
       height:rem(15);
-      width: rem(5);
       background-color: $main-text-color;
     }
   }
