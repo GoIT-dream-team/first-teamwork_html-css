@@ -4,13 +4,13 @@
 }
 
 .sec-16-wrap {
-  width: rem(378);
+  // width: rem(378);
   margin: 0 auto;
   line-height: rem(19.5);
 }
 
 .sec-16-title {
-  width: rem(358);
+  // width: rem(358);
   text-align: left;
   font-size: rem(13.5);
   font-family: $font-first;
@@ -21,7 +21,7 @@
 
 .sec-16-list {
   list-style-type: none;
-  width: rem(285);
+  // width: rem(285);
   margin: 0 auto;
   padding-left: rem(28);
 }
@@ -106,7 +106,6 @@
 .sec-16-price {
   position: absolute;
   display: block;
-  content: '';
   bottom: 6%;
   right: 10%;
   font-size: rem(30);
