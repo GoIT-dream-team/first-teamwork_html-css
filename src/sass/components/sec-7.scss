@@ -1,0 +1,26 @@
+.sec-7-title-main {
+    @extend %title-simple;
+    font-size: rem(18);
+    // width: rem(200);
+    // @media (max-width: 767px) {
+    // }
+}
+.sec-7-subtitle {
+    @include title-line-litle;
+    @extend %subtitle-simple;
+    font-size: rem(13.5);
+    // @media (min-width: 768px) {
+    //     @include title-line-big;
+    // }
+}
+
+.sec-7-subtitle {
+    color: red;
+}
+
+.sec-7-title-wrappre {
+    // @media (max-width: 767px) {
+    //     @include title-сenterX;
+    //     width: rem(320);
+    // }
+}
