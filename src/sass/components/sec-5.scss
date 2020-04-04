@@ -1,4 +1,6 @@
 .sec-5-content {
+  padding-bottom: rem(20);
+
   @include tablets {
     display: flex;
     justify-content: space-between;
@@ -19,6 +21,7 @@
   @extend %subtitle-simple;
   @include title-line;
   font-size: rem(13.5);
+  margin-bottom: rem(40);
 }
 
 .sec-5-title-wrapper {

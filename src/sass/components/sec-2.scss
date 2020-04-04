@@ -80,11 +80,14 @@
 }
 
 .sec-2-img-text__text {
+    padding-top: rem(50);
+    padding-bottom: rem(25);
     font-family: "Acrom";
     font-size: rem(13.5);
     font-weight: 500;
-    @media (max-width: 767px) {
-        padding-top: rem(30);
-        padding-bottom: rem(15);
-    }
+
+    // @media (max-width: 767px) {
+    //     padding-top: rem(30);
+    //     padding-bottom: rem(15);
+    // }
 }
