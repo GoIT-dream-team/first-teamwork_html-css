@@ -4,8 +4,8 @@
 }
 
 .wrapper-list-text {
-   @include content-center-flex("hor")
-   flex-wrap: wrap;
+   // @include content-center-flex("hor")
+   // flex-wrap: wrap;
 }
 
 .numeral-list {
@@ -14,7 +14,7 @@
 }
 
 .numeral-list__item {
-   width: rem(290);
+   // width: rem(290);
    padding-left: rem(52);
    position: relative;
    overflow: hidden;
@@ -91,7 +91,7 @@
 }
 
 .after-list__text--sec-9 {
-   width: rem(358);
+   // width: rem(358);
 
    &::after {
       content: "/";
