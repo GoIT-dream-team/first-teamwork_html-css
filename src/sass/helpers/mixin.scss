@@ -210,8 +210,21 @@
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-// Линия возле заголовка
-@mixin title-line($w: rem(20), $h: rem(3), $color: #000, $mar: rem(15)) {
+// Линия (маленькая) возле заголовка
+@mixin title-line-litle($w: rem(20), $h: rem(3), $color: #000, $mar: rem(15)) {
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: $h;
+    width: $w;
+    margin-right: $mar;
+    background-color: $color;
+  }
+}
+
+// Линия (большая) возле заголовка
+@mixin title-line-big($w: rem(28), $h: rem(3), $color: #000, $mar: rem(15)) {
   &::before {
     content: '';
     display: inline-block;

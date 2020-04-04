@@ -8,8 +8,8 @@
 @import "./helpers/grid.scss";
 
 // * Сommon use
-// @import "./components/main-btn.scss";
-// @import "./components/site-wrapper.scss";
+@import "./components/main-btn.scss";
+@import "./components/site-wrapper.scss";
 
 // ! Section 1
 @import "./components/sec-1-all.scss";
@@ -27,25 +27,29 @@
 // ! Section  5
 @import "./components/sec-5.scss";
 @import "./components/sec-5-slider.scss";
+// ! Section  6
+@import "./components/sec-6.scss";
+// ! Section  7
+@import "./components/sec-7.scss";
 
 // ! Section 9
 @import "./components/sec-9-list-text.scss";
 
 // ! Section  10
-@import './components/sec-10.scss';
+@import "./components/sec-10.scss";
 
 // ! Section  14
-@import './components/sec-14.scss';
+@import "./components/sec-14.scss";
 
 // ! Section 15
-@import './components/sec-15.scss';
+@import "./components/sec-15.scss";
 
 // ! Section  16
-@import './components/sec-16.scss';
+@import "./components/sec-16.scss";
 
 // ! Section  18
-@import './components/sec-18.scss';
-@import './components/sec-18-price-block.scss';
+@import "./components/sec-18.scss";
+@import "./components/sec-18-price-block.scss";
 
 // ! Footer
 @import "./components/footer.scss";
