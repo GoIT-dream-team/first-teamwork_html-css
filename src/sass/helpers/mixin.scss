@@ -3,22 +3,22 @@
 }
 // mixins популярных брекпоинтов / вызов @include phones{ background-color: red;}
 @mixin desktop {
-  @media screen and (min-width: rem(1200)) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }
 @mixin laptop {
-  @media screen and (min-width: rem(992)) {
+  @media screen and (min-width: 992px) {
     @content;
   }
 }
 @mixin tablets {
-  @media screen and (min-width: rem(768)) {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
 @mixin phones {
-  @media screen and (min-width: rem(480)) {
+  @media screen and (min-width: 480px) {
     @content;
   }
 }

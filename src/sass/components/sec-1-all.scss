@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    z-index: 0;
+    // z-index: 0;
 
     @include phones {
       font-size: rem(120);
@@ -48,7 +48,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 2;
+  // z-index: 2;
 
   @include retina2x {
     background-image: url(../images/bg/480/lines@2x.png);
@@ -104,9 +104,9 @@
 .top-header {
   // TODO position fixed to scrol
   // position: fixed;
-  position: absolute;
+  // position: absolute;
   // width: 100%;
-  z-index: 100;
+  // z-index: 100;
 }
 
 .top-header__inner {
