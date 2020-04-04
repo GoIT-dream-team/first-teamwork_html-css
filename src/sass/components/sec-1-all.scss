@@ -94,12 +94,10 @@
       line-height: rem(13.46);
     }
   }
+}
 
-  &__btn {
-    & .wave-btn__link {
-      // margin: 0 auto;
-    }
-  }
+.slider-btn {
+  @include all-btn;
 }
 
 // ! top-header
