@@ -21,7 +21,7 @@
   font-size: rem(13.5);
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: rem(4);
     left: 0;
@@ -32,11 +32,10 @@
   }
 }
 
-
 .sec-3-title__main {
   font-size: rem(18);
   text-transform: uppercase;
-  font-family: 'Acrom';
+  font-family: "Acrom";
   font-weight: 900;
   padding-bottom: rem(35);
 }
