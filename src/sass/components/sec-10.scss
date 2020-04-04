@@ -4,13 +4,13 @@
 }
 
 .sec-10-wrap {
-  width: rem(378);
-  margin: 0 auto;
+  // width: rem(378);
+  // margin: 0 auto;
 }
 
 .sec-10-title {
-  width: rem(285);
-  margin: 0 auto;
+  // width: rem(285);
+  // margin: 0 auto;
   font-size: rem(10.5);
   font-family: $font-first;
   font-weight: 800;
@@ -21,14 +21,13 @@
 
 .sec-10-list {
   list-style-type: none;
-  width: rem(285);
-  margin: 0 auto;
+  // width: rem(285);
+  // margin: 0 auto;
   padding-left: rem(28);
 }
 
 .sec-10-list_item {
   display: block;
-  content: '';
   position: relative;
   line-height: rem(20.31);
 
@@ -112,8 +111,8 @@
 
 .click {
   display: block;
-  width: rem(215);
-  margin: 0 auto;
+  // width: rem(215);
+  // margin: 0 auto;
   height: rem(50);
   margin-top: rem(38);
   border: none;
