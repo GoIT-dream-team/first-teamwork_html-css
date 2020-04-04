@@ -19,7 +19,7 @@
 
 .sec-5-subtitle {
   @extend %subtitle-simple;
-  @include title-line;
+  @include title-line-litle;
   font-size: rem(13.5);
   margin-bottom: rem(40);
 }

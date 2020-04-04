@@ -7,7 +7,7 @@
     // }
 }
 .sec-2-subtitle {
-    @include title-line;
+    @include title-line-litle;
     padding-bottom: rem(15);
     padding-top: 40px;
     font-family: "Acrom";
@@ -62,9 +62,13 @@
     }
 }
 
+.sec-2-content__photo-01 {
+    width: 100%;
+}
+
 .sec-2-list__items {
-    // width: rem(380);
-    padding-left: rem(45);
+    // width: 100%;
+    padding-left: rem(40);
 
     // @media (min-width: 768px) {
     //     display: flex;
