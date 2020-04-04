@@ -20,6 +20,7 @@
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: rem(21);
+  text-align: center;
 }
 
 .sec-18__price-block {
@@ -63,7 +64,7 @@
     font-size: rem(50);
     font-weight: 300;
     top: rem(13);
-    left: rem(-50);
+    left: rem(-30);
   }
 
   &__dash {
@@ -84,15 +85,6 @@
 }
 
 .sec-18-btn {
-  display: block;
-  // width: rem(294);
-  height: rem(41);
-  border: none;
-  background-color: $stylish-color-orange;
-  font-family: $font-first;
-  color: $main-white-color;
-  font-size: rem(10);
-  line-height: 1;
-  font-weight: 800;
-  text-transform: uppercase;
+  @include all-btn();
+  margin: 0 auto;
 }
