@@ -1,32 +1,31 @@
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 17px;
+  padding-left: 17px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 480px) {
   .container {
-    max-width: 476px;
+    max-width: 480px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 644px;
+    max-width: 677px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 760px;
+    max-width: 748px;
   }
 }
 
-
 // @media (min-width: 1200px) {
 //   .container {
-//     max-width: 1140px;
+//     max-width: 848px;
 //   }
 // }
