@@ -1,0 +1,35 @@
+.sec-8-top-block {
+    padding-bottom: rem(25);
+}
+
+.sec-8-subtitle {
+    @include title-line-litle;
+    padding-left: rem(40);
+
+    &::before {
+        top: rem(10);
+    }
+}
+
+.sec-8-title-main {
+    padding-bottom: rem(10);
+    padding-top: rem(25);
+}
+
+.sec-8-text-title {
+    @include square-list-7x7;
+    position: relative;
+    font-size: rem(14.54);
+    line-height: rem(22.85);
+    padding-left: rem(25);
+    margin: rem(20) 0;
+
+    &::before {
+        top: rem(10);
+        left: rem(0);
+    }
+}
+
+.sec-8-text-block {
+    padding-bottom: rem(40);
+}

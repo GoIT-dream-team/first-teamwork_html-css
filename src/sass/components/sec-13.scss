@@ -1,0 +1,20 @@
+.sec-13-title-main {
+    padding-bottom: rem(20);
+}
+
+.sec-13-subtitle {
+    padding-bottom: rem(25);
+    @include title-line-litle;
+    padding-left: rem(25);
+    position: relative;
+
+    &::before {
+        top: rem(7);
+        width: rem(15);
+    }
+}
+
+.sec-13-text-title {
+    padding-top: rem(40);
+    padding-bottom: rem(10);
+}
