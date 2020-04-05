@@ -26,17 +26,16 @@
   font-weight: 900;
 }
 
-%title-basic-revers {
-  font-family: "Acrom";
-  color: #fff;
-  background-color: #000;
-  text-transform: uppercase;
-}
-
 %title-simple {
   font-family: "Acrom";
   color: #000;
   font-weight: 900;
+  text-transform: uppercase;
+}
+
+%title-basic-revers {
+  font-family: "Acrom";
+  color: #fff;
   text-transform: uppercase;
 }
 

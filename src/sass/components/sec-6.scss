@@ -1,0 +1,49 @@
+.sec-6-title-main {
+    // font-size: rem(18);
+    // @extend %title-simple;
+
+    padding-bottom: rem(35);
+}
+
+.sec-6-title-wrappre {
+    padding-bottom: rem(40);
+}
+
+.sec-6-subtitle {
+    padding-left: rem(30);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: rem(8);
+        left: 0;
+        display: block;
+        height: rem(3);
+        width: rem(20);
+        background-color: $main-text-color;
+    }
+}
+
+.sec-6-list-item {
+    list-style-type: none;
+    padding-left: rem(80);
+    line-height: rem(20);
+    padding-bottom: 20px;
+    font-size: rem(13.5);
+
+    &:last-child {
+        padding-bottom: 0px;
+    }
+}
+
+.sec-6-list-item-title {
+    position: relative;
+    @include square-list-7x7;
+    font-size: rem(13.05);
+    // font-weight: 800;
+    // text-transform: uppercase;
+}
+
+.sec-6-list-items {
+    padding-bottom: rem(70);
+}

@@ -1,0 +1,54 @@
+.title-main {
+    color: #000;
+    font-size: rem(18);
+    font-family: $font-first;
+    line-height: rem(24);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.title-main-revers {
+    color: #fff;
+    background-color: #000;
+    font-size: rem(18);
+    font-family: $font-first;
+    line-height: rem(24);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: rem(13.5);
+    font-weight: 500;
+    font-family: $font-first;
+    line-height: rem(19.5);
+    position: relative;
+}
+
+.list-title {
+    color: #000;
+    font-size: rem(13.5);
+    font-family: $font-first;
+    line-height: rem(19.5);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.list-title-revers {
+    color: #fff;
+    font-size: rem(13.5);
+    font-family: $font-first;
+    line-height: rem(19.5);
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #000;
+    padding-right: rem(5);
+}
+
+.simple-text {
+    color: $desc-text-color;
+    font-size: rem(13.5);
+    font-family: $font-first;
+    line-height: rem(19.5);
+    font-weight: 400;
+}
