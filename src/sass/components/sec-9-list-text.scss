@@ -18,38 +18,35 @@
    padding-left: rem(52);
    position: relative;
    overflow: hidden;
-   
-   
 
-   &:nth-last-of-type(n+2) {
+   &:nth-last-of-type(n + 2) {
       margin-bottom: rem(25);
    }
 
    &::before {
       counter-increment: numeral;
-      content: "0" counter(numeral) "." ;
+      content: "0" counter(numeral) ".";
       font-size: rem(30);
       font-family: $font-first;
-      color:$main-text-color;
+      color: $main-text-color;
       font-weight: 700;
       line-height: rem(25);
       position: absolute;
       top: 0;
-      left:rem(-12);            
-   }  
-   
-   &::after{
+      left: rem(-12);
+   }
+
+   &::after {
       content: "";
       display: block;
       background-color: $stylish-color-cyan;
       width: 11px;
-      height: 11px; 
+      height: 11px;
       position: absolute;
       top: rem(30);
-      left: rem(20)
+      left: rem(20);
    }
 }
-
 
 .numeral-list__text {
    font-size: rem(13);
@@ -59,24 +56,20 @@
    font-weight: bold;
    text-transform: uppercase;
    font-weight: 900;
-  
 }
 
 .numeral-list__text--sub-text {
    font-size: rem(13);
    font-family: $font-first;
    font-weight: 500;
-   color:$desc-text-color;
+   color: $desc-text-color;
    line-height: rem(20);
    text-transform: none;
    margin-top: rem(9);
-   
 }
-
 
 .after-list {
    margin-top: rem(35);
-   
 }
 
 .after-list__text {
@@ -87,7 +80,6 @@
    color: $stylish-color-orange;
    text-align: left;
    font-weight: 500;
-
 }
 
 .after-list__text--sec-9 {
@@ -103,4 +95,23 @@
       left: rem(5);
       transform: rotate(10deg);
    }
+}
+
+.sec-9-title-span {
+   color: #fff;
+   background-color: #000;
+   padding-left: rem(5);
+}
+
+.sec-9-subtitle {
+   @include title-line-litle;
+   padding-left: rem(40);
+
+   &::before {
+      top: rem(10);
+   }
+}
+
+.sec-9-title-main {
+   padding-bottom: rem(15);
 }

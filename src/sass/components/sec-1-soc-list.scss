@@ -1,5 +1,28 @@
-.soc-list__item,
-.soc-list-fluid__item {
+.bot-content {
+  position: relative;
+  @include сenter-x;
+  bottom: rem(32);
+  z-index: 5;
+}
+
+.bot-content-wrapper {
+  @include tablets {
+    margin-left: 0;
+  }
+}
+
+.soc-list,
+.soc-list-fluid {
+  display: none;
+}
+
+.soc-list-fluid {
+  @include desktop {
+    @include content-center-flex;
+  }
+}
+
+.soc-list-fluid .soc-list__item {
   margin-right: rem(20);
 
   &:last-child {
@@ -20,26 +43,12 @@
   }
 }
 
-.soc-list,
-.soc-list-fluid {
-  display: none;
-}
-
 .soc-list {
   position: absolute;
   bottom: rem(156);
   right: 0;
-  // z-index: 20;
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   display: flex;
-  // }
-}
-
-.soc-list-fluid {
-  order: 2;
-  
-  @include desktop {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
   }
 }

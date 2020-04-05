@@ -13,8 +13,11 @@
 @import "./components/titles-class.scss";
 
 // ! Section 1
-@import "./components/sec-1-all.scss";
+@import "./components/sec-1-header.scss";
+@import "./components/sec-1-wrappers.scss";
+@import "./components/sec-1-content.scss";
 @import "./components/sec-1-soc-list.scss";
+@import "./components/sec-1-top-slider.scss";
 
 // ! Section 2
 @import "./components/sec-2.scss";
@@ -28,10 +31,13 @@
 // ! Section  5
 @import "./components/sec-5.scss";
 @import "./components/sec-5-slider.scss";
+
 // ! Section  6
 @import "./components/sec-6.scss";
+
 // ! Section  7
 @import "./components/sec-7.scss";
+
 // ! Section  8
 @import "./components/sec-8.scss";
 
@@ -39,9 +45,20 @@
 @import "./components/sec-9-list-text.scss";
 
 // ! Section  10
-@import './components/sec-10.scss';
-@import './components/sec-10-note-text.scss';
-@import './components/sec-10,14,16.scss';
+@import "./components/sec-10.scss";
+@import "./components/sec-10-note-text.scss";
+@import "./components/sec-10,14,16.scss";
+@import "./components/sec-10.scss";
+
+// ! Section  11
+@import "./components/sec-11.scss";
+
+// ! Section  12
+@import "./components/sec-12.scss";
+
+// ! Section  13
+@import "./components/sec-13.scss";
+
 // ! Section  14
 @import "./components/sec-14.scss";
 

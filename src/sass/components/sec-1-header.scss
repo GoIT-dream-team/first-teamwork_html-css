@@ -1,0 +1,89 @@
+// ! top-header
+.top-header {
+  // TODO position fixed to scrol
+  // position: fixed;
+  position: absolute;
+  @include сenter-x;
+  z-index: 100;
+}
+
+.top-header__inner {
+  padding: rem(15);
+
+  @include desktop {
+    padding: rem(15) 0;
+  }
+}
+
+.top-logo {
+  @include transition;
+
+  &:focus {
+    transform: scale(1.1);
+    outline-color: $stylish-color-orange;
+  }
+}
+
+.bur-menu {
+  position: relative;
+  width: rem(30);
+  height: rem(18);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover .bur-menu__line,
+  &:hover::before,
+  &:hover::after {
+    background-color: $stylish-color-orange;
+  }
+
+  @include tablets {
+    width: rem(15);
+    height: rem(10);
+  }
+
+  &::before,
+  &::after {
+    @include pseudo;
+    position: absolute;
+    height: rem(3);
+    background-color: $main-white-color;
+    border-radius: rem(1);
+    @include transition;
+
+    @include tablets {
+      height: rem(2);
+    }
+  }
+
+  &::before {
+    width: 85%;
+    right: 0;
+    top: 0;
+  }
+
+  &::after {
+    width: 100%;
+    right: 0;
+    bottom: rem(1);
+
+    @include tablets {
+      bottom: 0;
+    }
+  }
+}
+
+.bur-menu__line {
+  position: relative;
+  width: 70%;
+  height: rem(3);
+  display: block;
+  background-color: $main-white-color;
+  @include transition;
+
+  @include tablets {
+    height: rem(2);
+  }
+}

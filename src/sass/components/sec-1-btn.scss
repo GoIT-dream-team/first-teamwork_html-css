@@ -78,7 +78,7 @@
     width: rem(255);
     height: rem(55);
     margin: 0 auto;
-    
+
     @include tablets {
       display: none;
     }
@@ -106,5 +106,3 @@
     }
   }
 }
-// 218 55width: 187%;
-      // height: 218%;
