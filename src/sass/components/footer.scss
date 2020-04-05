@@ -1,14 +1,17 @@
 .page-footer {
-  // display: flex;
-  // justify-content: space-around;
+  display: flex;
+  align-items: center;
   background-color: $bg-header-footer-color;
-  height: rem(100);
+  min-height: rem(100);
   border-top: rem(1) solid #d1d2d4;
-  // @include desktop {
-  //   min-height: rem(334);
-  // }
+  @include desktop {
+    min-height: rem(250);
+  }
 }
 
+.center-test {
+  background-color: $bg-header-footer-color;
+}
 // .page-footer__container {
 //   width: rem(714);
 //   display: flex;
@@ -19,6 +22,7 @@
 //     justify-content: space-between;
 //   }
 // }
+
 
 // .page-footer__contacts {
 //   width: rem(320);
@@ -59,6 +63,9 @@
     line-height: 1;
     margin-bottom: rem(5);
     text-transform: uppercase;
+    @include tablets {
+      font-size: rem(8);
+    }
   }
 
   &__info,
@@ -70,6 +77,9 @@
     font-weight: 400;
     line-height: rem(11);
     letter-spacing: 0.035em;
+    @include tablets {
+      font-size: rem(8);
+    }
 
     &:hover {
       color: $stylish-color-orange;
@@ -78,15 +88,15 @@
 }
 
 .contact-block--hidden {
-  // @media screen and (max-width: rem(767)) {
-  //   display: none;
-  // }
+  @media screen and (max-width: rem(767)) {
+    display: none;
+  }
 }
 
 .contact-btn {
   @include transition;
-  display: block;
-  // width: rem(120);
+  display: inline-block;
+  width: 100%;
   height: rem(20);
   color: $main-white-color;
   font-family: $font-first;
@@ -98,10 +108,9 @@
   background-color: transparent;
   border: rem(1) solid $footer-button-color;
   cursor: pointer;
-  // @include tablets {
-  //   width: rem(123);
-  //   height: rem(28);
-  // }
+  @include tablets {
+    font-size: rem(7);
+  }
   // @include desktop {
   //   width: rem(139);
   //   height: rem(31);
