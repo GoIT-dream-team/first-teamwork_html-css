@@ -4,26 +4,18 @@
 .sec-3-title__wrappre {
   margin-top: rem(70);
   margin-bottom: rem(35);
-
-  // @media (max-width: 767px) {
-  //   display: inline-block;
-  //   position: relative;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   width: rem(290);
-  // }
 }
 
 .sec-3-subtitle {
   position: relative;
   padding-left: rem(30);
-  font-family: $font-first;
-  font-size: rem(13.5);
+  // font-family: $font-first;
+  // font-size: rem(13.5);
 
   &::before {
     content: "";
     position: absolute;
-    top: rem(4);
+    top: rem(8);
     left: 0;
     display: block;
     height: rem(3);
@@ -33,20 +25,12 @@
 }
 
 .sec-3-title__main {
-  font-size: rem(18);
-  text-transform: uppercase;
-  font-family: "Acrom";
-  font-weight: 900;
   padding-bottom: rem(35);
 }
 
 .sec-3-list__items {
   list-style-type: none;
-  padding-left: rem(45);
-
-  // @media (min-width: 768px) {
-  //   padding-left: 0;
-  // }
+  padding-left: rem(40);
 }
 
 .sec-3-list__title {
@@ -58,8 +42,8 @@
 }
 
 .list__title-span {
-  font-size: rem(10);
-  font-weight: 900;
+  font-weight: 800;
+  font-size: rem(12);
 }
 
 .sec-3-list__text-blue {
@@ -74,8 +58,5 @@
 }
 
 .sec-3-list__text {
-  font-family: $font-first;
-  font-size: rem(13.5);
   padding-top: rem(10);
-  font-weight: 400;
 }
