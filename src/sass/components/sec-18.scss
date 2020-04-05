@@ -20,10 +20,25 @@
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: rem(21);
+  text-align: center;
+
+  @include tablets {
+    font-size: rem(27);
+    text-align: left;
+  }
 }
 
 .sec-18__price-block {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.sec-18__price-block--hidden {
   margin-bottom: rem(37);
+  @include tablets {
+    display: none;
+  }
 }
 
 .sec-18-subtitle {
@@ -33,6 +48,10 @@
   line-height: rem(19);
   font-weight: 700;
   margin-bottom: rem(10);
+  @include tablets {
+    font-size: rem(9);
+    line-height: rem(12);
+  }
 }
 
 .sec-18-about {
@@ -40,8 +59,12 @@
   font-family: $font-first;
   font-size: rem(13);
   line-height: rem(19);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: rem(18);
+  @include tablets {
+    font-size: rem(8);
+    line-height: rem(12);
+  }
 }
 
 .sec-18-note {
@@ -52,6 +75,10 @@
   font-weight: 500;
   margin-bottom: rem(27);
   position: relative;
+  @include tablets {
+    font-size: rem(9);
+    line-height: rem(13);
+  }
 
   &::before {
     margin: 0;
@@ -63,7 +90,7 @@
     font-size: rem(50);
     font-weight: 300;
     top: rem(13);
-    left: rem(-50);
+    left: rem(-30);
   }
 
   &__dash {
@@ -84,15 +111,6 @@
 }
 
 .sec-18-btn {
-  display: block;
-  // width: rem(294);
-  height: rem(41);
-  border: none;
-  background-color: $stylish-color-orange;
-  font-family: $font-first;
-  color: $main-white-color;
-  font-size: rem(10);
-  line-height: 1;
-  font-weight: 800;
-  text-transform: uppercase;
+  @include all-btn();
+  margin: 0 auto;
 }
