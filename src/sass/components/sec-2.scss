@@ -1,3 +1,8 @@
+.sec-2-img-text__wrapper {
+    @include tablets {
+        margin-top: rem(112);
+    }
+}
 .sec-2-subtitle {
     @include title-line-big;
     position: relative;
@@ -32,7 +37,7 @@
 }
 
 .sec-2-title__wrapper {
-    padding-top: 40px;
+    padding-top: rem(40);
 }
 
 .sec-2-list__item {
@@ -61,7 +66,7 @@
 }
 
 .sec-2-img-text__text {
-    padding-top: rem(50);
+    // padding-top: rem(50);
     padding-bottom: rem(25);
     font-family: "Acrom";
     font-size: rem(13.5);
