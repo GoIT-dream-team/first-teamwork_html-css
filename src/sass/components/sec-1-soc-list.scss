@@ -1,6 +1,14 @@
 .bot-content {
+  position: relative;
   @include сenter-x;
   bottom: rem(32);
+  z-index: 5;
+}
+
+.bot-content-wrapper {
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .soc-list-fluid .soc-list__item {
@@ -41,10 +49,9 @@
 }
 
 .soc-list-fluid {
-  // order: 2;
   
   @include desktop {
-    display: flex;
+    @include content-center-flex;
   }
 }
 
