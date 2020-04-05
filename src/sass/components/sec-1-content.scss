@@ -1,0 +1,227 @@
+.sec-1-content {
+  min-height: rem(475);
+  position: relative;
+  background-image: url(../images/bg/480/lines.png);
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: 94.5%;
+
+  @include tablets {
+    background-size: 96%;
+  }
+
+  @include retina2x {
+    background-image: url(../images/bg/480/lines@2x.png);
+  }
+
+  @include retina3x {
+    background-image: url(../images/bg/480/lines@3x.png);
+  }
+}
+
+// ! sec-1-btn <in skider>
+.slider-btn-top,
+.slider-btn-bot {
+  @include all-btn;
+}
+
+.slider-btn-top {
+  display: none;
+  margin-left: rem(53);
+  width: rem(111);
+  min-height: rem(29);
+  font-size: rem(7);
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.slider-btn-bot {
+  margin: 0 auto;
+  width: rem(219);
+  min-height: rem(55);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+// ! main-text-block
+.main-text-block {
+  position: relative;
+  padding-bottom: rem(40);
+  font-size: rem(13.5);
+  line-height: rem(19.5);
+  text-align: center;
+
+  @include phones {
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  @include tablets {
+    margin: 0;
+  }
+}
+
+// ! main-title-block
+.main-title-block {
+  text-transform: uppercase;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: rem(150);
+    text-align: center;
+  }
+}
+
+.main-title-block__title {
+  margin: 0 auto;
+  margin-bottom: rem(35);
+  font-size: rem(30);
+  font-weight: 800;
+  line-height: rem(39);
+
+  @include phones {
+    width: rem(350);
+  }
+
+  @include tablets {
+    width: rem(370);
+    font-size: rem(45);
+    line-height: rem(56.08);
+  }
+}
+
+.main-title-block__sub-title {
+  position: relative;
+  padding: 0 rem(30);
+  font-size: rem(13.5);
+  font-weight: 700;
+  line-height: rem(19.5);
+  letter-spacing: -0.025em;
+
+  @include tablets {
+    padding: 0 rem(35);
+    margin-left: rem(20);
+    margin-bottom: rem(20);
+    width: rem(245);
+    font-size: rem(8);
+    line-height: rem(13.46);
+    letter-spacing: 0em;
+  }
+
+  &::before,
+  &::after {
+    @include pseudo;
+    position: absolute;
+  }
+
+  &::before {
+    top: rem(4);
+    left: rem(5);
+    width: rem(10);
+    height: rem(10);
+    background-image: url(../images/icons/icon_parentheses-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include tablets {
+      top: rem(2);
+      left: rem(13);
+      width: rem(8);
+      height: rem(8);
+    }
+  }
+
+  &::after {
+    bottom: rem(2);
+    right: rem(5);
+    width: rem(20);
+    height: rem(16);
+    background-image: url(../images/icons/icon_parentheses-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include tablets {
+      right: rem(0);
+      width: rem(12);
+      height: rem(10);
+    }
+  }
+}
+
+.title-line-r {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: rem(25);
+    right: rem(-70);
+    width: rem(44);
+    height: rem(6);
+    background-color: $main-white-color;
+
+    @include tablets {
+      display: inline-block;
+    }
+  }
+}
+
+.title-line-center {
+  @include tablets {
+    display: none;
+  }
+}
+
+.title-line-l {
+  position: relative;
+
+  @include tablets {
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    position: relative;
+    display: none;
+    margin-right: rem(22);
+    top: rem(-13);
+    left: rem(0);
+    width: rem(56);
+    height: rem(6);
+    background-color: $main-white-color;
+
+    @include tablets {
+      display: inline-block;
+    }
+  }
+}
+
+// ! main-text-block
+.main-text-block__title {
+  margin-bottom: rem(10);
+  font-size: rem(13.5);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @include tablets {
+    font-size: rem(10.5);
+    line-height: rem(16.82);
+  }
+}
+
+.main-text-block__subtitle {
+  margin-bottom: rem(38);
+  font-weight: 400;
+  color: $decs-header-footer-color;
+
+  @include tablets {
+    margin: 0;
+    font-size: rem(10);
+    line-height: rem(13.46);
+  }
+}
