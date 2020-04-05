@@ -157,12 +157,12 @@
   // }
 
   // @include tablets {
-  //   width: rem(644);
+    // width: rem(644);
   // }
 
-  // @include desktop {
-  //   width: rem(1126);
-  // }
+  @include desktop {
+    padding: rem(15) 0;
+  }
 }
 
 .top-logo {
@@ -301,13 +301,14 @@
 
 .main-title-block__sub-title {
   position: relative;
-  padding: 0 rem(35);
+  padding: 0 rem(30);
   font-size: rem(13.5);
   font-weight: 700;
   line-height: rem(19.5);
   letter-spacing: -0.025em;
 
   @include tablets {
+    padding: 0 rem(35);
     margin-left: rem(20);
     margin-bottom: rem(20);
     width: rem(245);
