@@ -8,25 +8,25 @@
 
 @media (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 476px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 644px;
+    max-width: 674px;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 732px;
-  }
-}
+// @media (min-width: 992px) {
+//   .container {
+//     max-width: 732px;
+//   }
+// }
 
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 732px;
   }
 }
