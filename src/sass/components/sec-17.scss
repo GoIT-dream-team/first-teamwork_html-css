@@ -5,8 +5,9 @@
 }
 
 .sec-title__main--black {
-   color:$main-white-color;
+   color: $main-white-color;
    background-color: $main-text-color;
+   padding-right: rem(5);
 }
 
 .numeral-list {
@@ -30,9 +31,8 @@
    font-size: rem(12);
    font-family: $font-first;
    color: rgba(0, 0, 0, 0.361);
-   font-weight: 700; 
-   line-height: rem(11);    
-   
+   font-weight: 700;
+   line-height: rem(11);
 }
 
 .buy-course__input {
@@ -44,16 +44,16 @@
    padding-bottom: rem(10);
    border: none;
    border-bottom: rem(1) solid $form-input-underline;
-   
-      &::placeholder {
-         font-size: rem(14);
-         font-family: $font-first;
-         color: $main-text-color;
-         line-height: rem(11); 
-      }
+
+   &::placeholder {
+      font-size: rem(14);
+      font-family: $font-first;
+      color: $main-text-color;
+      line-height: rem(11);
+   }
 }
 
 .buy-course__button {
    margin-top: rem(35);
-   @include all-btn
+   @include all-btn;
 }
