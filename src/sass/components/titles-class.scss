@@ -5,10 +5,10 @@
     line-height: rem(24);
     font-weight: 800;
     text-transform: uppercase;
-    // @include tablets {
-    //     font-size: rem(27);
-    //     line-height: rem(33.65);
-    // }
+    @include tablets {
+        font-size: rem(27);
+        line-height: rem(33.65);
+    }
 }
 
 .title-main-revers {
@@ -18,10 +18,10 @@
     line-height: rem(24);
     font-weight: 700;
     text-transform: uppercase;
-    // @include tablets {
-    //     font-size: rem(27);
-    //     line-height: rem(33.65);
-    // }
+    @include tablets {
+        font-size: rem(27);
+        line-height: rem(33.65);
+    }
 }
 
 .subtitle {
@@ -30,10 +30,10 @@
     font-family: $font-first;
     line-height: rem(19.5);
     position: relative;
-    // @include tablets {
-    //     font-size: rem(8.97);
-    //     line-height: rem(13.46);
-    // }
+    @include tablets {
+        font-size: rem(8.97);
+        line-height: rem(13.46);
+    }
 }
 
 .list-title {
@@ -43,10 +43,10 @@
     line-height: rem(19.5);
     font-weight: 800;
     text-transform: uppercase;
-    // @include tablets {
-    //     font-size: rem(8.97);
-    //     line-height: rem(13.46);
-    // }
+    @include tablets {
+        font-size: rem(8.97);
+        line-height: rem(13.46);
+    }
 }
 
 .list-title-revers {
@@ -57,10 +57,10 @@
     font-weight: 800;
     text-transform: uppercase;
     padding-right: rem(5);
-    // @include tablets {
-    //     font-size: rem(8.97);
-    //     line-height: rem(13.46);
-    // }
+    @include tablets {
+        font-size: rem(8.97);
+        line-height: rem(13.46);
+    }
 }
 
 .simple-text {
@@ -69,10 +69,10 @@
     font-family: $font-first;
     line-height: rem(19.5);
     font-weight: 400;
-    // @include tablets {
-    //     font-size: rem(7.85);
-    //     line-height: rem(11.78);
-    // }
+    @include tablets {
+        font-size: rem(7.85);
+        line-height: rem(11.78);
+    }
 }
 
 .orange-text {
@@ -81,10 +81,10 @@
     font-family: $font-first;
     line-height: rem(19.5);
     font-weight: 700;
-    // @include tablets {
-    //     font-size: rem(8.98);
-    //     line-height: rem(13.46);
-    // }
+    @include tablets {
+        font-size: rem(8.98);
+        line-height: rem(13.46);
+    }
 }
 
 .style-none {
