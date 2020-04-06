@@ -56,11 +56,11 @@
   }
 }
 
-// @media (min-width: 1200px) {
-//   .container {
-//     max-width: 748px;
-//   }
-// }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
 
 .grid-flex {
   display: flex;

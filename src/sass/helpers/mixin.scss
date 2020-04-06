@@ -47,6 +47,13 @@ $col-count: 12;
     right: auto;
   }
 }
+// Делает обратное
+@mixin push--0 {
+  margin: {
+    left: 0;
+    right: 0;
+  }
+}
 
 // Создает линию под блоком
 // пример: @include sep-h(80%,2px,$blue);
@@ -264,7 +271,7 @@ $col-count: 12;
 }
 
 // Квадратик в списке 7x7
-@mixin square-list-7x7($w: 7px, $h: 7px, $color: #000, $left: rem(-20), $top: rem(5)) {
+@mixin square-list-7x7($w: rem(7), $h: rem(7), $color: #000, $left: rem(-20), $top: rem(5)) {
   &::before {
     content: "";
     // display: inline-block;

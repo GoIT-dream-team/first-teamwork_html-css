@@ -1,6 +1,5 @@
 .sec-8-wrapper {
-    padding-top: rem(20);
-    padding-bottom: rem(30);
+    padding: rem(30) 0;
 }
 
 .sec-8-top-block {
@@ -26,9 +25,14 @@
     }
 }
 
+.sec-8-title {
+    width: col(9);
+}
+
 .sec-8-title-main {
     margin-bottom: rem(10);
     margin-top: rem(25);
+    padding-left: rem(25);
 }
 
 .sec-8-text-title {
