@@ -22,7 +22,7 @@
 }
 
 .sec-2-list__title {
-    padding: rem(45) 0 rem(15) 0;
+    margin-bottom: rem(15);
     font-size: rem(13.5);
     @include tablets {
         font-size: rem(16.82);
@@ -113,6 +113,7 @@
 }
 
 .sec-2-list__wrapper {
+    margin-top: rem(45);
     @include tablets {
         position: relative;
     }
@@ -124,6 +125,7 @@
     color: $stylish-color-orange;
     margin-top: rem(45);
     @include tablets {
+        margin-top: 0;
         font-size: rem(10);
         line-height: rem(13.6);
         position: absolute;
