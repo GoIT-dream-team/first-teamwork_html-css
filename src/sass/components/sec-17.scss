@@ -49,11 +49,25 @@
       font-size: rem(14);
       font-family: $font-first;
       color: $main-text-color;
-      line-height: rem(11);
+      line-height: rem(20);
+      font-weight: 500;
    }
 }
 
 .buy-course__button {
    margin-top: rem(35);
    @include all-btn;
+}
+
+.buy-course-form {
+   padding: 0 rem(65);
+}
+
+input[type="submit"] {
+   padding: rem(15) rem(40);
+   border: none;
+   outline: none;
+   @include tablets {
+      font-size: rem(6.73);
+   }
 }

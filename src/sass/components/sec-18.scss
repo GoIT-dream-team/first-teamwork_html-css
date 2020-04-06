@@ -85,7 +85,7 @@
     padding: 0;
     position: absolute;
     display: block;
-    content: '/';
+    content: "/";
     color: $main-text-color;
     font-size: rem(50);
     font-weight: 300;
@@ -95,22 +95,30 @@
 
   &__dash {
     &::after {
-      content: '\2014';
+      content: "\2014";
     }
   }
 }
 
 .sec-18-note__quote {
   &::before {
-    content: '\00ab';
+    content: "\00ab";
   }
 
   &:after {
-    content: '\00bb';
+    content: "\00bb";
   }
 }
 
 .sec-18-btn {
   @include all-btn();
   margin: 0 auto;
+
+  padding: rem(15) rem(40);
+  border: none;
+  outline: none;
+  @include tablets {
+    font-size: rem(6.73);
+    font-weight: 800;
+  }
 }
