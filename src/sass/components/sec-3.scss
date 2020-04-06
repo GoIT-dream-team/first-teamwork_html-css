@@ -1,12 +1,18 @@
 .sec-3__wrapper {
+  padding-top: rem(79);
   margin-bottom: rem(45);
   @include tablets {
-    padding-top: rem(60);
+    padding-top: rem(57);
   }
 }
-.sec-3-title__wrappre {
-  margin-top: rem(70);
+
+.sec-3-title__wrapper {
   margin-bottom: rem(35);
+  width: col(8);
+  @include push--auto;
+  @include tablets {
+    @include push--0;
+  }
 }
 
 .sec-3-subtitle {
@@ -28,7 +34,12 @@
 }
 
 .sec-3-title__main {
-  padding-bottom: rem(35);
+  margin-bottom: rem(35);
+  padding-left: rem(30);
+  @include tablets {
+    padding-left: 0;
+  }
+  
 }
 
 .sec-3-list__items {
