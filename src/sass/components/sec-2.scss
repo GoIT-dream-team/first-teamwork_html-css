@@ -1,13 +1,14 @@
-.sec-2-img-text__wrapper {
+.sec-2__wrapper {
+    padding-top: rem(50);
     @include tablets {
-        margin-top: rem(112);
+        padding-top: rem(112);
     }
 }
 
 .sec-2-subtitle {
     @include title-line-big;
     position: relative;
-    padding-bottom: rem(15);
+    margin-bottom: rem(15);
     padding-left: rem(40);
     font-family: "Acrom";
     font-size: rem(15);
@@ -100,8 +101,7 @@
 }
 
 .sec-2-img-text__text {
-    padding-top: rem(50);
-    padding-bottom: rem(25);
+    margin-bottom: rem(25);
     font-family: "Acrom";
     font-size: rem(13.5);
     line-height: rem(19.5);
@@ -109,7 +109,6 @@
     @include tablets {
         font-size: rem(9);
         line-height: rem(13.46);
-        padding-top: 0;
     }
 }
 
