@@ -1,6 +1,6 @@
 $col-count: 12;
 @function col($columns) {
-  @return unquote((100 / $col-count) * $columns + '%');
+  @return unquote((100 / $col-count) * $columns + "%");
 }
 
 @function rem($px) {
