@@ -1,5 +1,8 @@
 .sec-3__wrapper {
   margin-bottom: rem(45);
+  @include tablets {
+    padding-top: rem(60);
+  }
 }
 .sec-3-title__wrappre {
   margin-top: rem(70);

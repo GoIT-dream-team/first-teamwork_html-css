@@ -2,6 +2,7 @@
     padding-top: rem(50);
     @include tablets {
         padding-top: rem(112);
+        padding-bottom: rem(60);
     }
 }
 
@@ -51,9 +52,9 @@
 }
 
 .sec-2-title__wrapper {
-    padding-top: rem(40);
+    margin-top: rem(40);
     @include tablets {
-        padding-top: rem(9);
+        margin: 0;
     }
 }
 
@@ -109,12 +110,14 @@
     @include tablets {
         font-size: rem(9);
         line-height: rem(13.46);
+        margin-bottom: rem(34);
     }
 }
 
 .sec-2-list__wrapper {
     margin-top: rem(45);
     @include tablets {
+        margin-top: rem(68);
         position: relative;
     }
 }
@@ -129,7 +132,7 @@
         font-size: rem(10);
         line-height: rem(13.6);
         position: absolute;
-        bottom: rem(-45);
+        bottom: rem(-47);
         right: 0;
     }
 }
