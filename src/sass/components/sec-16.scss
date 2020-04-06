@@ -2,9 +2,34 @@
   padding-bottom: rem(20);
 }
 
+.sec-16-text-block {
+  margin-bottom: rem(26);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    align-items: center;
+    margin-bottom: rem(25);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sec-16-title-main {
+  @include tablets {
+    font-size: rem(27);
+    line-height: rem(33.65);
+  }
+}
+
 .sec-16-title-span {
+  width: col(10);
   background-color: #000;
-  padding-right: rem(5);
+  padding: 0 rem(3);
 }
 
 .sec-16-subtitle {
@@ -13,6 +38,11 @@
   position: relative;
   padding-bottom: rem(40);
 
+  @include tablets {
+    font-size: rem(8.97);
+    line-height: rem(13.46);
+  }
+
   &::before {
     top: rem(8);
   }
@@ -20,45 +50,92 @@
 
 @include tablets {
   .sec-16-img-block-first {
-    display: flex;
-    flex-flow: wrap;
+    @include tablets {
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: rem(51);
+    }
   }
   .sec-16-content__photo-11 {
-    order: 1;
+    // order: 1;
   }
   .sec-16-title-blk {
-    order: 2;
+    @include tablets {
+      margin-left: 5%;
+    }
   }
+}
+
+.sec-16-text-block-wrap {
+  @include push--auto;
+  width: 69%;
 }
 
 .sec-16-text-title {
-  padding-top: rem(30);
-  padding-bottom: rem(15);
+  width: col(6);
+  margin-bottom: rem(15);
+
+  @include tablets {
+    padding: 0;
+  }
+}
+
+.sec-16-text {
+  @include tablets {
+    padding-left: rem(10);
+  }
 }
 
 .sec-16-img-block-second {
-  padding-bottom: rem(45);
+  margin-top: rem(30);
+  margin-bottom: rem(55);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sec-16 {
-  padding-top: rem(25);
+  padding-top: rem(45);
   padding-bottom: rem(45);
+
+  @include tablets {
+    padding-bottom: 0;
+  }
+}
+
+.sec-16-content__photo-06 {
+  @include tablets {
+    margin-right: 5%;
+  }
 }
 
 .sec-16-wrap {
-  // width: rem(378);
-  margin: 0 auto;
+  width: col(10);
+  position: relative;
+  @include push--auto;
   line-height: rem(19.5);
+
+  @include tablets {
+    align-items: flex-start;
+    width: col(12);
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .sec-16-title {
-  // width: rem(358);
+  margin-bottom: rem(26);
   text-align: left;
   font-size: rem(13.5);
   font-family: $font-first;
   font-weight: 800;
-  padding-bottom: rem(36);
   text-transform: uppercase;
+
+  @include tablets {
+    margin-bottom: 0;
+    margin-right: col(1);
+    font-size: rem(8.97);
+    line-height: rem(14.58);
+  }
 }
 
 .sec-16-list {
@@ -70,13 +147,13 @@
 
 .sec-16-list_item {
   display: block;
-  content: "";
+  content: '';
   position: relative;
 }
 
 .sec-16-list_item::before {
   display: block;
-  content: "[ 001 ]";
+  content: '[ 001 ]';
   position: absolute;
   font-size: rem(13);
   font-family: $font-first;
@@ -92,20 +169,36 @@
 }
 
 .two-numb::before {
-  content: "[ 002 ]";
+  content: '[ 002 ]';
 }
 
 .three-numb::before {
-  content: "[ 003 ]";
+  content: '[ 003 ]';
 }
 
 .four-numb::before {
-  content: "[ 004 ]";
+  content: '[ 004 ]';
 }
 
 .five-numb::before {
-  content: "[ 005 ]";
-  margin-top: rem(5);
+  content: '[ 005 ]';
+  // margin-top: rem(5);
+}
+
+.box-price {
+  @include push--auto;
+  width: col(10);
+  padding: rem(6);
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    width: 27%;
+    position: absolute;
+    bottom: 17%;
+    right: 0;
+  }
 }
 
 .box-text {
@@ -114,29 +207,34 @@
   font-size: rem(17);
   font-family: $font-first;
   font-weight: 500;
-  margin-left: rem(45);
-  margin-top: rem(40);
   line-height: 1.7;
+
+  @include tablets {
+    line-height: rem(11);
+  }
 
   & .box-sentence {
     background-color: $stylish-color-cyan;
+
+    @include tablets {
+      font-size: rem(7.85);
+    }
   }
 }
 
-.box-price {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .price {
-  position: absolute;
-  display: block;
-  bottom: 6%;
-  right: 10%;
   font-size: rem(30);
   font-weight: 800;
   color: $main-text-color;
+
+  .wer {
+    font-size: rem(19.34);
+
+    @include tablets {
+      font-size: rem(9);
+      text-transform: uppercase;
+    }
+  }
 }
 
 .price-tag {
@@ -148,4 +246,10 @@
   font-family: $font-first;
   font-weight: 800;
   color: #3c3b40;
+
+  @include tablets {
+    top: -3px;
+    font-size: rem(7.85);
+    line-height: rem(20.19);
+  }
 }
