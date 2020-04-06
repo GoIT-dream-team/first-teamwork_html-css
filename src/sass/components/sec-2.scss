@@ -3,6 +3,7 @@
         margin-top: rem(112);
     }
 }
+
 .sec-2-subtitle {
     @include title-line-big;
     position: relative;
@@ -10,13 +11,21 @@
     padding-left: rem(40);
     font-family: "Acrom";
     font-size: rem(15);
+    line-height: rem(16.43);
     font-weight: 800;
     text-transform: uppercase;
+    @include tablets {
+        font-size: rem(10.09);
+        line-height: rem(16.82);
+    }
 }
 
 .sec-2-list__title {
     padding: rem(45) 0 rem(15) 0;
-    font-size: rem(16);
+    font-size: rem(13.5);
+    @include tablets {
+        font-size: rem(16.82);
+    }
 }
 
 .sec-2-span-bg-dark {
@@ -29,6 +38,10 @@
     @extend %title-basic;
     font-size: rem(20.5);
     line-height: rem(30);
+    @include tablets {
+        font-size: rem(27);
+        line-height: rem(35);
+    }
 }
 
 .sec-2-list__item-text-span {
@@ -38,13 +51,25 @@
 
 .sec-2-title__wrapper {
     padding-top: rem(40);
+    @include tablets {
+        padding-top: rem(34);
+    }
 }
 
+.sec-2-img-text__text-block {
+    @include tablets {
+        margin-left: col(2);
+    }
+}
 .sec-2-list__item {
     font-family: "Acrom";
-    font-size: rem(15);
+    font-size: rem(13.5);
     list-style-type: none;
     padding-bottom: rem(20);
+    @include tablets {
+        font-size: rem(9);
+        padding-right: rem(10);
+    }
 
     &:last-child {
         padding-bottom: 0px;
@@ -55,6 +80,12 @@
     position: relative;
     @include square-list;
     line-height: rem(20);
+    @include tablets {
+        line-height: rem(13.46);
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .sec-2-content__photo-01 {
@@ -63,19 +94,41 @@
 
 .sec-2-list__items {
     padding-left: rem(40);
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .sec-2-img-text__text {
-    // padding-top: rem(50);
+    padding-top: rem(50);
     padding-bottom: rem(25);
     font-family: "Acrom";
     font-size: rem(13.5);
+    line-height: rem(19.5);
     font-weight: 500;
+    @include tablets {
+        font-size: rem(9);
+        line-height: rem(13.46);
+        padding-top: 0;
+    }
 }
 
+.sec-2-list__wrapper {
+    @include tablets {
+        position: relative;
+    }
+}
 .seс-2-orange-text {
+    font-size: rem(13.5);
     font-weight: 500;
-    line-height: rem(20);
+    line-height: rem(19.5);
     color: $stylish-color-orange;
     margin-top: rem(45);
+    @include tablets {
+        font-size: rem(10);
+        line-height: rem(13.6);
+        position: absolute;
+        bottom: rem(-45);
+        right: 0;
+    }
 }
