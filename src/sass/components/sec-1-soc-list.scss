@@ -22,8 +22,9 @@
   }
 }
 
-.soc-list-fluid .soc-list__item {
-  margin-right: rem(20);
+.soc-list-fluid,
+.soc-list__item {
+  margin-right: rem(10);
 
   &:last-child {
     margin-right: rem(0);
