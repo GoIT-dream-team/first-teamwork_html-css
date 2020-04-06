@@ -1,13 +1,20 @@
 .sec-6-wrapper {
   position: relative;
-  padding: rem(20) 0 rem(30);
+  padding: rem(20) 0 rem(50);
+}
+
+.sec-6-inner-1 {
+  justify-content: space-between;
+  align-items: center;
 
   @include tablets {
+    position: relative;
+
     &::before {
       content: 'Hard';
       position: absolute;
-      top: rem(220);
-      left: rem(70);
+      top: rem(118);
+      left: rem(-23);
       font-size: rem(140.24);
       font-weight: 800;
       text-transform: uppercase;
@@ -15,21 +22,10 @@
       color: $bg-text;
     }
   }
-}
-
-.sec-6-inner-1 {
-  justify-content: space-between;
-  align-items: center;
 
   & img {
-      z-index: 1;
+    z-index: 1;
   }
-}
-
-.sec-6-inner-2 {
-    @include tablets {
-        margin-top: rem(53);
-    }
 }
 
 .sec-6-title-wrappre {
@@ -38,7 +34,8 @@
   width: col(8);
 
   @include tablets {
-    @include push--0; 
+    @include push--0;
+    margin-bottom: rem(30);
   }
 }
 
