@@ -47,6 +47,13 @@ $col-count: 12;
     right: auto;
   }
 }
+// Делает обратное
+@mixin push--0 {
+  margin: {
+    left: 0;
+    right: 0;
+  }
+}
 
 // Создает линию под блоком
 // пример: @include sep-h(80%,2px,$blue);

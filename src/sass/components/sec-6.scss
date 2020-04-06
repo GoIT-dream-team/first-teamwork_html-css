@@ -1,12 +1,17 @@
+.sec-6-wrapper {
+    padding: rem(20) 0;
+}
+
 .sec-6-title-main {
     // font-size: rem(18);
     // @extend %title-simple;
 
-    padding-bottom: rem(35);
+    margin-bottom: rem(35);
 }
 
 .sec-6-title-wrappre {
-    padding-bottom: rem(40);
+    margin-bottom: rem(40);
+    width: col(8);
 }
 
 .sec-6-subtitle {
@@ -24,9 +29,19 @@
     }
 }
 
+.sec-6-list-items {
+    width: col(10);
+    @include push--auto;
+    margin-bottom: rem(70);
+
+    @include tablets {
+        @include push--0;
+    }
+}
+
 .sec-6-list-item {
     list-style-type: none;
-    padding-left: rem(80);
+    padding-left: rem(20);
     line-height: rem(20);
     padding-bottom: 20px;
     font-size: rem(13.5);
@@ -44,6 +59,4 @@
     // text-transform: uppercase;
 }
 
-.sec-6-list-items {
-    padding-bottom: rem(70);
-}
+
