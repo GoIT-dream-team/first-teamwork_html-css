@@ -6,11 +6,25 @@
     justify-content: space-between;
 }
 
-.sec-7-title-wrappre {
+.sec-7-title-wrappre,
+.sec-7-text-block-01,
+.sec-7-text-block-02 {
+    width: col(10);
+    @include push--auto;
+
+    @include tablets {
+        @include push--0;
+    }
+}
+
+.sec-7-text-block-title {
+    width: col(6);
 }
 
 .sec-7-title-main {
     margin-bottom: rem(15);
+    padding-left: rem(40);
+    width: col(8);
 }
 .sec-7-subtitle {
     @include title-line-litle;
