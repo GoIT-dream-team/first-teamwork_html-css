@@ -11,6 +11,9 @@
 
 .numeral-list {
    margin-top: rem(60);
+   @include tablets {
+      margin-top: 0;
+   }
 }
 
 .modal-window {
