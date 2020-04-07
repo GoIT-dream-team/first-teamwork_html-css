@@ -64,7 +64,6 @@
 }
 
 .sec-4__title-wrapper {
-  margin-bottom: rem(25);
   width: col(8);
   @include push--auto;
   @include tablets {
@@ -125,6 +124,7 @@
 }
 
 .sec-4__list-item {
+    margin-top: rem(25);
   @include square-list-7x7(
     $w: rem(5),
     $h: rem(5),
