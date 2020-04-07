@@ -8,6 +8,22 @@
   position: relative;
   box-shadow: $main-box-shadow;
 
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend %font-line-40;
+
   &::after {
     content: '';
     position: absolute;
@@ -27,22 +43,6 @@
       right: rem(23);
     }
   }
-
-  .slick-track {
-    display: flex;
-  }
-
-  .slick-list {
-    overflow: hidden;
-  }
-}
-
-.slide {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @extend %font-line-40;
 
   &__text-block {
     height: 190px;
