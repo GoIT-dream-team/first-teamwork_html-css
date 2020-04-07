@@ -56,6 +56,10 @@
    font-weight: bold;
    text-transform: uppercase;
    font-weight: 900;
+   @include tablets {
+      font-size: rem(7.85);
+      line-height: rem(11.78);
+   }
 }
 
 .numeral-list__text--sub-text {
@@ -66,6 +70,10 @@
    line-height: rem(20);
    text-transform: none;
    margin-top: rem(9);
+   @include tablets {
+      font-size: rem(7.85);
+      line-height: rem(11.78);
+   }
 }
 
 .after-list {
