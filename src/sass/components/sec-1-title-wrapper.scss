@@ -1,0 +1,26 @@
+.sec-1-title-wrapper {
+  padding-top: rem(50);
+  // background-image: none;
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: rem(85);
+    min-height: rem(475);
+    background-image: url(../images/bg/bg_photo-top-sec.png);
+    background-repeat: no-repeat;
+    background-size: 69%;
+    background-position: bottom rem(-200) right 0px;
+
+    @include retina2x {
+      background-image: url(../images/bg/bg_photo-top-sec@2x.png);
+    }
+  
+    @include retina3x {
+      background-image: url(../images/bg/bg_photo-top-sec@3x.png);
+    }
+  }
+
+  
+}

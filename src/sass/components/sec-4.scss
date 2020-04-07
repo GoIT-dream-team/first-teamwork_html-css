@@ -1,3 +1,8 @@
+.sec-4__wrapper {
+    @include tablets {
+        padding-top: rem(50);
+    }
+}
 .sec-4-text-inner {
     margin-top: rem(35);
     margin-bottom: rem(50);

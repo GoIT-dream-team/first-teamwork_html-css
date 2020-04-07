@@ -1,13 +1,16 @@
-.sec-2-img-text__wrapper {
+.sec-2__wrapper {
+    padding-top: rem(50);
+    padding-bottom: rem(39.5);
     @include tablets {
-        margin-top: rem(112);
+        padding-top: rem(112);
+        padding-bottom: rem(61);
     }
 }
 
 .sec-2-subtitle {
     @include title-line-big;
     position: relative;
-    padding-bottom: rem(15);
+    margin-bottom: rem(15);
     padding-left: rem(40);
     font-family: "Acrom";
     font-size: rem(15);
@@ -21,7 +24,7 @@
 }
 
 .sec-2-list__title {
-    padding: rem(45) 0 rem(15) 0;
+    margin-bottom: rem(15);
     font-size: rem(13.5);
     @include tablets {
         font-size: rem(16.82);
@@ -46,13 +49,13 @@
 
 .sec-2-list__item-text-span {
     position: relative;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .sec-2-title__wrapper {
-    padding-top: rem(40);
+    margin-top: rem(40);
     @include tablets {
-        padding-top: rem(9);
+        margin: 0;
     }
 }
 
@@ -65,10 +68,13 @@
     font-family: "Acrom";
     font-size: rem(13.5);
     list-style-type: none;
-    padding-bottom: rem(20);
+    margin-bottom: rem(20);
     @include tablets {
+        width: col(2.7);
         font-size: rem(9);
-        padding-right: rem(10);
+        &:nth-last-child(-n + 4) {
+            margin-bottom: 0;
+        }
     }
 
     &:last-child {
@@ -96,12 +102,12 @@
     padding-left: rem(40);
     @include tablets {
         padding: 0;
+        justify-content: space-between;
     }
 }
 
 .sec-2-img-text__text {
-    padding-top: rem(50);
-    padding-bottom: rem(25);
+    margin-bottom: rem(25);
     font-family: "Acrom";
     font-size: rem(13.5);
     line-height: rem(19.5);
@@ -109,12 +115,14 @@
     @include tablets {
         font-size: rem(9);
         line-height: rem(13.46);
-        padding-top: 0;
+        margin-bottom: rem(34);
     }
 }
 
 .sec-2-list__wrapper {
+    margin-top: rem(45);
     @include tablets {
+        margin-top: rem(68);
         position: relative;
     }
 }
@@ -125,10 +133,11 @@
     color: $stylish-color-orange;
     margin-top: rem(45);
     @include tablets {
+        margin-top: 0;
         font-size: rem(10);
         line-height: rem(13.6);
         position: absolute;
-        bottom: rem(-45);
+        bottom: rem(-62);
         right: 0;
     }
 }

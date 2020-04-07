@@ -52,7 +52,6 @@
   .sec-16-img-block-first {
     @include tablets {
       align-items: center;
-      justify-content: space-between;
       margin-bottom: rem(51);
     }
   }
@@ -61,7 +60,7 @@
   }
   .sec-16-title-blk {
     @include tablets {
-      margin-left: 5%;
+      margin-left: col(1);
     }
   }
 }

@@ -1,119 +1,143 @@
 .sec-7-wrapper {
-    padding: rem(40) 0;
+  padding: rem(50) 0;
 }
 
 .sec-7-top-part {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sec-7-title-wrappre,
+.sec-7-text-block-01,
+.sec-7-text-block-02 {
+  width: col(10);
+  @include push--auto;
+
+  @include tablets {
+    @include push--0;
+    width: col(12);
+  }
+}
+
+.sec-7-text-block-01,
+.sec-7-text-block-02 {
+  @include tablets {
     justify-content: space-between;
-}
-
-.sec-7-title-wrappre {
-}
-
-.sec-7-title-main {
-    margin-bottom: rem(15);
-}
-.sec-7-subtitle {
-    @include title-line-litle;
-    @extend %subtitle-simple;
-    padding-left: rem(40);
-    margin-bottom: rem(30);
-
-    @include tablets {
-        margin-bottom: rem(15);
-        width: 81%;
-    }
-    
-    &::before {
-        top: rem(10);
-    }
-}
-
-.sec-7-text-block-wrapper {
-    @include tablets {
-        position: relative;
-        top: rem(-12);
-        margin-left: col(1);
-    }
+    align-items: flex-start;
+  }
 }
 
 .sec-7-text-block-title {
-    @extend %title-basic-revers;
-    font-size: rem(13.5);
-    line-height: rem(19.5);
-    font-weight: 800;
-    margin: rem(15) 0;
+  width: col(6);
+}
 
-    @include tablets {
-        margin: 0;
-        font-size: rem(8.97);
-        line-height: rem(14.58);
-    }
+.sec-7-title-main {
+  margin-bottom: rem(15);
+  padding-left: rem(40);
+  width: col(8);
+
+  @include tablets {
+    padding-left: 0;
+  }
+}
+.sec-7-subtitle {
+  @include title-line-litle;
+  @extend %subtitle-simple;
+  padding-left: rem(40);
+  margin-bottom: rem(30);
+
+  @include tablets {
+    margin-bottom: rem(15);
+    width: col(8);
+  }
+
+  &::before {
+    top: rem(10);
+  }
+}
+
+.sec-7-text-block-wrapper {
+  @include tablets {
+    position: relative;
+    // top: rem(-12);
+  }
+}
+
+.sec-7-text-block-title {
+  @extend %title-basic-revers;
+  font-size: rem(13.5);
+  line-height: rem(19.5);
+  font-weight: 800;
+  margin: rem(15) 0;
+
+  @include tablets {
+    margin: 0;
+    font-size: rem(8.97);
+    line-height: rem(14.58);
+  }
 }
 
 .sec-7-title-span {
-    background: #000;
-    padding-right: rem(5);
+  background: #000;
+  padding-right: rem(5);
 }
 
 .sec-7-text-block-text-right {
-
 }
 
 .sec-7-text-block-text-bold {
-    font-size: rem(13.5);
-    line-height: rem(19.5);
-    font-weight: 700;
-    margin-bottom: rem(15);
+  font-size: rem(13.5);
+  line-height: rem(19.5);
+  font-weight: 700;
+  margin-bottom: rem(15);
 
-    @include tablets {
-        margin-bottom: rem(8);
-        margin-left: col(1);
-        font-size: rem(8.97);
-        line-height: rem(13.46);
-    }
+  @include tablets {
+    font-size: rem(8.97);
+    line-height: rem(13.46);
+  }
 }
 .sec-7-text-block-text-normal {
-    font-size: rem(13.5);
-    line-height: rem(19.5);
-    font-weight: 400;
-    margin-bottom: rem(40);
-    
-    @include tablets {
-        margin-bottom: rem(25);
-        margin-left: col(1);
-        font-size: rem(7.85);
-        line-height: rem(11.78);
+  font-size: rem(13.5);
+  line-height: rem(19.5);
+  font-weight: 400;
+  margin-bottom: rem(40);
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+  @include tablets {
+    margin-bottom: rem(25);
+    font-size: rem(7.85);
+    line-height: rem(11.78);
+
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }
 
 .sec-7-bottom-part {
-    align-items: center;
+  @include tablets {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .sec-7-text-block-01 {
-    @include tablets {
-        margin-bottom: rem(20);
-    }
-    // order: 1;
+  @include tablets {
+    margin-bottom: rem(35);
+  }
+  // order: 1;
 }
 
 @media (max-width: rem(767)) {
-    .sec-7-bottom-part {
-        // display: flex;
-        // flex-flow: wrap;
-    }
+  .sec-7-bottom-part {
+    // display: flex;
+    // flex-flow: wrap;
+  }
 
-    
+  .sec-7-content__photo-04 {
+    // order: 2;
+  }
 
-    .sec-7-content__photo-04 {
-        // order: 2;
-    }
-
-    .sec-7-text-block-02 {
-        // order: 3;
-    }
+  .sec-7-text-block-02 {
+    // order: 3;
+  }
 }

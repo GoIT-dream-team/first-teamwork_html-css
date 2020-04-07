@@ -1,0 +1,46 @@
+.sec-19-wrapper {
+    padding: rem(75) 0 rem(40) 0;
+}
+
+.sec-19-title-main {
+    padding-bottom: rem(15);
+}
+
+.sec-19-subtitle {
+    @include title-line-litle;
+    padding-left: rem(25);
+    position: relative;
+    padding-bottom: rem(30);
+
+    &::before {
+        top: rem(8);
+        width: rem(13);
+    }
+}
+
+.sec-19-btn {
+    @include all-btn();
+    padding: rem(15) rem(40);
+    border: none;
+    outline: none;
+    @include tablets {
+        font-size: rem(6.73);
+        font-weight: 800;
+    }
+}
+
+.sec-19-text-block {
+    padding-top: rem(40);
+}
+
+.sec-19-text-title {
+    font-size: rem(19.99);
+    line-height: rem(23.99);
+}
+
+.sec-19-list-item {
+    padding-bottom: rem(25);
+    &:last-of-type {
+        padding-bottom: rem(20);
+    }
+}

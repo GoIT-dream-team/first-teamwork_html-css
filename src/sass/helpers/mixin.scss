@@ -1,6 +1,6 @@
 $col-count: 12;
 @function col($columns) {
-  @return unquote((100 / $col-count) * $columns + '%');
+  @return unquote((100 / $col-count) * $columns + "%");
 }
 
 @function rem($px) {
@@ -45,6 +45,13 @@ $col-count: 12;
   margin: {
     left: auto;
     right: auto;
+  }
+}
+// Делает обратное
+@mixin push--0 {
+  margin: {
+    left: 0;
+    right: 0;
   }
 }
 
@@ -264,7 +271,7 @@ $col-count: 12;
 }
 
 // Квадратик в списке 7x7
-@mixin square-list-7x7($w: 7px, $h: 7px, $color: #000, $left: rem(-20), $top: rem(5)) {
+@mixin square-list-7x7($w: rem(7), $h: rem(7), $color: #000, $left: rem(-20), $top: rem(5)) {
   &::before {
     content: "";
     // display: inline-block;

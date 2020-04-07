@@ -75,6 +75,14 @@
     }
 }
 
+.simple-text-bold {
+    color: $desc-text-color;
+    font-size: rem(13.5);
+    font-family: $font-first;
+    line-height: rem(19.5);
+    font-weight: 800;
+}
+
 .orange-text {
     color: $stylish-color-orange;
     font-size: rem(13.5);
