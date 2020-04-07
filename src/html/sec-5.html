@@ -16,44 +16,37 @@
       <div class="sec-5-slider">
         <div class="slide">
           <div class="slide__info">
-            <img
-              class="user-photo-sm img-sm"
-              srcset="
+            <picture>
+              <source
+                srcset="
                 ./images/content/480/user-photo/user-photo-480.jpg,
                 ./images/content/480/user-photo/user-photo-480@2x.jpg 2x,
                 ./images/content/480/user-photo/user-photo-480@3x.jpg 3x
+                "
+                media="(max-width: 767px)"
+              />
+              <source srcset="
+              ./images/content/768/user-photo/user-photo-768.jpg,
+              ./images/content/768/user-photo/user-photo-768@2x.jpg 2x,
+              ./images/content/768/user-photo/user-photo-768@3x.jpg 3x
               "
-              src="./images/content/480/user-photo/user-photo-480.jpg"
-              alt="user photo"
-              width="55"
-              height="55"
-            />
+              media="(min-width: 768px)"
+              />
 
-            <img
-              class="user-photo-md img-lg"
-              srcset="
-                ./images/content/768/user-photo/user-photo-768.jpg,
-                ./images/content/768/user-photo/user-photo-768@2x.jpg 2x,
-                ./images/content/768/user-photo/user-photo-768@3x.jpg 3x
+              <source srcset="
+              ./images/content/1200/user-photo/user-photo-1200.jpg,
+              ./images/content/1200/user-photo/user-photo-1200@2x.jpg 2x,
+              ./images/content/1200/user-photo/user-photo-1200@3x.jpg 3x
               "
-              src="./images/content/768/user-photo/user-photo-768.jpg"
-              alt="user photo"
-              width="79"
-              height="79"
-            />
-
-            <img
-              class="user-photo-lg img-xlg"
-              srcset="
-                ./images/content/1200/user-photo/user-photo-1200.jpg,
-                ./images/content/1200/user-photo/user-photo-1200@2x.jpg 2x,
-                ./images/content/1200/user-photo/user-photo-1200@3x.jpg 3x
-              "
-              src="./images/content/1200/user-photo/user-photo-1200.jpg"
-              alt="user photo"
-              width="87"
-              height="87"
-            />
+              media="(min-width: 1200px)"
+              />
+              <img
+                src="./images/content/1200/user-photo/user-photo-1200.jpg"
+                alt="user photo"
+                width="87"
+                height="87"
+              />
+            </picture>
 
             <h3 class="user__name">Nina Miroshnychenko</h3>
           </div>
