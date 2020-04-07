@@ -24,9 +24,16 @@
     line-height: rem(11.78);
   }
 
-  &:nth-last-child(-n + 2) {
+  &:last-child {
     margin-bottom: 0;
   }
+
+  @include tablets {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
 
   &::before {
     display: block;
