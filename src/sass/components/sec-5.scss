@@ -1,3 +1,10 @@
+.sec-5-wrapper {
+  padding-top: rem(34);
+  @include tablets {
+    padding-top: rem(47);
+  }
+}
+
 .sec-5-content {
   padding-bottom: rem(20);
 
