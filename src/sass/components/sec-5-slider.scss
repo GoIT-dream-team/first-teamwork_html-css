@@ -1,12 +1,11 @@
+.wrapper-slider {
+  @include push-tablets;
+  width: col(9);
+}
+
 .sec-5-slider {
+  min-height: 213px;
   position: relative;
-  padding: 0 rem(20);
-  padding-right:rem(13);
-  // width: rem(294);
-  // height: rem(213);
-  margin: 0 auto;
-  // display: flex;
-  // justify-content: space-between;
   box-shadow: $main-box-shadow;
 
   .slick-track {
@@ -14,14 +13,128 @@
   }
 
   .slick-list {
-    // width: rem(300);
     overflow: hidden;
   }
 }
 
-.test-ar {
+.slide {
   position: relative;
-  // width: rem(294);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend %font-line-40;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: rem(13);
+    width: rem(1);
+    height: 100%;
+    display: block;
+    background: #eee;
+    z-index: -1;
+
+    @include tablets {
+      right: rem(20);
+    }
+
+    @include desktop {
+      right: rem(23);
+    }
+  }
+
+  &__text-block {
+    height: 190px;
+    margin: 20px 12px 20px 0;
+    padding-right: 20px;
+    overflow-y: scroll;
+
+    @include tablets {
+      margin: 28px 19px 28px 0;
+      height: rem(249);
+    }
+
+    @include desktop {
+      margin: 32px 21px 32px 0;
+      height: rem(276);
+    }
+
+    // &::before,
+    // &::after {
+    //   // content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   width: 90%;
+    //   height: rem(20);
+    //   display: block;
+    //   background-color: #fff;
+
+    //   @include tablets {
+    //     height: rem(28);
+    //   }
+
+    //   @include desktop {
+    //     width: 96%;
+    //     height: rem(32);
+    //   }
+    // }
+
+    // &::before {
+    //   top: 0;
+    // }
+
+    // &::after {
+    //   bottom: 0;
+    // }
+
+    &::-webkit-scrollbar {
+      width: rem(3);
+      background-color: transparent;
+
+      @include tablets {
+        width: rem(5);
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $main-text-color;
+      border-radius: rem(1);
+
+      @include tablets {
+        border-radius: rem(2);
+      }
+    }
+  }
+}
+
+.slide__info {
+  padding: rem(20);
+  align-self: start;
+
+  @include tablets {
+    padding: rem(28);
+  }
+
+  @include desktop {
+    padding: rem(32);
+  }
+}
+
+.user__name {
+  margin-top: rem(6);
+
+  @include tablets {
+    margin-top: rem(8);
+  }
+
+  @include desktop {
+    margin-top: rem(10);
+  }
+}
+
+.slider-controls {
+  position: relative;
   margin: 0 auto;
   display: flex;
 
@@ -36,6 +149,16 @@
     border: none;
     border: rem(1) solid $footer-privaty-text-color;
     cursor: pointer;
+
+    @include tablets {
+      width: rem(21);
+      height: rem(21);
+    }
+
+    @include desktop {
+      width: rem(24);
+      height: rem(24);
+    }
   }
 
   & button.slick-arrow.slick-prev {
@@ -45,6 +168,14 @@
     background-position: center;
     background-size: 50%;
     @include transition;
+
+    @include tablets {
+      right: rem(20);
+    }
+
+    @include desktop {
+      right: rem(23);
+    }
 
     &:hover {
       background: url(../images/icons/arrow-left.svg), $stylish-color-orange;
@@ -84,9 +215,17 @@
       &::before,
       &::after {
         font-weight: 800;
-        font-size: rem(8);
+        font-size: rem(5);
         cursor: pointer;
         @include transition;
+
+        @include tablets {
+          font-size: rem(6);
+        }
+
+        @include desktop {
+          font-size: rem(8);
+        }
       }
 
       &:hover::after {
@@ -101,17 +240,29 @@
 
     li.slick-active::after {
       position: absolute;
-      content: "";
-      top: rem(10);
-      left: rem(-7);
-      width: rem(25);
+      content: '';
+      top: rem(11);
+      left: rem(-2);
+      width: rem(15);
       height: rem(1);
       display: block;
       background-color: $main-text-color;
+
+      @include tablets {
+        top: rem(10);
+        left: rem(-4);
+        width: rem(20);
+      }
+
+      @include desktop {
+        top: rem(10);
+        left: rem(-5);
+        width: rem(25);
+      }
     }
 
     li:first-child button::after {
-      content: "01";
+      content: '01';
 
       &:hover {
         color: $stylish-color-orange;
@@ -119,70 +270,23 @@
     }
 
     & li.slick-active button::after {
-      font-size: rem(13);
+      font-size: rem(8);
+
+      @include tablets {
+        font-size: rem(10);
+      }
+
+      @include desktop {
+        font-size: rem(13);
+      }
     }
 
     & li:nth-child(2) button::after {
-      content: "02";
+      content: '02';
     }
 
     & li:nth-child(3) button::after {
-      content: "03";
-    }
-  }
-}
-
-.slide {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-size: rem(5.46);
-  line-height: rem(9.37);
-
-  .slick-slide {
-    // width: rem(263);
-  }
-
-  &__info {
-    padding-top: rem(20);
-  }
-
-  &__text-block {
-    // width: rem(190);
-    // height: rem(177);
-    height: rem(213);
-    overflow-y: scroll;
-    padding-right: rem(11);
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 99%;
-      height: rem(20);
-      display: block;
-      background-color: #fff;
-    }
-
-    &::before {
-      top: 0;
-    }
-
-    &::after {
-      bottom: 0;
-    }
-
-    &::-webkit-scrollbar {
-      width: rem(1);
-      background-color: rgba(63, 65, 68, 0.1);
-    }
-
-    &::-webkit-scrollbar-thumb {
-      height: rem(15);
-      width: rem(5);
-      background-color: $main-text-color;
+      content: '03';
     }
   }
 }

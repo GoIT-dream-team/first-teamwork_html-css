@@ -582,3 +582,18 @@
     line-height: rem(22.5);
   }
 }
+
+%font-line-40 {
+  font-size: rem(5.46);
+  line-height: rem(9.37);
+
+  @include tablets {
+    font-size: rem(7.85);
+    line-height: rem(13.46);
+  }
+
+  @include desktop {
+    font-size: rem(8.75);
+    line-height: rem(15);
+  }
+}

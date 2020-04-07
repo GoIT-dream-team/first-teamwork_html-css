@@ -66,12 +66,12 @@
 }
 
 .sec-16-text-block-wrap {
-  @include push--auto;
+  @include push-tablets;
   width: 69%;
 }
 
 .sec-16-text-title {
-  width: col(6);
+  width: 80%;
   margin-bottom: rem(15);
 
   @include tablets {
@@ -103,7 +103,7 @@
 
 .sec-16-content__photo-06 {
   @include tablets {
-    margin-right: 5%;
+    margin-right: col(1);
   }
 }
 
