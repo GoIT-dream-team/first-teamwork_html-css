@@ -10,10 +10,14 @@
 
 .top-header__inner {
   padding: rem(17);
-  width: rem(480);
+  width: 100%;
   @include push--auto;
   justify-content: space-between;
   align-items: center;
+
+  @include phones {
+    width: rem(480);
+  }
 
   @include tablets {
     width: rem(677);
