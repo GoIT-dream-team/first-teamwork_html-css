@@ -1,11 +1,17 @@
 .sec-11-title-main {
-    padding-bottom: rem(20);
+    margin-bottom: rem(20);
 }
 
 .sec-11-subtitle {
     @include title-line-litle;
-    padding-left: rem(40);
+    padding-left: rem(30);
     position: relative;
+    @include push--auto;
+    width: col(8);
+    @include tablets {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     &::before {
         top: rem(10);
@@ -13,8 +19,10 @@
 }
 
 .sec-11-title-text {
-    padding-bottom: rem(15);
-    // padding-top: rem(20);
+    margin-bottom: rem(15);
+    @include tablets {
+        margin-bottom: rem(30);
+    }
 }
 
 @media (max-width: 767px) {
@@ -27,19 +35,24 @@
     }
     .sec-11-img-block {
         order: 2;
-        padding-bottom: rem(60);
+        margin-bottom: rem(60);
     }
     .sec-11-subtitle {
         order: 3;
-        padding-bottom: rem(45);
+        margin-bottom: rem(45);
     }
     .sec-11-text {
-        padding-bottom: rem(40);
+        margin-bottom: rem(40);
     }
 }
-
 .sec-11-list-items {
     list-style: none;
+    // @include push--auto;
+    // width: col(8);
+    // @include tablets {
+    //     margin-right: 0;
+    //     margin-left: 0;
+    // }
 }
 
 .sec-11-dark-title {
@@ -47,7 +60,7 @@
     font-weight: 500;
     line-height: rem(16.21);
     color: #fff;
-    padding-bottom: rem(30);
+    margin-bottom: rem(30);
 }
 
 .sec-11-dark-title-span {
@@ -56,17 +69,75 @@
 }
 
 .sec-11-item-title {
-    padding-bottom: rem(10);
+    margin-bottom: rem(10);
+    width: col(7);
+    position: relative;
 }
 
 .sec-11-item-text {
-    padding-bottom: 40px;
-    // &:last-child {
-    //     padding-bottom: 0;
-    // }
+    margin-bottom: rem(40);
 }
 
 .sec-11-text-span {
     font-weight: 800;
     display: block;
+}
+
+.sec-11-text-block {
+    @include push--auto;
+    width: col(8);
+    @include tablets {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.sec-11-list-item {
+    position: relative;
+    @include push--auto;
+    width: col(8);
+    @include tablets {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.sec-11-bg__img-01 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    max-width: 100%;
+    height: 70px;
+}
+
+.sec-11-bg__img-02 {
+    height: auto;
+    position: absolute;
+    top: rem(45);
+    left: 100%;
+    transform: translateX(-100%);
+    max-width: 100%;
+    height: 134px;
+}
+
+.sec-11-bg__img-03 {
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    max-width: 100%;
+    height: 110px;
+}
+
+.sec-11-top-block {
+    @include tablets {
+        margin-bottom: rem(60);
+    }
+}
+
+.sec-11-content__photo-06 {
+    max-width: 100%;
+    height: auto;
 }

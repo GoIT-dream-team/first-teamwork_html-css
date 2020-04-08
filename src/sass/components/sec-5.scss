@@ -45,9 +45,15 @@
   @include tablets {
     margin-bottom: 0;
   }
-  
+
   @include desktop {
     width: col(9);
   }
 }
 
+.sec-5-subtitle-span-dark {
+  background-color: #000;
+  color: #fff;
+  padding-right: rem(5);
+  padding-left: rem(3);
+}
