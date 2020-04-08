@@ -1,6 +1,7 @@
 .sec-1-content {
-  min-height: rem(475);
+  // margin-top: rem(50);
   position: relative;
+  min-height: rem(475);
   background-image: url(../images/bg/480/lines.png);
   background-repeat: repeat-y;
   background-position: top;
@@ -27,7 +28,7 @@
 
 .slider-btn-top {
   display: none;
-  margin-left: rem(53);
+  margin-left: col(2);
   width: rem(111);
   min-height: rem(29);
   font-size: rem(7);
@@ -38,30 +39,12 @@
 }
 
 .slider-btn-bot {
-  margin: 0 auto;
-  width: rem(219);
+  @include push-tablets;
+  width: col(8);
   min-height: rem(55);
 
   @include tablets {
     display: none;
-  }
-}
-
-// ! main-text-block
-.main-text-block {
-  position: relative;
-  padding-bottom: rem(40);
-  font-size: rem(13.5);
-  line-height: rem(19.5);
-  text-align: center;
-
-  @include phones {
-    text-align: left;
-    margin: 0 auto;
-  }
-
-  @include tablets {
-    margin: 0;
   }
 }
 
@@ -76,18 +59,18 @@
 }
 
 .main-title-block__title {
-  margin: 0 auto;
+  @include push-tablets;
   margin-bottom: rem(35);
   font-size: rem(30);
   font-weight: 800;
   line-height: rem(39);
 
   @include phones {
-    width: rem(350);
+    width: col(8);
   }
 
   @include tablets {
-    width: rem(370);
+    width: 100%;
     font-size: rem(45);
     line-height: rem(56.08);
   }
@@ -95,17 +78,17 @@
 
 .main-title-block__sub-title {
   position: relative;
-  padding: 0 rem(30);
+  padding: 0 rem(33);
   font-size: rem(13.5);
   font-weight: 700;
   line-height: rem(19.5);
   letter-spacing: -0.025em;
 
   @include tablets {
-    padding: 0 rem(35);
-    margin-left: rem(20);
+    padding: 0;
+    margin-left: col(2);
     margin-bottom: rem(20);
-    width: rem(245);
+    width: col(6);
     font-size: rem(8);
     line-height: rem(13.46);
     letter-spacing: 0em;
@@ -119,7 +102,7 @@
 
   &::before {
     top: rem(4);
-    left: rem(5);
+    left: rem(10);
     width: rem(10);
     height: rem(10);
     background-image: url(../images/icons/icon_parentheses-left.svg);
@@ -128,7 +111,7 @@
 
     @include tablets {
       top: rem(2);
-      left: rem(13);
+      left: rem(-18);
       width: rem(8);
       height: rem(8);
     }
@@ -136,7 +119,7 @@
 
   &::after {
     bottom: rem(2);
-    right: rem(5);
+    right: rem(10);
     width: rem(20);
     height: rem(16);
     background-image: url(../images/icons/icon_parentheses-right.svg);
@@ -144,7 +127,7 @@
     background-position: center;
 
     @include tablets {
-      right: rem(0);
+      right: rem(-15);
       width: rem(12);
       height: rem(10);
     }
@@ -189,7 +172,7 @@
     display: none;
     margin-right: rem(22);
     top: rem(-13);
-    left: rem(0);
+    left: rem(1);
     width: rem(56);
     height: rem(6);
     background-color: $main-white-color;
@@ -201,6 +184,15 @@
 }
 
 // ! main-text-block
+.main-text-block {
+  position: relative;
+  width: col(10);
+  font-size: rem(13.5);
+  line-height: rem(19.5);
+  text-align: left;
+  @include push-tablets;
+}
+
 .main-text-block__title {
   margin-bottom: rem(10);
   font-size: rem(13.5);
