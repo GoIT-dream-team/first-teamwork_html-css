@@ -90,6 +90,7 @@
    @include tablets {
       font-size: rem(9);
       font-weight: 500;
+      @include title-line-big
       }
    @include desktop {
       font-size: rem(10);
@@ -111,6 +112,13 @@
    list-style: none;
    counter-reset: numeral;
    
+}
+
+.numeral-list-sec-9 {
+   margin-top: rem(60);
+   @include tablets {
+      margin-top: 0;
+   }
 }
 
 .numeral-list__item--sec-9 {

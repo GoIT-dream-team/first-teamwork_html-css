@@ -1,7 +1,37 @@
 .sec-17 {
    padding-top: rem(45);
    padding-bottom: rem(45);
-   border-bottom: 1px solid #000;
+}
+
+
+.wrapper-all-section {
+   align-items: flex-start;
+}
+
+.sec-15-title__wrapper {
+   justify-content: flex-start;
+}
+
+.sec-17-title__main {
+  @include push--auto;
+  width: col(8);
+}
+
+.sec-17-subtitle {
+   width: col(7);
+   margin-top: rem(20);
+   padding-left: rem(40);
+   @include push--auto;
+   @include title-line-litle 
+      &:before {
+         top: rem(10);
+   
+      }
+   @include tablets {
+      margin: 0;
+      margin-top: rem(20);
+      @include title-line-big
+   }
 }
 
 .sec-title__main--black {
@@ -10,19 +40,38 @@
    padding-right: rem(5);
 }
 
-.numeral-list {
+.numeral-list-sec-17{
    margin-top: rem(60);
    @include tablets {
-      margin-top: 0;
+      align-items: flex-start;
+      margin: 0;
+      margin-top: rem(40);
    }
 }
 
+
+
+
+.numeral-list__item--sec-17{
+   @include tablets {
+      margin: 0;
+      &:nth-of-type(n+2){
+         margin-top: rem(20);
+      }
+   }   
+}
+
+
 .modal-window {
    box-shadow: $main-box-shadow;
-   padding-top: rem(62);
-   padding-bottom: rem(62);
+   padding: rem(62);
    margin-top: rem(28);
    margin-bottom: rem(45);
+   width: col(10);
+   @include push--auto;
+   @include tablets {
+      padding:rem(55);
+   }
 }
 
 .numeral-list__text--sub-text-black {
@@ -31,7 +80,7 @@
 }
 
 .buy-course__label {
-   font-size: rem(12);
+   font-size: rem(8);
    font-family: $font-first;
    color: rgba(0, 0, 0, 0.361);
    font-weight: 700;
@@ -41,36 +90,43 @@
 .buy-course__input {
    margin-top: rem(8);
    margin-bottom: rem(20);
-   width: 100%;
+   width: rem(240);
    display: block;
-   padding-top: rem(10);
-   padding-bottom: rem(10);
+   padding-top: rem(8);
+   padding-bottom: rem(8);
    border: none;
    border-bottom: rem(1) solid $form-input-underline;
+      @include tablets {
+         width: rem(200);
+      }
 
    &::placeholder {
-      font-size: rem(14);
+      font-size: rem(9.3);
       font-family: $font-first;
       color: $main-text-color;
-      line-height: rem(20);
+      line-height: rem(12);
       font-weight: 500;
    }
 }
 
 .buy-course__button {
-   margin-top: rem(35);
-   @include all-btn;
-}
-
-.buy-course-form {
-   padding: 0 rem(65);
-}
-
-input[type="submit"] {
-   padding: rem(15) rem(40);
+   background-color: $stylish-color-orange;
+   display: inline-block;
+   width: col(9);
+   height: rem(40);
+   margin-top: rem(30);
+   @include all-btn; 
+   font-size: rem(8); 
+   text-decoration: none;
    border: none;
-   outline: none;
-   @include tablets {
-      font-size: rem(6.73);
-   }
+      @include tablets {
+         height: rem(32);
+         font-size: rem(6.7);
+      }
 }
+
+/* .buy-course-form {
+   padding: 0 rem(65);
+} */
+
+
