@@ -5,6 +5,10 @@
 .sec-12-inner {
   justify-content: space-between;
   align-items: flex-start;
+
+  @include desktop {
+      align-items: center;
+  }
 }
 
 .sec-12-text-block {
