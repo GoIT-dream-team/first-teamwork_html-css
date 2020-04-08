@@ -5,6 +5,21 @@
   background-color: #fff;
 }
 
+.sec-1 {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
 footer {
   position: sticky;
   bottom: 0;
