@@ -13,7 +13,11 @@
 
 
 .numeral-list-sec-15 {
+   margin-top: rem(45);
    align-items: flex-start;
+   @include tablets {
+      margin-top: rem(50);
+   }
 }
 
 .numeral-list__after-text {
