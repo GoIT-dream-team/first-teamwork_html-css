@@ -2,19 +2,35 @@
     padding: rem(75) 0 rem(40) 0;
 }
 
+.sec-19-title-block {
+    @include push--auto;
+    width: col(7);
+    @include tablets {
+        margin: 0;
+        width: col(12);
+    }
+}
+
 .sec-19-title-main {
-    padding-bottom: rem(15);
+    margin-bottom: rem(15);
 }
 
 .sec-19-subtitle {
     @include title-line-litle;
     padding-left: rem(25);
     position: relative;
-    padding-bottom: rem(30);
+    margin-bottom: rem(30);
 
     &::before {
         top: rem(8);
         width: rem(13);
+    }
+    @include tablets {
+        padding-left: rem(45);
+        &::before {
+            top: rem(8);
+            width: rem(28);
+        }
     }
 }
 
@@ -26,16 +42,33 @@
     @include tablets {
         font-size: rem(6.73);
         font-weight: 800;
+        // @include push--auto;
+        // width: col(8);
+        margin-left: rem(45);
     }
 }
 
 .sec-19-text-block {
-    padding-top: rem(40);
+    @include push--auto;
+    width: col(9);
+    position: relative;
+    margin-top: rem(40);
+    @include tablets {
+        margin-top: 0;
+        margin-left: col(1);
+    }
 }
 
 .sec-19-text-title {
     font-size: rem(19.99);
     line-height: rem(23.99);
+    margin-bottom: rem(10);
+    @include tablets {
+        position: absolute;
+        top: 0;
+        left: rem(-65);
+        font-size: rem(16.82);
+    }
 }
 
 .sec-19-list-item {
@@ -43,4 +76,17 @@
     &:last-of-type {
         padding-bottom: rem(20);
     }
+    @include tablets {
+        font-size: rem(8.97);
+    }
+}
+
+.sec-19-item-span {
+    @include tablets {
+        font-size: rem(8.97);
+    }
+}
+
+.sec-19-orange-text {
+    float: right;
 }
