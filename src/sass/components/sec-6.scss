@@ -20,6 +20,10 @@
       text-transform: uppercase;
       transform: rotate(90deg);
       color: $bg-text;
+
+      @include desktop {
+        font-size: rem(156.25);
+      }
     }
   }
 
@@ -93,22 +97,14 @@
 .sec-6-list-item-title {
   position: relative;
   @include square-list-7x7(5px, 5px, #000, rem(-19), rem(7));
-  font-size: rem(13.05);
+  @extend %font-line-8;
 
   @include tablets {
     @include square-list-7x7($left: rem(-19), $top: rem(4));
     margin-bottom: rem(6);
   }
-
-  @include tablets {
-    font-size: rem(8.97);
-    line-height: rem(14.58);
-  }
 }
 
 .sec-6-list-item-text {
-  @include tablets {
-    font-size: rem(7.85);
-    line-height: rem(11.78);
-  }
+  @extend %font-line-7;
 }
