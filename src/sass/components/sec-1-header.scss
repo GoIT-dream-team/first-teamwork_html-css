@@ -4,32 +4,34 @@
   // position: fixed;
   position: absolute;
   @include сenter-x;
+  padding: rem(17) 0;
   width: 100%;
   min-height: rem(40);
   z-index: 100;
 }
 
 .top-header__inner {
-  @include сenter-xy;
-  padding: 0 rem(17);
+  // @include сenter-xy;
+  // padding: 0 rem(17);
 }
 
 .container-f {
-  // padding: rem(17);
+  padding: 0 rem(17);
   width: 100%;
   @include push--auto;
   justify-content: space-between;
   align-items: center;
 
   @include phones {
-    width: rem(480);
+    max-width: rem(480);
   }
 
   @include tablets {
-    width: rem(677);
+    max-width: rem(677);
   }
 
   @include desktop {
+    padding: 0 rem(30);
     width: 100%;
     max-width: 1350px;
   }
