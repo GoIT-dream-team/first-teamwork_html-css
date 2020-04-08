@@ -34,8 +34,9 @@
 
 // ! title-wrapper
 .sec-1-title-wrapper {
+  padding-top: rem(50);
+  padding-bottom: rem(42);
   position: relative;
-  padding-top: rem(60);
   z-index: 5;
 
   @include tablets {
@@ -43,7 +44,6 @@
     min-height: rem(475);
     background-image: url(../images/bg/768/bg_photo-top-sec-768.png);
     background-repeat: no-repeat;
-    // background-size: 71%;
     background-position: bottom rem(-218) right 0px;
 
     @include retina2x {
