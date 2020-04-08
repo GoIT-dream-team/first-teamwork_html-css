@@ -3,6 +3,7 @@
   margin-bottom: rem(50);
   padding: 0;
   list-style-type: none;
+  counter-reset: orange-counter;
   // padding-left: rem(28);
 }
 
@@ -37,7 +38,8 @@
 
   &::before {
     display: block;
-    content: '[ 001 ]';
+    counter-increment: orange-counter;
+    content: "[ 00" counter(orange-counter) " ]";
     position: absolute;
     font-size: rem(13);
     font-family: $font-first;
@@ -62,26 +64,26 @@
   }
 }
 
-.two-numb::before {
-  content: '[ 002 ]';
-}
+// .two-numb::before {
+//   content: '[ 002 ]';
+// }
 
-.three-numb::before {
-  content: '[ 003 ]';
-}
+// .three-numb::before {
+//   content: '[ 003 ]';
+// }
 
-.four-numb::before {
-  content: '[ 004 ]';
-}
+// .four-numb::before {
+//   content: '[ 004 ]';
+// }
 
-.five-numb::before {
-  content: '[ 005 ]';
-}
+// .five-numb::before {
+//   content: '[ 005 ]';
+// }
 
-.six-numb::before {
-  content: '[ 006 ]';
-  top: rem(25);
-}
+// .six-numb::before {
+//   content: '[ 006 ]';
+//   top: rem(25);
+// }
 
 .title-article {
   margin: 0;
