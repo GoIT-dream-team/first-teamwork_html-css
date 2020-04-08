@@ -137,53 +137,6 @@
   }
 }
 
-.sec-16-list {
-  list-style-type: none;
-  // width: rem(285);
-  margin: 0 auto;
-  padding-left: rem(28);
-}
-
-.sec-16-list_item {
-  display: block;
-  content: '';
-  position: relative;
-}
-
-.sec-16-list_item::before {
-  display: block;
-  content: '[ 001 ]';
-  position: absolute;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: 700;
-  color: $main-white-color;
-  text-align: center;
-  width: rem(55);
-  height: rem(15);
-  background-color: $stylish-color-orange;
-  top: 23%;
-  left: -19%;
-  transform: rotate(-90deg);
-}
-
-.two-numb::before {
-  content: '[ 002 ]';
-}
-
-.three-numb::before {
-  content: '[ 003 ]';
-}
-
-.four-numb::before {
-  content: '[ 004 ]';
-}
-
-.five-numb::before {
-  content: '[ 005 ]';
-  // margin-top: rem(5);
-}
-
 .box-price {
   @include push--auto;
   width: col(10);

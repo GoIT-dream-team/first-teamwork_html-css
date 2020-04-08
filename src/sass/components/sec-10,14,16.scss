@@ -3,7 +3,9 @@
   margin-bottom: rem(50);
   padding: 0;
   list-style-type: none;
-  // padding-left: rem(28);
+  @include tablets {
+    margin-bottom: rem(15);
+  }
 }
 
 .list-article {
@@ -22,11 +24,15 @@
     padding-right: rem(15);
     font-size: rem(8.97);
     line-height: rem(11.78);
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
+  // &:nth-last-child(-n + 2) {
+  //   margin-bottom: 0;
+  // }
 
   &::before {
     display: block;
@@ -110,17 +116,32 @@
   display: block;
   width: rem(215);
   height: rem(50);
+  margin: 0 auto;
   margin-top: rem(38);
   border: none;
   text-transform: uppercase;
   font-family: $font-first;
   font-weight: 800;
   background-color: $stylish-color-orange;
-  color: $main-white-color;
-  font-size: rem(11);
+
+  @include tablets {
+    order: 1;
+    margin: 0;
+    padding: 0;
+    width: rem(120);
+    height: rem(30);
+    line-height: rem(10.11);
+  }
 }
 
 .link_click {
   text-transform: uppercase;
   text-decoration: none;
+  color: $main-white-color;
+  font-size: rem(11);
+
+  @include tablets {
+    font-size: rem(6.17);
+    // line-height: rem(10.09);
+  }
 }
