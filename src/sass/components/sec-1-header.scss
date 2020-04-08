@@ -5,11 +5,17 @@
   position: absolute;
   @include сenter-x;
   width: 100%;
+  min-height: rem(40);
   z-index: 100;
 }
 
 .top-header__inner {
-  padding: rem(17);
+  @include сenter-xy;
+  padding: 0 rem(17);
+}
+
+.container-f {
+  // padding: rem(17);
   width: 100%;
   @include push--auto;
   justify-content: space-between;
@@ -25,6 +31,7 @@
 
   @include desktop {
     width: 100%;
+    max-width: 1350px;
   }
 }
 
@@ -57,17 +64,20 @@
     height: rem(10);
   }
 
+  @include desktop {
+    width: rem(20);
+  }
+
   &::before,
   &::after {
     @include pseudo;
     position: absolute;
-    height: rem(3);
+    height: 3px;
     background-color: $main-white-color;
-    border-radius: rem(1);
     @include transition;
 
     @include tablets {
-      height: rem(2);
+      height: 2px;
     }
   }
 
@@ -75,6 +85,10 @@
     width: 85%;
     right: 0;
     top: 0;
+
+    @include tablets {
+      top: rem(-1);
+    }
   }
 
   &::after {
@@ -83,7 +97,7 @@
     bottom: rem(1);
 
     @include tablets {
-      bottom: 0;
+      bottom: rem(-1);
     }
   }
 }
@@ -91,12 +105,12 @@
 .bur-menu__line {
   position: relative;
   width: 70%;
-  height: rem(3);
+  height: 3px;
   display: block;
   background-color: $main-white-color;
   @include transition;
 
   @include tablets {
-    height: rem(2);
+    height: 2px;
   }
 }

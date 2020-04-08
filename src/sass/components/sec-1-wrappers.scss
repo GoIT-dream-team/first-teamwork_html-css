@@ -44,7 +44,8 @@
     min-height: rem(475);
     background-image: url(../images/bg/768/bg_photo-top-sec-768.png);
     background-repeat: no-repeat;
-    background-position: bottom rem(-218) right 0px;
+    background-size: rem(466);
+    background-position: bottom rem(-218) right 0;
 
     @include retina2x {
       background-image: url(../images/bg/768/bg_photo-top-sec-768@2x.png);
@@ -56,10 +57,9 @@
   }
 
   @include desktop {
-    min-height: 531px;
-    // background-size: 72%;
-    // background-position: bottom rem(-227) right 0px;
     background-image: url(../images/bg/1200/bg_photo-top-sec.png);
+    background-position: bottom rem(-218) right rem(100);
+
     @include retina2x {
       background-image: url(../images/bg/1200/bg_photo-top-sec@2x.png);
     }
