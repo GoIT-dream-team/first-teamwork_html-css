@@ -1,21 +1,27 @@
 .sec-3__wrapper {
   padding-top: rem(39.5);
-  padding-bottom: rem(45);
+  padding-bottom: rem(25);
   @include tablets {
     padding-top: rem(61);
     padding-bottom: rem(50);
+    background: url(../images/bg/768/bg_graph-768.png);
+    background-repeat: no-repeat;
+    background-position: bottom rem(39) right 0;
   }
-}
 
-.sec-3-title__wrapper {
-  @include push--auto;
-  margin-bottom: rem(35);
-  width: col(8);
-  @include tablets {
-    margin: 0;
+  .sec-3-title__wrapper {
+    @include push--auto;
+    margin-bottom: rem(35);
+    width: col(8);
+    @include tablets {
+      margin: 0;
+    }
   }
-}
 
+  // .sec-3__grid-wrapper {
+  //   justify-content: space-between;
+  // }
+}
 .sec-3-subtitle {
   position: relative;
   padding-left: rem(30);
@@ -23,7 +29,7 @@
   // font-size: rem(13.5);
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: rem(8);
     left: 0;
@@ -41,7 +47,6 @@
     margin-bottom: rem(24);
     padding-left: 0;
   }
-  
 }
 
 .sec-3__list {
@@ -53,7 +58,7 @@
   list-style-type: none;
   padding-left: rem(40);
   @include tablets {
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 0;
     & li {
       &:nth-child(1) {

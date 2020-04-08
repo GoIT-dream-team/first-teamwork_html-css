@@ -3,11 +3,24 @@
     padding-bottom: rem(45);
   }
   
+  .list-article:last-child{
+    margin-bottom: 0;
+  }
+
   .sec-10-title {
+    width: col(10);
+    margin: 0 auto;
     font-size: rem(10.5);
     font-family: $font-first;
     font-weight: 800;
-    padding-bottom: rem(36);
+    margin-bottom: rem(36);
     text-transform: uppercase;
     line-height: rem(16.5);
-  }
+
+    @include tablets {
+      width: col(2.5);
+      font-size: rem(9);
+      line-height: rem(16.82);
+      margin-left: rem(0);
+    }
+}
