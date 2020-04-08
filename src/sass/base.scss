@@ -38,32 +38,6 @@ body {
   color: $main-text-color;
 }
 
-.container {
-  // width: 100%;
-  // margin: 0 auto;
-  // padding: 0 rem(10);
-
-  
-  // @include phones {
-  //   width: rem(446);
-  //   padding: 0;
-  // }
-
-  // @include tablets {
-  //   width: rem(644);
-  // }
-
-  // ! Скороее всего нет такого
-  // @include laptop {
-  //   width: rem(712);
-  // }
-
-  // ! под вопросом, пока временный
-  // @include desktop {
-  //   width: rem(712);
-  // }
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
