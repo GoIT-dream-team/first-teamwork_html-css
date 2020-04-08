@@ -1,27 +1,39 @@
 .sec-3__wrapper {
   padding-top: rem(39.5);
   padding-bottom: rem(25);
+}
+
+.sec-3-title__wrapper {
+  @include push--auto;
+  margin-bottom: rem(45);
+  width: col(8);
+  @include tablets {
+    margin: 0;
+  }
+}
+
+.sec-3__grid-wrapper {
   @include tablets {
     padding-top: rem(61);
     padding-bottom: rem(50);
     background: url(../images/bg/768/bg_graph-768.png);
     background-repeat: no-repeat;
-    background-position: bottom rem(39) right 0;
+    background-position: bottom rem(40) right rem(-33);
   }
-
-  .sec-3-title__wrapper {
-    @include push--auto;
-    margin-bottom: rem(35);
-    width: col(8);
-    @include tablets {
-      margin: 0;
-    }
+  @include retina2x {
+    background: url(../images/bg/768/bg_graph-768@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom rem(40) right rem(-33);
+    background-size: rem(259);
   }
-
-  // .sec-3__grid-wrapper {
-  //   justify-content: space-between;
-  // }
+  @include retina3x {
+    background: url(../images/bg/768/bg_graph-768@3x.png);
+    background-repeat: no-repeat;
+    background-position: bottom rem(40) right rem(-33);
+    background-size: rem(259);
+  }
 }
+
 .sec-3-subtitle {
   position: relative;
   padding-left: rem(30);
@@ -49,11 +61,22 @@
   }
 }
 
+// НУЖНО ДОБАВИТЬ на 768 маржины первому и последнему li ! ! ! !
 .sec-3__list {
+  &:not(:first-child) {
+    margin-top: rem(28);
+  }
   @include tablets {
-    // padding-right: rem(20);
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+    &:first-child,
+    &:last-child {
+      margin-bottom: rem(21);
+    }
   }
 }
+
 .sec-3-list__items {
   list-style-type: none;
   padding-left: rem(40);
@@ -79,7 +102,7 @@
 
 .sec-3-list__title {
   @extend %title-basic;
-  padding: rem(10) 0;
+  margin-bottom: rem(12);
   font-size: rem(23);
   line-height: 1;
   @include square-list-orange;
@@ -117,5 +140,5 @@
 }
 
 .sec-3-list__text {
-  padding-top: rem(10);
+  margin-top: rem(10);
 }
