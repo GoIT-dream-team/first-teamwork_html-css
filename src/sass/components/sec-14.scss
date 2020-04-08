@@ -1,18 +1,3 @@
-.sec-14 {
-  padding-top: rem(25);
-  padding-bottom: rem(25);
-}
-
-.title-sec {
-  text-align: left;
-  font-size: rem(13.5);
-  font-family: $font-first;
-  font-weight: 800;
-  padding-bottom: rem(33);
-  text-transform: uppercase;
-  line-height: rem(19.5);
-}
-
 .sec-14-title-main {
   padding-bottom: rem(25);
 }
@@ -56,87 +41,26 @@
   padding-bottom: rem(45);
 }
 
-.sec-14-wrap {
-  // width: rem(378);
-  // margin: 0 auto;
-}
-
-.sec-14-title {
-  // width: rem(358);
+.title-sec {
   text-align: left;
   font-size: rem(13.5);
   font-family: $font-first;
   font-weight: 800;
-  padding-bottom: rem(36);
+  margin-bottom: rem(33);
   text-transform: uppercase;
   line-height: rem(19.5);
+
+  @include tablets {
+    width: col(2.5);
+    line-height: rem(20.19);
+    margin-left: rem(0);
+    margin-bottom: rem(20);
+  }
 }
 
-.sec-14-list {
-  list-style-type: none;
-  // width: rem(285);
-  // margin: 0 auto;
-  padding-left: rem(28);
-  counter-reset: orange-counter;
-}
-
-.sec-14-list_item {
-  display: block;
-  position: relative;
-}
-
-.sec-14-list_item::before {
-  display: block;
-  position: absolute;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: 700;
-  color: $main-white-color;
-  text-align: center;
-  width: rem(55);
-  height: rem(15);
-  background-color: $stylish-color-orange;
-  top: 23%;
-  left: -19%;
-  transform: rotate(-90deg);
-}
-
-// .two-numb::before {
-//   content: "[ 002 ]";
-// }
-
-// .three-numb::before {
-//   content: "[ 003 ]";
-// }
-
-// .four-numb::before {
-//   content: "[ 004 ]";
-// }
-
-// .five-numb::before {
-//   content: "[ 005 ]";
-// }
-
-// .six-numb::before {
-//   content: "[ 006 ]";
-//   top: rem(20);
-// }
-
-.sec-14-title_item {
-  margin: 0;
-  padding: 0;
-  color: $main-text-color;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: 700;
-  padding-bottom: rem(15);
-  line-height: rem(19.5);
-}
-.sec-14-item_text {
-  color: $desc-text-color;
-  font-size: rem(13);
-  font-family: $font-first;
-  font-weight: normal;
-  padding-bottom: rem(30);
-  line-height: rem(19.5);
+.lane {
+  @include tablets {
+    margin-top: rem(7);
+    margin-left: rem(50);
+  }
 }
