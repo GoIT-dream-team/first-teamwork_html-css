@@ -1,14 +1,19 @@
 .bot-content {
   position: relative;
+  padding: 0 rem(17);
+  width: rem(677);
   @include сenter-x;
   bottom: rem(32);
   z-index: 5;
+
+  @include desktop {
+    width: rem(1129);
+  }
 }
 
 .bot-content-wrapper {
-  @include tablets {
-    margin-left: 0;
-  }
+  justify-content: space-between;
+  align-items: center;
 }
 
 .soc-list,

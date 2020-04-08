@@ -1,19 +1,14 @@
 // ! sec-1
 .sec-1 {
   position: relative;
-  background: url(../images/bg/480/bgt.png), $bg-header-footer-color;
-  background-repeat: no-repeat;
-  background-position: top;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(16, 39, 66, 1) 0%,
+      rgba(254, 254, 254, 0) 100%
+    ),
+    $bg-header-footer-color;
   color: $main-white-color;
   z-index: 0;
-
-  @include retina2x {
-    background-image: url(../images/bg/480/bgt@2x.png);
-  }
-
-  @include retina3x {
-    background-image: url(../images/bg/480/bgt@3x.png);
-  }
 
   &::after {
     @include сenter-xy;
@@ -39,31 +34,60 @@
 
 // ! title-wrapper
 .sec-1-title-wrapper {
+  padding-top: rem(50);
+  padding-bottom: rem(42);
   position: relative;
-  padding-top: rem(60);
   z-index: 5;
 
   @include tablets {
     padding-top: rem(80);
     min-height: rem(475);
-    background-image: url(../images/bg/bg_photo-top-sec.png);
+    background-image: url(../images/bg/768/bg_photo-top-sec-768.png);
     background-repeat: no-repeat;
-    background-size: 71%;
-    background-position: bottom rem(-210) right 0px;
+    background-position: bottom rem(-218) right 0px;
 
     @include retina2x {
-      background-image: url(../images/bg/bg_photo-top-sec@2x.png);
+      background-image: url(../images/bg/768/bg_photo-top-sec-768@2x.png);
     }
 
     @include retina3x {
-      background-image: url(../images/bg/bg_photo-top-sec@3x.png);
+      background-image: url(../images/bg/768/bg_photo-top-sec-768@3x.png);
     }
   }
 
   @include desktop {
     min-height: 531px;
-    background-size: 72%;
-    background-position: bottom rem(-227) right 0px;
+    // background-size: 72%;
+    // background-position: bottom rem(-227) right 0px;
+    background-image: url(../images/bg/1200/bg_photo-top-sec.png);
+    @include retina2x {
+      background-image: url(../images/bg/1200/bg_photo-top-sec@2x.png);
+    }
+
+    @include retina3x {
+      background-image: url(../images/bg/1200/bg_photo-top-sec@3x.png);
+    }
   }
 }
 
+.main-content-sec-1 {
+  position: relative;
+  background-image: url(../images/bg/480/lines.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 2;
+
+  @include retina2x {
+    background-image: url(../images/bg/480/lines@2x.png);
+  }
+
+  @include retina3x {
+    background-image: url(../images/bg/480/lines@3x.png);
+  }
+
+  @include tablets {
+    background-image: url(../images/bg/768/lines.png);
+    background-size: 97%;
+  }
+}

@@ -4,12 +4,15 @@
 
 .sec-8-top-block {
     margin-bottom: rem(25);
-
     @include tablets {
         margin-bottom: 0;
         justify-content: space-between;
         // align-items: center;
     }
+}
+
+.sec-8-content__photo-07 {
+    @include push-tablets;
 }
 
 .sec-8-subtitle {
@@ -26,13 +29,13 @@
 }
 
 .sec-8-title {
+    @include push-tablets;
     width: col(9);
 }
 
 .sec-8-title-main {
     margin-bottom: rem(10);
     margin-top: rem(25);
-    padding-left: rem(25);
 }
 
 .sec-8-text-title {
