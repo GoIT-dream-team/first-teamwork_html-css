@@ -1,37 +1,83 @@
+.sec-12-wrapper {
+  padding: rem(40) 0;
+}
+
+.sec-12-inner {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sec-12-text-block {
+  @include push-tablets;
+  width: col(8);
+}
+
 .sec-12-title-main {
-    padding-bottom: rem(25);
+  @extend %font-line-31;
+  margin-bottom: rem(30);
+
+  @include tablets {
+    margin-bottom: rem(20);
+  }
 }
 
 .sec-12-subtitle {
-    @include title-line-litle;
-    padding-left: rem(25);
-    position: relative;
-    padding-bottom: rem(40);
+  @include title-line-litle;
+  @extend %font-line-9;
+  padding-left: rem(25);
+  position: relative;
+  margin-bottom: rem(40);
 
-    &::before {
-        top: rem(10);
-        width: rem(15);
+  @include tablets {
+    padding-left: rem(46);
+    width: col(11);
+  }
+
+  &::before {
+    top: rem(10);
+    width: rem(15);
+
+    @include tablets {
+      top: rem(6);
+      width: rem(28);
     }
+  }
 }
 
 .sec-12-subtitle-span {
-    background-color: $stylish-color-cyan;
-    padding-right: rem(3);
+  background-color: $stylish-color-cyan;
+  padding-right: rem(3);
+}
+
+.sec-16-content__photo-11 {
+  @include push-tablets;
+}
+
+.sec-12-list-items {
+  margin-top: rem(35);
 }
 
 .sec-12-list-item {
-    padding-bottom: rem(30);
-    position: relative;
-    @include square-list-7x7;
-    &::before {
-        top: rem(7);
-    }
-    &:last-child {
-        padding-bottom: 0;
-    }
+  position: relative;
+  margin-bottom: rem(30);
+  padding-left: rem(20);
+  @include square-list-7x7($left: 0);
+  &::before {
+    top: rem(7);
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    margin-bottom: rem(16);
+  }
 }
-.sec-12-list-items {
-    padding-top: rem(35);
-    padding-bottom: rem(60);
-    padding-left: rem(20);
+
+.sec-12-list-title {
+    @extend %font-line-23;
+}
+
+.sec-12-list-text {
+  @extend %font-line-19;
 }
