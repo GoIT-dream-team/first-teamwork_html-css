@@ -1,5 +1,5 @@
 .sec-14-top-block {
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: rem(60);
 }
 
@@ -61,6 +61,7 @@
   }
 
   @include tablets {
+    margin-top: 0;
     width: col(6);
     &::before {
       top: rem(7);
