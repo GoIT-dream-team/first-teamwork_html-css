@@ -211,3 +211,11 @@
     bottom: rem(33);
   }
 }
+
+.seс-2-orange-text {
+    @media (max-width: 767px) {
+        width: col(8);
+        @include push--auto;
+        text-align: center;
+    }
+}
