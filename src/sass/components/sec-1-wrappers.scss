@@ -58,7 +58,7 @@
 
   @include desktop {
     background-image: url(../images/bg/1200/bg_photo-top-sec.png);
-    background-position: bottom rem(-218) right rem(100);
+    background-position: bottom rem(-218) right rem(10);
 
     @include retina2x {
       background-image: url(../images/bg/1200/bg_photo-top-sec@2x.png);

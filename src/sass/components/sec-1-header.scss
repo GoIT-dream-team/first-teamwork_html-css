@@ -1,8 +1,5 @@
 // ! top-header
 .top-header {
-  // TODO position fixed to scrol
-  // position: fixed;
-  position: absolute;
   @include сenter-x;
   padding: rem(17) 0;
   width: 100%;
@@ -10,11 +7,7 @@
   z-index: 100;
 }
 
-.top-header__inner {
-  // @include сenter-xy;
-  // padding: 0 rem(17);
-}
-
+// * header, controls slider and soc-list
 .container-f {
   padding: 0 rem(17);
   width: 100%;
@@ -33,7 +26,7 @@
   @include desktop {
     padding: 0 rem(30);
     width: 100%;
-    max-width: 1350px;
+    max-width: 1500px;
   }
 }
 
