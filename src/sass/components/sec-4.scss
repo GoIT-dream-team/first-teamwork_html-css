@@ -10,6 +10,7 @@
 .sec-4-text-inner {
   margin-top: rem(35);
   margin-bottom: rem(50);
+
   @include tablets {
     margin-bottom: 0;
   }
@@ -65,17 +66,16 @@
 
 .sec-4__title-wrapper {
   width: col(8);
-  @include push--auto;
+  @include push-tablets;
   @include tablets {
-      margin-bottom: rem(43);
-    margin-left: 0;
-    margin-right: 0;
+    width: col(12);
+    margin-bottom: rem(43);
   }
 }
 
 .sec-4-title-basic-revers {
   @extend %title-basic-revers;
-
+  width: col(12);
   margin-bottom: rem(15);
   font-size: rem(18);
   line-height: rem(24);

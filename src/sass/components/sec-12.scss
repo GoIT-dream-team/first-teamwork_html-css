@@ -1,5 +1,5 @@
 .sec-12-wrapper {
-  padding: rem(40) 0;
+  padding: rem(50) 0;
 }
 
 .sec-12-inner {
@@ -8,6 +8,15 @@
 
   @include desktop {
     align-items: center;
+  }
+}
+
+.sec-12-title {
+  width: col(8);
+  @include push-tablets;
+
+  @include tablets {
+    width: col(12);
   }
 }
 
@@ -59,7 +68,7 @@
 .sec-12-list-item {
   position: relative;
   margin-bottom: rem(30);
-  padding-left: rem(20);
+  padding-left: rem(15);
   @include square-list-7x7($left: 0);
   &::before {
     top: rem(7);
@@ -75,8 +84,10 @@
 
 .sec-12-list-title {
   @extend %font-line-23;
+  margin-bottom: rem(8);
 }
 
 .sec-12-list-text {
+  width: col(9);
   @extend %font-line-19;
 }

@@ -245,7 +245,7 @@
     position: absolute;
     display: block;
     color: $main-text-color;
-    top: 0;
+    top: rem(-4);
     left: rem(5);
     transform: rotate(10deg);
     @include tablets {

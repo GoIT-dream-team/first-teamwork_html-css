@@ -155,7 +155,7 @@
   @include tablets {
     width: 27%;
     position: absolute;
-    bottom: 17%;
+    bottom: rem(-3);
     right: 0;
   }
 }
