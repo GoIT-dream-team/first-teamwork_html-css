@@ -13,13 +13,12 @@
     margin-bottom: rem(15);
     padding-left: rem(40);
     font-family: "Acrom";
-    font-size: rem(15);
-    line-height: rem(16.43);
+    @extend %font-line-27;
     font-weight: 800;
     text-transform: uppercase;
-    @include tablets {
-        font-size: rem(10.09);
-        line-height: rem(16.82);
+
+    @include desktop {
+        margin-bottom: 1.64rem;
     }
 }
 
@@ -39,12 +38,8 @@
 
 .sec-2-title-basic {
     @extend %title-basic;
-    font-size: rem(20.5);
-    line-height: rem(30);
-    @include tablets {
-        font-size: rem(27);
-        line-height: rem(35);
-    }
+    @extend %font-line-35;
+    line-height: rem(43);
 }
 
 .sec-2-list__item-text-span {
@@ -109,13 +104,14 @@
 .sec-2-img-text__text {
     margin-bottom: rem(25);
     font-family: "Acrom";
-    font-size: rem(13.5);
-    line-height: rem(19.5);
+    @extend %font-line-24;
     font-weight: 500;
     @include tablets {
-        font-size: rem(9);
-        line-height: rem(13.46);
         margin-bottom: rem(52);
+    }
+
+    @include desktop {
+        margin-bottom: 3.85rem;
     }
 }
 
