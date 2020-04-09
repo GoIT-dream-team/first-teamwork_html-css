@@ -10,6 +10,10 @@
   @include tablets {
     position: relative;
 
+    @include desktop {
+      align-items: flex-end;
+    }
+
     &::before {
       content: 'Hard';
       position: absolute;
@@ -22,7 +26,8 @@
       color: $bg-text;
 
       @include desktop {
-        font-size: rem(156.25);
+        top: rem(185);
+        left: rem(0);
       }
     }
   }
