@@ -15,6 +15,10 @@
   font-weight: 800;
   text-transform: uppercase;
 
+  @include tablets {
+    margin-bottom: rem(8);
+  }
+
   @include desktop {
     margin-bottom: rem(15);
   }
@@ -77,9 +81,9 @@
 
 .sec-2-title__wrapper {
   margin-top: rem(40);
-  @include tablets {
-    margin: 0;
-  }
+  width: col(8);
+  @include push-tablets;
+  margin-top: rem(15);
 }
 
 .sec-2-img-text__text-block {
@@ -169,9 +173,9 @@
   @extend %font-line-24;
   font-weight: 500;
 
-  @include tablets {
-    margin-bottom: rem(25);
-  }
+  // @include tablets {
+  //   margin-bottom: rem(5);
+  // }
 
   @include desktop {
     margin-bottom: rem(52);
