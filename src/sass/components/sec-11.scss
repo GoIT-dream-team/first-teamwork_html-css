@@ -81,8 +81,11 @@
 
 .sec-11-item-title {
     margin-bottom: rem(10);
-    // width: col(8);
+    width: col(8);
     position: relative;
+    // @include tablets {
+    //     width: col(8);
+    // }
 }
 
 .sec-11-item-text {
@@ -134,13 +137,15 @@
 .sec-11-bg__img-01 {
     position: absolute;
     top: rem(-34);
-    right: rem(-35);
+    right: rem(-84);
     transform: translateX(-100%);
     max-width: 100%;
     z-index: -1;
     height: 70px;
     @include tablets {
         height: 50px;
+        top: rem(-34);
+        right: rem(-35);
     }
 }
 

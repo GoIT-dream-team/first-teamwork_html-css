@@ -74,6 +74,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    @include desktop {
+        top: 0;
+    }
 }
 
 .sec-8-text {

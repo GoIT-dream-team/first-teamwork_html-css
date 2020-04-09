@@ -119,14 +119,3 @@
   }
 }
 
-.link_click {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $main-white-color;
-  font-size: rem(11);
-
-  @include tablets {
-    font-size: rem(6.17);
-    // line-height: rem(10.09);
-  }
-}

@@ -1,7 +1,3 @@
-.sec-14-top-block {
-  
-}
-
 .list-sentence-2 {
   width: col(10);
   @include push-tablets;
@@ -50,5 +46,20 @@
     font-size: rem(9);
     line-height: rem(16.82);
     margin-left: rem(0);
+  }
+}
+
+.sec-10-click {
+  @include all-btn;
+  @include push-tablets;
+  margin-top: rem(35);
+  width: col(7);
+  min-height: rem(50);
+  font-size: rem(10.87);
+  @include tablets {
+    margin-top: 0;
+    width: col(2);
+    min-height: rem(28);
+    font-size: rem(6.17);
   }
 }
