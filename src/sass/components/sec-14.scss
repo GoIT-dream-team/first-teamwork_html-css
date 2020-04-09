@@ -1,25 +1,50 @@
+.sec-14-top-block {
+  align-items: center;
+  margin-bottom: rem(60);
+}
+
+.sec-14-img-block {
+  @include push-tablets;
+}
+
 .sec-14-title-main {
   padding-bottom: rem(25);
 }
 
 .sec-14-title-span {
   background-color: #000;
-  padding: 0 rem(10);
+
+  @include tablets {
+    line-height: rem(37);
+  }
 }
 
 .sec-14-subtitle {
   @include title-line-litle;
   padding-left: rem(40);
   position: relative;
-  padding-bottom: rem(60);
 
   &::before {
     top: rem(10);
   }
+
+  @include tablets {
+    width: col(10);
+  }
+}
+
+.sec-14-title-block {
+  width: col(10);
+  @include push-tablets;
+}
+
+.sec-14-title-main-wrapper {
+  width: col(10);
+  @include push-tablets;
 }
 
 .sec-14-orange-text {
-  padding: rem(25) 0;
+  margin: rem(25) 0;
   position: relative;
   padding-left: rem(25);
   &::before {
@@ -34,6 +59,15 @@
     top: rem(25);
     left: rem(0);
   }
+
+  @include tablets {
+    width: col(6);
+    &::before {
+      top: rem(7);
+      left: rem(5);
+      font-weight: 800;
+    }
+  }
 }
 
 .sec-14 {
@@ -42,6 +76,8 @@
 }
 
 .title-sec {
+  width: col(10);
+  @include push-tablets;
   text-align: left;
   font-size: rem(13.5);
   font-family: $font-first;

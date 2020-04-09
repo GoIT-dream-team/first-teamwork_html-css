@@ -1,5 +1,10 @@
 .sec-11-title-main {
+    width: col(11);
+    @include push-tablets;
     margin-bottom: rem(20);
+@include tablets {
+    width: col(10.5);
+}
 }
 
 .sec-11-subtitle {
@@ -36,8 +41,7 @@
     }
 
     .sec-11-top-block {
-        display: flex;
-        flex-flow: wrap;
+        justify-content: space-between;
     }
     .sec-11-title-main {
         order: 1;
@@ -201,8 +205,8 @@
 }
 
 .sec-11-content__photo-06 {
-    max-width: 100%;
-    height: auto;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .nam01::before {

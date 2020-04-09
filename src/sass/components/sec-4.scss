@@ -38,7 +38,6 @@
 .sec-4-text-inner__title-span {
   background-color: #000;
   padding: 0 rem(5);
-  line-height: rem(30);
 }
 
 // .sec-4__text {
@@ -67,17 +66,16 @@
 
 .sec-4__title-wrapper {
   width: col(8);
-  @include push--auto;
+  @include push-tablets;
   @include tablets {
-      margin-bottom: rem(43);
-    margin-left: 0;
-    margin-right: 0;
+    width: col(12);
+    margin-bottom: rem(43);
   }
 }
 
 .sec-4-title-basic-revers {
   @extend %title-basic-revers;
-
+  width: col(12);
   margin-bottom: rem(15);
   font-size: rem(18);
   line-height: rem(24);

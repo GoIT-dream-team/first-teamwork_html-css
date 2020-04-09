@@ -14,11 +14,10 @@
 
 .sec-3__grid-wrapper {
   @include tablets {
-    padding-top: rem(61);
-    padding-bottom: rem(50);
+    padding-bottom: rem(20);
     background: url(../images/bg/768/bg_graph-768.png);
     background-repeat: no-repeat;
-    background-position: bottom rem(40) right rem(-33);
+    background-position: bottom rem(10) right rem(-33);
   }
   @include retina2x {
     background: url(../images/bg/768/bg_graph-768@2x.png);

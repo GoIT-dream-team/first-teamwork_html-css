@@ -83,7 +83,11 @@
   margin-top: rem(40);
   width: col(8);
   @include push-tablets;
-  margin-top: rem(15);
+  
+  @include tablets {
+    margin-top: rem(15);
+    width: col(12);
+  }
 }
 
 .sec-2-img-text__text-block {
@@ -173,9 +177,9 @@
   @extend %font-line-24;
   font-weight: 500;
 
-  // @include tablets {
-  //   margin-bottom: rem(5);
-  // }
+  @include tablets {
+    margin-bottom: rem(40);
+  }
 
   @include desktop {
     margin-bottom: rem(52);
