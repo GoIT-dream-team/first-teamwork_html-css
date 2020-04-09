@@ -7,13 +7,8 @@
   align-items: flex-start;
 
   @include desktop {
-      align-items: center;
+    align-items: center;
   }
-}
-
-.sec-12-text-block {
-  @include push-tablets;
-  width: col(8);
 }
 
 .sec-12-title-main {
@@ -79,7 +74,7 @@
 }
 
 .sec-12-list-title {
-    @extend %font-line-23;
+  @extend %font-line-23;
 }
 
 .sec-12-list-text {

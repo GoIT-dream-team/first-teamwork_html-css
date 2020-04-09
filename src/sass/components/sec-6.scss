@@ -18,18 +18,23 @@
       content: 'Hard';
       position: absolute;
       top: rem(118);
-      left: rem(-23);
+      left: rem(28);
       font-size: rem(140.24);
       font-weight: 800;
       text-transform: uppercase;
       transform: rotate(90deg);
       color: $bg-text;
+      z-index: -1;
 
       @include desktop {
-        top: rem(185);
-        left: rem(0);
+        top: rem(135);
+        left: rem(50);
       }
     }
+  }
+  
+  .big-size {
+    margin-left: col(1);
   }
 
   & img {
