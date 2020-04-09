@@ -27,6 +27,7 @@
   margin-bottom: rem(35);
   width: col(10);
   text-transform: uppercase;
+  font-weight: 800;
 
   @include tablets {
     width: col(12);

@@ -10,6 +10,7 @@
 .sec-4-text-inner {
   margin-top: rem(35);
   margin-bottom: rem(50);
+
   @include tablets {
     margin-bottom: 0;
   }
@@ -37,6 +38,7 @@
 .sec-4-text-inner__title-span {
   background-color: #000;
   padding: 0 rem(5);
+  line-height: rem(30);
 }
 
 // .sec-4__text {
