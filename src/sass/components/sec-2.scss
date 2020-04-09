@@ -1,139 +1,188 @@
 .sec-2__wrapper {
+  padding-top: rem(50);
+  padding-bottom: rem(39.5);
+  @include tablets {
+    padding-top: rem(112);
+    padding-bottom: rem(61);
+  }
+
+  @include desktop {
     padding-top: rem(50);
-    padding-bottom: rem(39.5);
-    @include tablets {
-        padding-top: rem(112);
-        padding-bottom: rem(61);
-    }
+    padding-bottom: rem(30);
+  }
+}
+
+.sec-2-img-text__wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
 }
 
 .sec-2-subtitle {
-    @include title-line-big;
-    position: relative;
-    margin-bottom: rem(15);
-    padding-left: rem(40);
-    font-family: "Acrom";
-    @extend %font-line-27;
-    font-weight: 800;
-    text-transform: uppercase;
-
-    @include desktop {
-        margin-bottom: 1.64rem;
-    }
+  @include title-line-big;
+  position: relative;
+  margin-bottom: rem(15);
+  padding-left: rem(40);
+  font-family: 'Acrom';
+  @extend %font-line-27;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .sec-2-list__title {
-    margin-bottom: rem(15);
-    font-size: rem(13.5);
-    @include tablets {
-        font-size: rem(16.82);
-    }
+  margin-bottom: rem(15);
+  font-size: rem(13.5);
+  @include tablets {
+    font-size: rem(16.82);
+  }
 }
 
 .sec-2-span-bg-dark {
-    background-color: #000;
-    color: #fff;
-    padding: 0 rem(5);
+  background-color: #000;
+  color: #fff;
+  padding: 0 rem(5);
 }
 
 .sec-2-title-basic {
-    @extend %title-basic;
-    @extend %font-line-35;
-    line-height: rem(43);
+  @extend %title-basic;
+  @extend %font-line-35;
+  line-height: rem(43);
 }
 
 .sec-2-list__item-text-span {
-    position: relative;
-    font-weight: 800;
+  position: relative;
+  font-weight: 800;
 }
 
 .sec-2-title__wrapper {
-    margin-top: rem(40);
-    @include tablets {
-        margin: 0;
-    }
+  margin-top: rem(40);
+  @include tablets {
+    margin: 0;
+  }
 }
 
 .sec-2-img-text__text-block {
-    @include tablets {
-        margin-left: col(2);
-    }
+  @include tablets {
+    margin-left: col(2);
+  }
 }
 .sec-2-list__item {
-    font-family: "Acrom";
-    font-size: rem(13.5);
-    list-style-type: none;
-    margin-bottom: rem(20);
-    @include tablets {
-        width: col(2.7);
-        font-size: rem(9);
-        &:nth-last-child(-n + 4) {
-            margin-bottom: 0;
-        }
-    }
+  font-family: 'Acrom';
+  font-size: rem(13.5);
+  list-style-type: none;
+  margin-bottom: rem(20);
 
-    &:last-child {
-        padding-bottom: 0px;
+  @include tablets {
+    width: col(2.7);
+    font-size: rem(9);
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
     }
+  }
+
+  &:last-child {
+    padding-bottom: 0px;
+  }
+
+  @include desktop {
+    padding: 0 1rem;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+        order: 7;
+    }
+    &:nth-child(3) {
+        order: 5;
+    }
+    &:nth-child(4) {
+        order: 3;
+    }
+    &:nth-child(5) {
+        order: 4;
+    }
+    &:nth-child(6) {
+        order: 2;
+    }
+    &:nth-child(7) {
+        order: 8;
+    }
+    &:nth-child(8) {
+        order: 6;
+    }
+  }
 }
 
 .sec-2-list__item-text {
-    position: relative;
-    @include square-list;
-    line-height: rem(20);
-    @include tablets {
-        line-height: rem(13.46);
-        &::before {
-            display: none;
-        }
+  position: relative;
+  @include square-list;
+  line-height: rem(20);
+  @include tablets {
+    line-height: rem(13.46);
+    &::before {
+      display: none;
     }
+  }
 }
 
 .sec-2-content__photo-01 {
-    width: 100%;
+  width: 100%;
 }
 
 .sec-2-list__items {
-    padding-left: rem(40);
-    @include tablets {
-        padding: 0;
-        justify-content: space-between;
-    }
+  padding-left: rem(40);
+  @include tablets {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 
 .sec-2-img-text__text {
-    margin-bottom: rem(25);
-    font-family: "Acrom";
-    @extend %font-line-24;
-    font-weight: 500;
-    @include tablets {
-        margin-bottom: rem(52);
-    }
-
-    @include desktop {
-        margin-bottom: 3.85rem;
-    }
+  margin-bottom: rem(25);
+  font-family: 'Acrom';
+  @extend %font-line-24;
+  font-weight: 500;
+  @include tablets {
+    margin-bottom: rem(52);
+  }
 }
 
 .sec-2-list__wrapper {
-    margin-top: rem(45);
-    @include tablets {
-        margin-top: rem(68);
-        position: relative;
-    }
+  margin-top: rem(45);
+
+  @include tablets {
+    margin-top: rem(68);
+    position: relative;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+  }
 }
+
 .seс-2-orange-text {
-    font-size: rem(13.5);
-    font-weight: 500;
-    line-height: rem(19.5);
-    color: $stylish-color-orange;
-    margin-top: rem(45);
-    @include tablets {
-        margin-top: 0;
-        font-size: rem(10);
-        line-height: rem(13.6);
-        position: absolute;
-        bottom: rem(-62);
-        right: 0;
-    }
+  font-size: rem(13.5);
+  font-weight: 500;
+  line-height: rem(19.5);
+  color: $stylish-color-orange;
+  margin-top: rem(45);
+
+  @include tablets {
+    margin-top: 0;
+    font-size: rem(10);
+    line-height: rem(13.6);
+    position: absolute;
+    bottom: rem(-75);
+    right: 0;
+  }
+
+  @include desktop {
+      bottom: rem(33);
+  }
 }
