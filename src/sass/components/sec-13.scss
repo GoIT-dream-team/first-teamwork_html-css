@@ -1,20 +1,50 @@
+.sec-13-wrapper {
+  padding-top: rem(50);
+  padding-bottom: rem(25);
+  @include tablets {
+    padding-bottom: rem(46);
+  }
+}
+
+.sec-13-title {
+  @include push-tablets;
+  width: col(6);
+  margin-bottom: rem(25);
+  @include tablets {
+    margin-bottom: 0;
+  }
+}
 .sec-13-title-main {
-    padding-bottom: rem(20);
+  margin-bottom: rem(20);
 }
 
 .sec-13-subtitle {
-    padding-bottom: rem(25);
-    @include title-line-litle;
-    padding-left: rem(25);
-    position: relative;
+  position: relative;
 
-    &::before {
-        top: rem(7);
-        width: rem(15);
+  @include title-line-litle;
+  padding-left: rem(25);
+  @include tablets {
+    padding-left: rem(45);
+  }
+  &::before {
+    top: rem(7);
+    width: rem(15);
+    @include tablets {
+      width: rem(29);
     }
+  }
+}
+
+.sec-13-text-block {
+  @include push-tablets;
+  margin-top: rem(40);
+  width: col(6);
+  @include tablets {
+    margin-top: 0;
+    margin-left: rem(33);
+  }
 }
 
 .sec-13-text-title {
-    padding-top: rem(40);
-    padding-bottom: rem(10);
+  margin-bottom: rem(10);
 }

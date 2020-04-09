@@ -109,7 +109,9 @@
   border: rem(1) solid $footer-button-color;
   cursor: pointer;
   @include tablets {
-    font-size: rem(7);
+    font-size: rem(6.73);
+    width: rem(110);
+    min-height: rem(28);
   }
   // @include desktop {
   //   width: rem(139);

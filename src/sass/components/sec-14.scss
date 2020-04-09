@@ -39,6 +39,9 @@
 .sec-14 {
   padding-top: rem(25);
   padding-bottom: rem(45);
+  @include tablets {
+    padding-top: rem(46);
+  }
 }
 
 .title-sec {
