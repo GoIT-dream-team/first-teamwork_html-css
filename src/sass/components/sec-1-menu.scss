@@ -1,5 +1,9 @@
 body.lock {
   overflow: hidden;
+
+  @include desktop {
+    overflow: auto;
+  }
 }
 
 .nav-menu {
@@ -17,20 +21,50 @@ body.lock {
   &.active {
     top: 100%;
   }
+  @include tablets {
+    width: 25%;
+  }
+
+  @include desktop {
+    width: rem(150);
+  }
+}
+
+.nav-menu__title .link{
+  min-height: rem(30);
+  font-size: rem(12);
+  line-height: rem(30);
+  font-weight: 300;
+  border-top: 1px solid $footer-button-color;
+  border-bottom: 1px solid $footer-button-color;
+  color: $main-white-color;
+  @include transition;
+
+  &:hover {
+    color: $stylish-color-orange;
+  }
+
+  @include desktop {
+    font-size: rem(9);
+  }
 }
 
 .nav-menu__list {
+  position: relative;
 }
 
 .nav-menu__item {
   height: rem(40);
-  font-size: rem(10);
-  line-height: rem(40);
   color: $main-white-color;
   z-index: 20;
 
-  &:last-child {
-    background-color: $footer-button-color;
+  @include tablets {
+    height: rem(30);
+  }
+
+  @include desktop {
+    height: rem(20);
+    font-size: rem(5);
   }
 }
 
@@ -41,4 +75,18 @@ body.lock {
   text-transform: uppercase;
   line-height: rem(40);
   color: $main-white-color;
+  @include transition;
+
+  &:hover {
+    background-color: $stylish-color-orange;
+  }
+
+  @include tablets {
+    line-height: rem(30);
+  }
+
+  @include desktop {
+    line-height: rem(20);
+    font-size: rem(10);
+  }
 }
