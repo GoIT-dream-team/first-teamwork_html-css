@@ -13,7 +13,7 @@
   transition: all 0.2s ease-in;
   opacity: 0.5;
   cursor: pointer;
-  z-index: 999;
+  z-index: 99;
 
   @include tablets {
     width: rem(30);

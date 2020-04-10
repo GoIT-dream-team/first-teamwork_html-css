@@ -1,0 +1,44 @@
+body.lock {
+  overflow: hidden;
+}
+
+.nav-menu {
+  position: fixed;
+  top: -2000%;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: $videocourse-price-color;
+  transition: all 0.2s linear;
+  overflow: auto;
+
+  &.active {
+    top: 100%;
+  }
+}
+
+.nav-menu__list {
+}
+
+.nav-menu__item {
+  height: rem(40);
+  font-size: rem(10);
+  line-height: rem(40);
+  color: $main-white-color;
+  z-index: 20;
+
+  &:last-child {
+    background-color: $footer-button-color;
+  }
+}
+
+.nav-menu__item .link {
+  width: 100%;
+  height: 100%;
+  font-size: rem(16);
+  text-transform: uppercase;
+  line-height: rem(40);
+  color: $main-white-color;
+}
