@@ -22,23 +22,31 @@
 
 .sec-12-title-main {
   @extend %font-line-31;
+  @include push-tablets;
+  width: col(11);
   margin-bottom: rem(30);
 
   @include tablets {
-    margin-bottom: rem(20);
+    margin-bottom: rem(10);
+  }
+
+  @include desktop {
+    margin-bottom: rem(40);
   }
 }
 
 .sec-12-subtitle {
   @include title-line-litle;
   @extend %font-line-9;
-  padding-left: rem(25);
+  @include push-tablets;
   position: relative;
+  width: col(11);
+  padding-left: rem(25);
   margin-bottom: rem(40);
 
   @include tablets {
+    margin-bottom: rem(20);
     padding-left: rem(46);
-    width: col(11);
   }
 
   &::before {
@@ -55,6 +63,11 @@
 .sec-12-subtitle-span {
   background-color: $stylish-color-cyan;
   padding-right: rem(3);
+  line-height: rem(20);
+
+  @include tablets {
+    line-height: rem(13.45);
+  }
 }
 
 .sec-16-content__photo-11 {
@@ -88,6 +101,6 @@
 }
 
 .sec-12-list-text {
-  width: col(9);
+  width: col(10);
   @extend %font-line-19;
 }
