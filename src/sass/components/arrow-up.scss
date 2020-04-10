@@ -1,0 +1,44 @@
+// ? aroww to scroll UP
+.scrollup {
+  position: fixed;
+  bottom: rem(30);
+  right: rem(20);
+  @include content-center-flex;
+  // display: none;
+  width: rem(50);
+  height: rem(50);
+  background-color: $main-white-color;
+  border: rem(3) solid $stylish-color-orange;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 999;
+
+  @include tablets {
+    width: rem(30);
+    height: rem(30);
+    border-width: rem(2);
+  }
+}
+
+.scrollup:hover {
+  border-color: $videocourse-price-color;
+  opacity: 1;
+}
+
+.scrollup:hover .arrow-up {
+  fill: $videocourse-price-color;
+}
+
+.arrow-up {
+  width: rem(30);
+  height: rem(30);
+  fill: $stylish-color-orange;
+  transition: all 0.2s ease-in;
+
+  @include tablets {
+    width: rem(20);
+    height: rem(20);
+  }
+}
