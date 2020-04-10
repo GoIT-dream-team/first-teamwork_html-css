@@ -5,6 +5,15 @@
   width: 100%;
   min-height: rem(40);
   z-index: 100;
+  // new
+  position: fixed;
+  background-color: transparent;
+  transition: all .5s ease-in-out;
+  
+  &.scroll {
+    background-color: $videocourse-price-color;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.4);
+  }
 }
 
 // * header, controls slider and soc-list
@@ -93,6 +102,26 @@
 
     @include tablets {
       bottom: rem(-1);
+    }
+  }
+
+  &.active {
+    &::before,
+    &::after {
+      top: 7px;
+      width: 100%;
+    }
+  
+    &::before {
+      transform: rotate(45deg);
+    }
+  
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    & .bur-menu__line {
+      width: 0;
     }
   }
 }
