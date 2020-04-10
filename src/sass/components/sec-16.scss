@@ -1,5 +1,5 @@
 .sec-16-title-main {
-  padding-bottom: rem(20);
+  margin-bottom: rem(20);
 }
 
 .sec-16-text-block {
@@ -34,9 +34,9 @@
 
 .sec-16-subtitle {
   @include title-line-litle;
+  width: col(10);
   padding-left: rem(35);
   position: relative;
-  padding-bottom: rem(40);
 
   @include tablets {
     font-size: rem(8.97);
@@ -55,13 +55,26 @@
       margin-bottom: rem(51);
     }
   }
+  
   .sec-16-content__photo-11 {
     // order: 1;
   }
+
   .sec-16-title-blk {
+    // margin-bottom: rem(40);
     @include tablets {
       margin-left: col(1);
     }
+  }
+}
+
+.sec-16-mar {
+  @include push-tablets;
+  margin-bottom: rem(40);
+  width: col(8);
+  @include tablets {
+    margin-left: col(1);
+    margin-bottom: 0;
   }
 }
 

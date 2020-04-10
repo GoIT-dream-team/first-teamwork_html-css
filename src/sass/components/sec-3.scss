@@ -1,18 +1,6 @@
 .sec-3__wrapper {
   padding-top: rem(39.5);
   padding-bottom: rem(25);
-}
-
-.sec-3-title__wrapper {
-  @include push--auto;
-  margin-bottom: rem(45);
-  width: col(8);
-  @include tablets {
-    margin: 0;
-  }
-}
-
-.sec-3__grid-wrapper {
   @include tablets {
     justify-content: space-between;
     padding-bottom: rem(20);
@@ -38,6 +26,19 @@
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: bottom rem(6) right rem(-50);
+  }
+}
+
+.sec-3__grid-wrapper {
+  justify-content: space-between;
+}
+
+.sec-3-title__wrapper {
+  @include push--auto;
+  margin-bottom: rem(45);
+  width: col(8);
+  @include tablets {
+    margin: 0;
   }
 }
 
