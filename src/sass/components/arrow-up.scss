@@ -1,10 +1,9 @@
 // ? aroww to scroll UP
 .scrollup {
   position: fixed;
-  bottom: rem(30);
+  bottom: rem(200);
   right: rem(20);
   @include content-center-flex;
-  // display: none;
   width: rem(50);
   height: rem(50);
   background-color: $main-white-color;
@@ -19,6 +18,10 @@
     width: rem(30);
     height: rem(30);
     border-width: rem(2);
+  }
+
+  @include desktop {
+    bottom: rem(70);
   }
 }
 

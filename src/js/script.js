@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // menu
+  // ====================================================== menu
   $('.bur-menu').click(function () {
     $('.bur-menu, .nav-menu').toggleClass('active');
     $('body').toggleClass('lock');
@@ -20,7 +20,7 @@ $(document).ready(function () {
   });
   // $(".bur-menu").click();
 
-  // scroll time
+  // ======================================================== scroll time
   $(function () {
     $('a[href^="#"]').on('click', function (event) {
       event.preventDefault();
@@ -33,7 +33,7 @@ $(document).ready(function () {
   });
   //
 
-  // top slider
+  // ======================================================= top slider
   $('.top-slider').slick({
     arrows: false,
     dots: true,
@@ -44,7 +44,7 @@ $(document).ready(function () {
     appendDots: $('.top-slider-dots'),
   });
 
-  // sleder 5 section
+  // ======================================================= sleder 5 section
   $('.sec-5-slider').slick({
     dots: true,
     infinite: true,
@@ -54,7 +54,7 @@ $(document).ready(function () {
     appendArrows: $('.slider-controls'),
   });
 
-  // scrollup
+  // ====================================================== scrollup
   $('.scrollup').click(function () {
     $('html, body').animate(
       {
@@ -77,5 +77,17 @@ $(document).ready(function () {
     } else {
       $('.top-header').removeClass('scroll');
     }
+  });
+
+  // ====================================================== popup
+
+  $('.contact-btn').click(function () {
+    $('#popup').fadeIn().addClass('open');
+    $('body').addClass('lock-two');
+  });
+
+  $('.close-btn').click(function () {
+    $('#popup').fadeOut().removeClass('open');
+    $('body').removeClass('lock-two');
   });
 });
