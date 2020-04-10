@@ -42,6 +42,11 @@
   }
 }
 
+.sec-18-pad {
+  @include tablets {
+    padding-left: rem(20);
+  }
+}
 .sec-18-subtitle {
   color: $main-text-color;
   font-family: $font-first;
@@ -95,6 +100,8 @@
     @include tablets {
       font-size: rem(30);
       font-weight: 500;
+      left: rem(-10);
+      top: rem(9);
     }
   }
 
