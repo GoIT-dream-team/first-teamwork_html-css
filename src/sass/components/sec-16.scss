@@ -161,6 +161,7 @@
 }
 
 .box-text {
+  padding-bottom: rem(20);
   display: inline-block;
   color: $main-text-color;
   font-size: rem(17);
@@ -169,6 +170,7 @@
   line-height: 1.7;
 
   @include tablets {
+    padding-bottom: 0;
     line-height: rem(11);
   }
 

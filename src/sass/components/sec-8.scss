@@ -1,89 +1,93 @@
 .sec-8-wrapper {
-    padding: rem(30) 0;
+  padding: rem(30) 0;
+}
+
+.sec-8-img-wrapper {
+  @include push-tablets;
 }
 
 .sec-8-top-block {
-    margin-bottom: rem(25);
+  margin-bottom: rem(25);
 
-    @include tablets {
-        margin-bottom: 0;
-        justify-content: space-between;
-        // align-items: center;
-    }
+  @include tablets {
+    margin-bottom: 0;
+    justify-content: space-between;
+    // align-items: center;
+  }
 }
 
 .sec-8-text-block {
-    width: col(9);
-    @include push-tablets;
+  width: col(9);
+  @include push-tablets;
 }
 
 .sec-8-content__photo-07 {
-    @include push-tablets;
+  @include push-tablets;
 }
 
 .sec-8-subtitle {
-    @include title-line-litle;
-    padding-left: rem(35);
+  @include title-line-litle;
+  padding-left: rem(35);
 
-    @include tablets {
-        margin-top: rem(10);
-        width: col(10);
-    }
+  @include tablets {
+    margin-top: rem(10);
+    width: col(10);
+  }
 
-    &::before {
-        top: rem(10);
-    }
+  &::before {
+    top: rem(10);
+  }
 }
 
 .sec-8-title {
-    @include push-tablets;
-    width: col(8);
-    @include desktop {
-        margin-bottom: rem(45);
-    }
+  @include push-tablets;
+  width: col(8);
+  @include desktop {
+    margin-bottom: rem(45);
+  }
 }
 
 .sec-8-title-main {
-    margin-bottom: rem(10);
-    margin-top: rem(25);
+  margin-bottom: rem(10);
+  margin-top: rem(25);
 }
 
 .sec-8-text-title {
-    @include square-list-7x7;
-    position: relative;
-    font-size: rem(14.54);
-    line-height: rem(22.85);
-    padding-left: rem(25);
-    margin: rem(20) 0;
+  @include square-list-7x7;
+  position: relative;
+  font-size: rem(14.54);
+  line-height: rem(22.85);
+  padding-left: rem(25);
+  margin: rem(20) 0;
+
+  @include tablets {
+    padding-left: 0;
+  }
+
+  &::before {
+    top: rem(10);
+    left: rem(0);
 
     @include tablets {
-        padding-left: 0;
+      top: rem(-18);
     }
-
-    &::before {
-        top: rem(10);
-        left: rem(0);
-
-        @include tablets {
-            top: rem(-18);
-        }
-    }
+  }
 }
 
 .sec-8-bottom-block {
-    @include tablets {
-        position: relative;
-        top: rem(-22);
-        justify-content: space-between;
-        align-items: center;
-    }
-    @include desktop {
-        top: 0;
-    }
+  @include tablets {
+    position: relative;
+    top: rem(-22);
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include desktop {
+    top: 0;
+  }
 }
 
 .sec-8-text {
-    @include tablets {
-        width: 92%;
-    }
+  @include tablets {
+    width: 92%;
+  }
 }

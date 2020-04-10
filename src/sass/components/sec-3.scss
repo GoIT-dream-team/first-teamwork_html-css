@@ -14,6 +14,7 @@
 
 .sec-3__grid-wrapper {
   @include tablets {
+    justify-content: space-between;
     padding-bottom: rem(20);
     background: url(../images/bg/768/bg_graph-768.png);
     background-repeat: no-repeat;
