@@ -1,6 +1,9 @@
 .sec-2__wrapper {
   padding-top: rem(50);
   padding-bottom: rem(40);
+  @include tablets {
+    padding-bottom: rem(80);
+  }
 }
 
 .sec-2-subtitle {
