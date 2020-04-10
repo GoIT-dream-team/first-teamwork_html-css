@@ -79,6 +79,10 @@
    background-color: $main-text-color;
 }
 
+.buy-course-form {
+   width: 100%;
+}
+
 .buy-course__label {
    font-size: rem(8);
    font-family: $font-first;
@@ -90,14 +94,14 @@
 .buy-course__input {
    margin-top: rem(8);
    margin-bottom: rem(20);
-   width: rem(240);
+   width: 100%;
    display: block;
    padding-top: rem(8);
    padding-bottom: rem(8);
    border: none;
    border-bottom: rem(1) solid $form-input-underline;
       @include tablets {
-         width: rem(200);
+         width: 100%;
       }
 
    &::placeholder {

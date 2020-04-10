@@ -38,6 +38,9 @@
 .sec-8-title {
     @include push-tablets;
     width: col(8);
+    @include desktop {
+        margin-bottom: rem(45);
+    }
 }
 
 .sec-8-title-main {

@@ -31,6 +31,13 @@
     background-position: bottom rem(40) right rem(-33);
     background-size: rem(259);
   }
+  @include desktop {
+    padding-bottom: rem(20);
+    background: url(../images/bg/768/bg_graph-768.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: bottom rem(6) right rem(-50);
+  }
 }
 
 .sec-3-subtitle {
