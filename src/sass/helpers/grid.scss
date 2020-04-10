@@ -53,15 +53,15 @@
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 677px;
+    max-width: 1174px;
   }
 }
 
-// @media (min-width: 1600px) {
-//   .container {
-//     max-width: 1474px;
-//   }
-// }
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1474px;
+  }
+}
 
 .grid-flex {
   display: flex;
