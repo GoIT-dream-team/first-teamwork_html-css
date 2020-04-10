@@ -19,6 +19,12 @@
   }
 }
 
+.sec-7-title-wrappre {
+  @include desktop {
+    margin-left: col(1);
+  }
+}
+
 .sec-7-text-block-01,
 .sec-7-text-block-02 {
   @include tablets {
@@ -48,7 +54,7 @@
 
   @include tablets {
     margin-bottom: rem(15);
-    width: col(8);
+    width: col(9);
   }
 
   &::before {
@@ -95,6 +101,10 @@
     font-size: rem(8.97);
     line-height: rem(13.46);
   }
+
+  @include desktop {
+    margin-bottom: rem(20);
+  }
 }
 .sec-7-text-block-text-normal {
   font-size: rem(13.5);
@@ -124,7 +134,10 @@
   @include tablets {
     margin-bottom: rem(35);
   }
-  // order: 1;
+
+  @include desktop {
+    margin-bottom: rem(55);
+  }
 }
 
 @media (max-width: rem(767)) {
