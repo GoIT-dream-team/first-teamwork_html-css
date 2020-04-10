@@ -1,267 +1,283 @@
 .sec-11-title-main {
-    width: col(11);
-    @include push-tablets;
-    margin-bottom: rem(20);
-@include tablets {
+  width: col(11);
+  @include push-tablets;
+  margin-bottom: rem(20);
+
+  @include tablets {
     width: col(10.5);
-}
+  }
 }
 
 .sec-11-subtitle {
-    @include title-line-litle;
-    padding-left: rem(30);
-    position: relative;
-    @include push--auto;
-    width: col(9);
-    @include tablets {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  @include title-line-litle;
+  padding-left: rem(30);
+  position: relative;
+  @include push--auto;
+  width: col(9);
+  display: none;
 
-    &::before {
-        top: rem(10);
-    }
+  @include tablets {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+
+  &::before {
+    top: rem(10);
+  }
+}
+
+.sec-11-subtitle-2 {
+  display: block;
+  margin-top: rem(55);
+
+  @include tablets {
+      display: none;
+  }
 }
 
 .sec-11-title-text {
-    margin-bottom: rem(15);
+  margin-bottom: rem(15);
 }
 
 .sec-11-text-block {
-    @include tablets {
-        margin-bottom: rem(32);
-        padding-left: col(1);
-    }
+  @include tablets {
+    margin-bottom: rem(32);
+    padding-left: col(1);
+  }
 }
 
 @media (max-width: 767px) {
-    .sec-11-text-block {
-        @include push--auto;
-        width: col(8);
-    }
+  .sec-11-text-block {
+    @include push--auto;
+    width: col(8);
+  }
 
-    .sec-11-top-block {
-        justify-content: space-between;
+  .sec-11-top-block {
+    justify-content: space-between;
+  }
+  .sec-11-title-main {
+    order: 1;
+  }
+  .sec-11-img-block {
+    order: 2;
+    margin-bottom: rem(60);
+  }
+  .sec-11-subtitle {
+    order: 3;
+
+    @include tablets {
+      margin-bottom: rem(45);
     }
-    .sec-11-title-main {
-        order: 1;
-    }
-    .sec-11-img-block {
-        order: 2;
-        margin-bottom: rem(60);
-    }
-    .sec-11-subtitle {
-        order: 3;
-        margin-bottom: rem(45);
-    }
-    .sec-11-text {
-        margin-bottom: rem(40);
-    }
+  }
+  .sec-11-text {
+    margin-bottom: rem(40);
+  }
 }
 .sec-11-list-items {
-    list-style: none;
+  list-style: none;
 }
 
 .sec-11-dark-title {
-    font-size: rem(12.35);
-    font-weight: 500;
-    line-height: rem(16.21);
-    color: #fff;
-    margin-bottom: rem(20);
-    position: relative;
-    @include tablets {
-        font-size: rem(8.97);
-    }
+  font-size: rem(12.35);
+  font-weight: 500;
+  line-height: rem(16.21);
+  color: #fff;
+  margin-bottom: rem(20);
+  position: relative;
+  @include tablets {
+    font-size: rem(8.97);
+  }
 }
 
 .sec-11-dark-title-span {
-    background-color: #000;
-    padding: 0 rem(2);
+  background-color: #000;
+  padding: 0 rem(2);
 }
 
 .sec-11-item-title {
-    margin-bottom: rem(10);
-    width: col(8);
-    position: relative;
-    // @include tablets {
-    //     width: col(8);
-    // }
+  margin-bottom: rem(10);
+  width: col(8);
+  position: relative;
+  // @include tablets {
+  //     width: col(8);
+  // }
 }
 
 .sec-11-item-text {
-    margin-bottom: rem(40);
+  margin-bottom: rem(40);
 }
 
 .sec-11-text-span {
-    font-weight: 800;
-    display: block;
+  font-weight: 800;
+  display: block;
 }
 
 .sec-11-bottom-block-first {
-    position: relative;
-    @include push--auto;
-    width: col(8);
-    @include tablets {
-        margin-right: 0;
-        margin-left: 0;
-    }
+  position: relative;
+  @include push--auto;
+  width: col(8);
+  @include tablets {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .sec-11-item-title {
-    // width: col(10);
-    position: relative;
-    @include tablets {
-        &.title-g {
-            width: col(7);
-        }
+  // width: col(10);
+  position: relative;
+  @include tablets {
+    &.title-g {
+      width: col(7);
     }
+  }
 }
 
 .sec-11-list-item {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .sec-11-bottom-block-second {
-    @include push--auto;
-    width: col(8);
-    @include tablets {
-        margin-right: 0;
-        margin-left: 0;
-        padding-left: rem(10);
-    }
+  @include push--auto;
+  width: col(8);
+  @include tablets {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: rem(10);
+  }
 }
 .sec-11-list-item {
-    position: relative;
+  position: relative;
 }
 
 .sec-11-bg__img-01 {
-    position: absolute;
+  position: absolute;
+  top: rem(-34);
+  right: rem(-84);
+  transform: translateX(-100%);
+  max-width: 100%;
+  z-index: -1;
+  height: 70px;
+  @include tablets {
+    height: 50px;
     top: rem(-34);
-    right: rem(-84);
-    transform: translateX(-100%);
-    max-width: 100%;
-    z-index: -1;
-    height: 70px;
-    @include tablets {
-        height: 50px;
-        top: rem(-34);
-        right: rem(-35);
-    }
+    right: rem(-35);
+  }
 }
 
 .sec-11-bg__img-02 {
-    height: auto;
-    position: absolute;
-    top: rem(0);
-    left: 100%;
-    transform: translateX(-100%);
-    max-width: 100%;
-    z-index: -1;
-    height: 140px;
-    @include tablets {
-        height: 100px;
-    }
+  height: auto;
+  position: absolute;
+  top: rem(0);
+  left: 100%;
+  transform: translateX(-100%);
+  max-width: 100%;
+  z-index: -1;
+  height: 140px;
+  @include tablets {
+    height: 100px;
+  }
 }
 
 .padding-text {
-    padding-right: 70px;
-    @include tablets {
-        padding-right: 41px;
-    }
+  padding-right: 70px;
+  @include tablets {
+    padding-right: 41px;
+  }
 }
 
 .padding-block {
-    @include tablets {
-        padding-left: rem(8);
-    }
+  @include tablets {
+    padding-left: rem(8);
+  }
 }
 
 .sec-11-bg__img-03 {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
-    max-width: 100%;
-    z-index: -1;
-    height: 110px;
-    @include tablets {
-        height: 80px;
-    }
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  max-width: 100%;
+  z-index: -1;
+  height: 110px;
+  @include tablets {
+    height: 80px;
+  }
 }
 
 .sec-11-bg__img-04 {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
-    max-width: 100%;
-    z-index: -1;
-    height: 110px;
-    @include tablets {
-        height: 80px;
-    }
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  max-width: 100%;
+  z-index: -1;
+  height: 110px;
+  @include tablets {
+    height: 80px;
+  }
 }
 
 .sec-11-top-block {
-    @include tablets {
-        margin-bottom: rem(60);
-    }
+  @include tablets {
+    margin-bottom: rem(60);
+  }
 }
 
 .sec-11-content__photo-06 {
-    margin-right: 0;
-    margin-left: auto;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .nam01::before {
-    content: "01_";
-    font-size: rem(38.61);
-    font-family: $font-first;
-    color: $main-box-shadow;
-    opacity: 0.02;
-    font-weight: 800;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    position: absolute;
-    top: rem(10);
-    left: rem(170);
-    @include tablets {
-        font-size: rem(28.05);
-        left: rem(105);
-    }
+  content: '01_';
+  font-size: rem(38.61);
+  font-family: $font-first;
+  color: $main-box-shadow;
+  opacity: 0.02;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: rem(10);
+  left: rem(170);
+  @include tablets {
+    font-size: rem(28.05);
+    left: rem(105);
+  }
 }
 .nam02::before {
-    content: "02_";
-    font-size: rem(38.61);
-    font-family: $font-first;
-    color: $main-box-shadow;
-    opacity: 0.02;
-    font-weight: 800;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    position: absolute;
-    top: rem(10);
-    left: rem(150);
-    @include tablets {
-        font-size: rem(28.05);
-        left: rem(100);
-    }
+  content: '02_';
+  font-size: rem(38.61);
+  font-family: $font-first;
+  color: $main-box-shadow;
+  opacity: 0.02;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: rem(10);
+  left: rem(150);
+  @include tablets {
+    font-size: rem(28.05);
+    left: rem(100);
+  }
 }
 
 .nam03::before {
-    content: "03_";
-    font-size: rem(38.61);
-    font-family: $font-first;
-    color: $main-box-shadow;
-    opacity: 0.02;
-    font-weight: 800;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    position: absolute;
-    top: rem(10);
-    left: rem(150);
-    @include tablets {
-        font-size: rem(28.05);
-        left: rem(100);
-    }
+  content: '03_';
+  font-size: rem(38.61);
+  font-family: $font-first;
+  color: $main-box-shadow;
+  opacity: 0.02;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: rem(10);
+  left: rem(150);
+  @include tablets {
+    font-size: rem(28.05);
+    left: rem(100);
+  }
 }

@@ -85,6 +85,10 @@
   outline: none;
 
   @include phones {
+    width: 75%;
+  }
+
+  @include tablets {
     width: 50%;
   }
 }
